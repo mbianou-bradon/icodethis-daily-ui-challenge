@@ -1,0 +1,23 @@
+{
+  "name": "icodethis-daily-ui-challenge",
+  "version": "1.0.0",
+  "description": "daily ui code challenges from icodethis.com website",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbianou-bradon/icodethis-daily-ui-challenge.git"
+  },
+  "author": "Mbianou Bradon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbianou-bradon/icodethis-daily-ui-challenge/issues"
+  },
+  "homepage": "https://github.com/mbianou-bradon/icodethis-daily-ui-challenge#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "tailwindcss": "^3.2.4"
+  }
+}

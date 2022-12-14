@@ -761,10 +761,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:left-\[15\%\] {
-    left: 15%;
-  }
-
   .sm\:left-1\/4 {
     left: 25%;
   }
@@ -803,10 +799,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:left-1\/4 {
-    left: 25%;
-  }
-
   .md\:w-\[780px\] {
     width: 780px;
   }

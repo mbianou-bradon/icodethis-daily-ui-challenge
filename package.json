@@ -4,7 +4,7 @@
   "description": "daily ui code challenges from icodethis.com website",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch --minify"
   },
   "repository": {
     "type": "git",

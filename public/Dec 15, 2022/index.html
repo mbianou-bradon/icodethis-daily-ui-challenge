@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Card Item</title>
 </head>
 <body>
     
-    <main>
-        <div class="card">
-            <div>
-                <img src="../assets/Dec 15, 2022/headphones.png" alt="">
+    <main class="bg-blue-100 h-screen text-slate-900 pt-24">
+        <div class="card flex bg-white rounded-lg w-fit p-10 mx-auto drop-shadow-2xl">
+            <div class="mx-4">
+                <img src="../assets/Dec 15, 2022/headphones.png" alt="" class="h-52 aspect-square object-center">
             </div>
 
             <div>
-                <div><h2>free shipping</h2></div>
-                <div class="item-name">
+                <div class="text-white bg-black rounded-full w-fit px-3"><h2>free shipping</h2></div>
+                <div class="item-name text-2xl font-semibold py-5 w-96">
                     <h2>Razer Kraken Kitty Edt Gaming Headset Quartz</h2>
                 </div>
                 <div class="item-price">
-                    <div class="item-price-discount"><p>1 599,-</p></div>
-                    <div class="item-new-price"><p>799,-</p></div>
-                    <p>This offer is valid until April 3 or as long as stock lasts!</p>
+                    <div class="item-price-discount line-through"><p>1 599,-</p></div>
+                    <div class="item-new-price text-4xl font-extrabold py-3"><p>799,-</p></div>
+                    <p class="text-slate-400">This offer is valid until April 3 or as long as stock lasts!</p>
                 </div>
 
-                <div class="add-to-cart">
+                <div class="add-to-cart text-white text-center font-semibold bg-blue-500 py-3 my-6 rounded-xl shadow-sm shadow-blue-600 border-b-2 border-blue-700 cursor-pointer hover:bg-blue-600 transition-all ease-linear duration-300">
                     <h2>Add to cart</h2>
                 </div>
-                <h2>50+ pcs. in stock</h2>
+                <div class="flex items-center gap-1 pb-4">
+                    <div class="text-green-500"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M232 128A104 104 0 1 1 128 24a104.2 104.2 0 0 1 104 104Z"/></svg></div>
+                    <h2 class="text-sm font-semibold">50+ pcs. in stock</h2></div>
 
-                <div class="call-to-action-btn">
+                <div class="call-to-action-btn flex [&>*]:flex justify-between [&>*]:items-center [&>*]:px-5 [&>*]:py-3 [&>*]:border-2 [&>*]:gap-2 [&>*]:rounded-md cursor-pointer [&>*:hover]:bg-slate-900 [&>*:hover]:text-white [&>*]:font-semibold [&>*>div>svg]:text-lg [&>*]:transition-all [&>*]:ease-linear [&>*]:duration-300">
                     <div>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m16 22l-6-10l-6 10"/><path d="M10 28a6 6 0 0 0 6-6H4a6 6 0 0 0 6 6Z" clip-rule="evenodd"/><path d="m44 22l-6-10l-6 10"/><path d="M38 28a6 6 0 0 0 6-6H32a6 6 0 0 0 6 6Z" clip-rule="evenodd"/><path d="M24 6v36M10 12h28m-28 0h28m0 30H10"/></g></svg>

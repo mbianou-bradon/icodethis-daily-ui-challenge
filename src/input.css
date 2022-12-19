@@ -19,3 +19,15 @@
 .firstRank {
     background-color: #5b5be6 !important;
 }
+
+.active {
+    @apply bg-[#839ef7] rounded-full text-white;
+}
+
+.income {
+    @apply bg-[#7073fc] h-1 rotate-90 p-1 rounded-full;
+}
+
+.expense {
+    @apply bg-[#e67bb2] h-1 rotate-90 rounded-full p-[0.125rem];
+}

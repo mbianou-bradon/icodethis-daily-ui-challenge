@@ -21,7 +21,7 @@
 }
 
 .active {
-    @apply bg-[#839ef7] rounded-full text-white;
+    @apply bg-gradient-to-tl from-[#839ef7] to-[#f8bef6] rounded-full text-white;
 }
 
 .income {
@@ -30,4 +30,8 @@
 
 .expense {
     @apply bg-[#e67bb2] h-1 rotate-90 rounded-full p-[0.125rem];
+}
+
+.expense-box {
+    box-shadow: -1.25rem -1rem 2px 1px #9dbaf6;
 }

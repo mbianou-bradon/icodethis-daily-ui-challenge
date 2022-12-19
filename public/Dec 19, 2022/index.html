@@ -9,17 +9,17 @@
 </head>
 <body class="bg-[#7a88f5]">
 
-    <div class="bg-white rounded-3xl w-full max-w-2xl px-5">
-        <div class=" py-10 px-6">
-            <div class="text-2xl font-semibold"><h2>Expenses</h2></div>
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-2 bg-[#eef0ff] p-2 rounded-full w-fit [&>*]:px-6 [&>*]:py-4 [&>*]:cursor-pointer mt-5 mb-10">
-                    <div class="active"><h2>Weekly</h2></div>
-                    <div><h2>Monthly</h2></div>
-                    <div><h2>Yearly</h2></div>
+    <div class="expense-box bg-white rounded-3xl w-full max-w-xl px-5 mx-auto my-20">
+        <div class="py-8 px-8">
+            <div class="text-3xl font-semibold"><h2>Expenses</h2></div>
+            <div class="flex items-center justify-between py-3">
+                <div class="flex items-center gap-2 bg-[#eef0ff] p-2 rounded-full w-fit text-sm [&>*]:px-4 [&>*]:py-3 [&>*]:cursor-pointer mt-5 mb-10 [&>*:hover]:bg-gradient-to-tl [&>*:hover]:from-[#839ef7] [&>*:hover]:to-[#f8bef6] [&>*]:rounded-full [&>*:hover]:text-white [&>*]:transition-all [&>*]:ease-linear [&>*]:duration-300">
+                    <div id="weekly" class="active"><h2>Weekly</h2></div>
+                    <div id="month"><h2>Monthly</h2></div>
+                    <div id="yearly"><h2>Yearly</h2></div>
                 </div>
 
-                <div class="text-2xl"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 9.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3z"/></svg></div>
+                <div class="text-2xl cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 9.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3z"/></svg></div>
             </div>
 
             <div class="flex flex-col gap-y-10 [&>*]:flex [&>*]:items-center [&>*]:gap-3 [&>*>div]:w-full [&>*>div]:bg-[#e3e2e6] [&>*>div]:h-1 [&>*>div]:rounded-full">
@@ -44,7 +44,7 @@
                     <div></div>
                 </div>
             </div>
-            <div class="flex items-center justify-around">
+            <div class="flex items-center justify-around mb-4">
                 <div class="relative">
                     <div class="income absolute w-60 top-[-8.4rem] left-[-6.8rem]"></div>
                     <div class="expense absolute w-28 top-[-4.5rem] left-[-2.2rem]"></div>
@@ -86,7 +86,7 @@
                 </div>
             
             </div>
-            <div class="flex items-center justify-center gap-5 [&>*]:flex [&>*]:items-center">
+            <div class="flex items-center justify-center gap-5 [&>*]:flex [&>*]:items-center [&>*]:gap-2">
                 <div>
                     <div class="text-[#7073fc]"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2z"/></svg></div>
                     <h2>Income</h2>

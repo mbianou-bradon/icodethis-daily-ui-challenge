@@ -35,3 +35,7 @@
 .expense-box {
     box-shadow: -1.25rem -1rem 2px 1px #9dbaf6;
 }
+
+.birthday-card {
+    box-shadow: 3rem 3rem 10px 0.5px rgba(1, 1, 1, 0.08);
+}

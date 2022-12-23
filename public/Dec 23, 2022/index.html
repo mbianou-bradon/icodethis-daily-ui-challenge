@@ -13,11 +13,11 @@
         <div class="relative">
             <h2 class="text-xl text-center font-semibold my-8">What our customers have to say</h2>
             <div>
-                <div class="text-5xl text-slate-400 absolute top-40 -left-24">
+                <div class="prev text-5xl text-slate-400 hover:text-slate-700 absolute top-40 -left-24 cursor-pointer" onclick="plusTestimonial(-1)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="0.75em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 384 512"><path fill="currentColor" d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256l262.7 131.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z"/></svg>
                 </div>
                 <div class="flex items-center overflow-hidden">
-                    <div class="testimonial flex items-center [&>*]:bg-white [&>*]:rounded-2xl [&>*]:w-[22rem] [&>*]:p-10 [&>*]:ml-5">
+                    <div class="testimonials flex items-center [&>*]:bg-white [&>*]:rounded-2xl [&>*]:w-[22rem] [&>*]:p-10 [&>*]:ml-5">
                         <div>
                             <div class="text-lg mb-5 w-56"><span><iconify-icon icon="clarity:block-quote-line"></iconify-icon></span>
                                 <p class="inline">Thank you! Your product description are amazing and 
@@ -61,7 +61,7 @@
 
                     </div>
 
-                    <div class="testimonial flex items-center gap-5 [&>*]:bg-white [&>*]:rounded-2xl [&>*]:w-[22rem] [&>*]:p-10 [&>*]:ml-5">
+                    <div class="testimonial none flex items-center gap-5 [&>*]:bg-white [&>*]:rounded-2xl [&>*]:w-[22rem] [&>*]:p-10 [&>*]:ml-5">
                         <div>
                             <div class="text-lg mb-5 w-56"><span><iconify-icon icon="clarity:block-quote-line"></iconify-icon></span>
                                 <p class="inline">Thank you! Your product description are amazing and 
@@ -105,7 +105,7 @@
 
                     </div>
 
-                    <div class="testimonial flex items-center gap-5 [&>*]:bg-white [&>*]:rounded-2xl [&>*]:w-[22rem] [&>*]:p-10 [&>*]:ml-5">
+                    <div class="testimonial none flex items-center gap-5 [&>*]:bg-white [&>*]:rounded-2xl [&>*]:w-[22rem] [&>*]:p-10 [&>*]:ml-5">
                         <div>
                             <div class="text-lg mb-5 w-56"><span><iconify-icon icon="clarity:block-quote-line"></iconify-icon></span>
                                 <p class="inline">Thank you! Your product description are amazing and 
@@ -151,15 +151,15 @@
                 </div>
 
                 <div class="flex items-center gap-2 text-slate-400 justify-center my-5 [&>*]:cursor-pointer [&>*:hover]:text-white [&>*]:ring-1 [&>*]:ring-slate-500 [&>*]:rounded-full">
-                    <div class="vue" onclick="currentVue(1)">
+                    <div class="vue" onclick="currentTestimonial(1)">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2z"/></svg>
                     </div>
 
-                    <div class="vue" onclick="currentVue(2)">
+                    <div class="vue" onclick="currentTestimonial(2)">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2z"/></svg>
                     </div>
 
-                    <div class="vue" onclick="currentVue(3)">
+                    <div class="vue" onclick="currentTestimonial(3)">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2z"/></svg>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
 
 
 
-                <div class="text-5xl text-slate-400 hover:text-slate-700 absolute bottom-36 -right-24 cursor-pointer">
+                <div class="next text-5xl text-slate-400 hover:text-slate-700 absolute bottom-36 -right-24 cursor-pointer" onclick="plusTestimonial(1)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="0.75em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 384 512"><path fill="currentColor" d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256L17.7 387.4c-15.8 7.9-22.2 27.1-14.3 42.9s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z"/></svg>
                 </div>
             </div>
@@ -179,5 +179,6 @@
 
 
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

@@ -43,132 +43,107 @@
 
 
 
+/* Add CSS here */
 
-.range-slider {
+/* First Slider */
+ .range-slider {
     max-width: 100%;
-    margin: 8em auto;
     position: relative;
     display: flex;
-}
+} 
 
-.range-slider .slider-1 {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 27px;
-    outline: none;
-    border-radius: 3px;
-    /* background: #e8ebf9; */
-
-}
-
-.range-slider .slider-1::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    width: 1.7rem;
-    height: 1.7rem;
-    cursor: pointer;
-    z-index: 3;
-    position: relative;
-}
-
-.range-slider .slider-thumb {
-    position: absolute;
-    width: 1.7em;
-    height: 1.7em;
-    background: #121D4C;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
-.range-slider .tooltip{
-    position: absolute;
-    width: 2.8em;
-    height: 2em;
-    top: -2em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    text-align: center;
-    line-height: 35px;
-    color: #121D4C;
-    border-radius: 3px;
-}
-
-.range-slider .progress {
-    width: 100%;
-    height: 0.4em;
-    border-radius: 3px;
-    background: linear-gradient(#121D4C, #121D4C);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    pointer-events: none;
-}
-/* .slider-1 {
-  height: 27px;
+ .slider-1 {
   -webkit-appearance: none;
-  margin: 10px 0;
-  width: 100%;
-}
-.slider-1:focus {
-  outline: none;
-}
-.slider-1::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8px;
-  cursor: pointer;
-  box-shadow: 0px 0px 0px #000000;
-  background: #e8ebf9;
+  margin-right: 15px;
+  width: 340px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
-  border: 0px solid #000000;
+  background-image: linear-gradient(#121d4c, #121d4c);
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
 }
+
+/* Input Thumb */
 .slider-1::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px #000000;
-  border: 0px solid #000000;
-  height: 21px;
-  width: 21px;
-  border-radius: 28px;
-  background: #121D4C;
-  cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -6.5px;
-} */
-/* .slider-1:focus::-webkit-slider-runnable-track {
-  background: #e8ebf9;
-} */
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #121d4c;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
 
+.slider-1::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #121d4c;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
 
+.slider-1::-ms-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #121d4c;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+/* Input Track */
+.slider-1::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.slider-1::-moz-range-track {
+  -webkit-appearance: none;
+
+}
+/* Second slider */
 
 .slider-2 {
-  height: 39px;
-  -webkit-appearance: none;
-  margin: 10px 0;
-  width: 100%;
+ -webkit-appearance: none;
+  margin-right: 15px;
+  width: 340px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(#121d4c, #121d4c);
+  background-size: 60% 100%;
+  background-repeat: no-repeat;
 }
 .slider-2:focus {
   outline: none;
 }
 .slider-2::-webkit-slider-runnable-track {
-  width: 100%;
+   width: 100%;
   height: 30px;
   cursor: pointer;
-  box-shadow: 0px 0px 0px #000000;
-  background: #E8EBF9;
-  border-radius: 20px;
-  border: 0px solid #000000;
+  border-radius: 20px;  
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  /* background: #121d4c */
 }
 .slider-2::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px #000000;
-  border: 0px solid #000000;
   height: 33px;
   width: 48px;
   border-radius: 35px;
-  background: #121D4C;
+  background: #121d4c;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -1.5px;
+  transition: background .3s ease-in-out;
 }
-

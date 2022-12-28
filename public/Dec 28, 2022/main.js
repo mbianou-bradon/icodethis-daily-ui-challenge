@@ -1,22 +1,26 @@
-const container = document.querySelector(".range-slider");
 
-const slider1 = document.querySelector(".slider-1")
-const thumb = document.querySelector(".slider-thumb")
-const tooltip = document.querySelector(".tooltip")
-const progress = document.querySelector(".progress")
+const rangeInputs = document.querySelectorAll('input[type="range"]')
+const range_1 = document.getElementById('range_1')
+const range_percentage = document.getElementById('range_percentage')
+const output = document.getElementById("tooltip")
 
-function customSlider(){
-    const maxVal = slider1.getAttribute("max");
-    const val = (slider1.value / maxVal) * 1500;
+function handleInputChange(e) {
+    let target = e.target
+    if (e.target.type !== 'range') {
+        target = document.getElementById('range')
+    }
+    const min = target.min
+    const max = target.max
+    const val = target.value
 
-    tooltip.innerHTML = slider1.value;
+    target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%';
 
-    progress.style.width = val;
-    thumb.style.left = val;
+    const output = document.getElementById("tooltip")
+
+    output.innerText = val;
 }
 
-customSlider();
 
-slider1.addEventListener("input", ()=>{
-    customSlider();
-})
+
+range_1.addEventListener('input', handleInputChange)
+

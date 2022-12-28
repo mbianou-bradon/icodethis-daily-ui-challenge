@@ -7,56 +7,124 @@
     <link rel="stylesheet" href="../style.css">
     <title>Fancy Sliders</title>
 </head>
-<body class="bg-[#f7fafc]">
-    <div class="w-full max-w-xl">
+<body class="bg-[#f7fafc] flex justify-center items-center min-h-screen">
+    <div class="text-slate-900 p-8 space-y-6 shadow-lg rounded w-full max-w-2xl">
         <div>
-            <div>
+            <div class="flex gap-[0.375rem] text-white border-b-4 items-baseline relative mx-auto max-w-md mb-20">
+                    <div
+                        class="absolute bottom-[-14px] left-[23%] bg-[#121D4C] rounded-full text-center text-xl flex items-center p-[0.125rem] cursor-pointer">
+                        <iconify-icon icon="ic:round-keyboard-arrow-left"></iconify-icon>
+                    </div>
+                    <div class="flex items-baseline gap-1 ml-2 [&>*]:w-[0.375rem] [&>*]:bg-[#DBE0F5]">
+                        <div class="h-[80px]"></div>
+                        <div class="h-[90px]"></div>
+                        <div class="h-[75px]"></div>
+                        <div class="h-[65px]"></div>
+                        <div class="h-[55px]"></div>
+                        <div class="h-[40px]"></div>
+                        <div class="h-[70px]"></div>
+                        <div class="h-[60px]"></div>
+                        <div class="h-[75px]"></div>
+                        <div class="h-[60px]"></div>
+                        <div class="h-[40px]"></div>
+                        <div class="h-[60px]"></div>
+                    </div>
+                    <!--  -->
+                    <div class="flex items-baseline gap-1 [&>*]:w-[0.375rem] [&>*]:bg-[#BEC9FF]">
+                        <div class="h-[40px]"></div>
+                        <div class="h-[60px]"></div>
+                        <div class="h-[50px]"></div>
+                        <div class="h-[70px]"></div>
+                        <div class="h-[80px]"></div>
+                        <div class="h-[90px]"></div>
+                        <div class="h-[40px]"></div>
+                        <div class="h-[70px]"></div>
+                        <div class="h-[80px]"></div>
+                        <div class="h-[90px]"></div>
+                        <div class="h-[60px]"></div>
+                        <div class="h-[75px]"></div>
+                        <div class="h-[45px]"></div>
+                        <div class="h-[75px]"></div>
+                        <div class="h-[55px]"></div>
+                        <div class="h-[70px]"></div>
+                        <div class="h-[80px]"></div>
+                        <div class="h-[90px]"></div>
+                        <div class="h-[70px]"></div>
+                        <div class="h-[60px]"></div>
+                    </div>
+                    
+                    <!--  -->
+                    <div class="flex items-baseline gap-1 [&>*]:w-[0.375rem] [&>*]:bg-[#DBE0F5]">
+                        <div class="h-[40px]"></div>
+                        <div class="h-[70px]"></div>
+                        <div class="h-[80px]"></div>
+                        <div class="h-[60px]"></div>
+                        <div class="h-[50px]"></div>
+                        <div class="h-[60px]"></div>
+                        <div class="h-[80px]"></div>
+                        <div class="h-[90px]"></div>
+                        <div class="h-[75px]"></div>
+                        <div class="h-[80px]"></div>
+                        <div class="h-[90px]"></div>
+    
+                    </div>
 
+                    <!-- Border bottom bar -->
+                    <div class="absolute bottom-[-4px] right-[7.8rem] bg-[#121D4C] p-[0.125rem] w-[12.5rem]"></div>
+                  
+                    <!-- Right arrow -->
+                    <div
+                        class="absolute bottom-[-14px] right-[23%] bg-[#121D4C] rounded-full text-center text-xl flex items-center p-[0.125rem] cursor-pointer">
+                        <iconify-icon icon="ic:round-keyboard-arrow-right"></iconify-icon>
+                    </div>
+               
             </div>
-
-            <div class="flex items-center gap-1">
+    
+            <div class="flex items-center gap-1 my-10 mx-auto">
                 <h2>$0</h2>
                 <div class="range-slider">
-                   <input type="range" min="0" max="1500" class="slider-1">
-
-                   <div class="slider-thumb">
-
-                    <div class="tooltip"></div>
-
-                   </div>
-
-                   <div class="progress"></div>
+                    <input type="range" min="0" max="1500" class="slider-1" id="range_1">
+    
+                    <div class="slider-thumb"> 
+                        <div class="tooltip absolute w-[3.5em] h-[2em] mx-auto -top-14 left-44 translate(-50%, -50%) bg-white text-center text-[#121D4C] rounded shadow-lg" id="tooltip">750</div>
+                    </div>
+    
                 </div>
                 <h2>$1500</h2>
             </div>
-
-            <div class="">
+    
+            <div class="range-slider">
                 <input type="range" min="0" max="100" name="range_percentage" id="range_percentage" class="slider-2">
             </div>
-
-
-            <div>
-                <div class="flex items-center gap-1">
+    
+    
+            <div class="[&>*]:my-10">
+                <div class="flex items-center gap-1 relative">
+                    <div class="absolute text-[0.75rem] right-0 -top-3">
+                        <h2>14Gb</h2>
+                    </div>
                     <h2>Sketch</h2>
-                    <div class="bg-[#e8ebf9] w-full">
-                        <div class="bg-slate-800 w-1/4 p-1 rounded-full"></div>
+                    <div class="bg-[#e8ebf9] w-full rounded-full">
+                        <div class="bg-slate-800 w-3/5 p-1 rounded-full"></div>
                     </div>
                 </div>
-
-                 <div class="flex items-center gap-1">
+    
+                <div class="flex items-center gap-1 relative">
+                    <div class="absolute text-[0.75rem] right-0 -top-3"><h2>36Gb</h2></div>
                     <h2>Figma</h2>
-                    <div class="bg-[#e8ebf9] w-full">
+                    <div class="bg-[#e8ebf9] w-full rounded-full">
                         <div class="bg-[#e87272] w-4/5 p-1 rounded-full"></div>
                     </div>
                 </div>
-
-
+    
+    
             </div>
-
+    
         </div>
-    </div>    
+    </div>
 
-    <script src="./main.js"></script>
-
+<script src="./main.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
+
 </html>

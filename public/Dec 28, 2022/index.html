@@ -16,20 +16,22 @@
 
             <div class="flex items-center gap-1">
                 <h2>$0</h2>
-                <div>
-                    <input type="range" 
-                    min="0" 
-                    max="1500" 
-                    name="range_amount" 
-                    id="range_amount"
-                    class="slider-1"
-                    >
+                <div class="range-slider">
+                   <input type="range" min="0" max="1500" class="slider-1">
+
+                   <div class="slider-thumb">
+
+                    <div class="tooltip"></div>
+
+                   </div>
+
+                   <div class="progress"></div>
                 </div>
                 <h2>$1500</h2>
             </div>
 
-            <div>
-                <input type="range" name="range_percentage" id="range_percentage">
+            <div class="">
+                <input type="range" min="0" max="100" name="range_percentage" id="range_percentage" class="slider-2">
             </div>
 
 
@@ -53,6 +55,8 @@
 
         </div>
     </div>    
+
+    <script src="./main.js"></script>
 
 </body>
 </html>

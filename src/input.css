@@ -159,3 +159,9 @@
 .Job_type {
   @apply col-span-2
 }
+
+.job_alert{
+  @apply grid grid-cols-2 sm:grid-cols-7 gap-2 rounded-lg bg-white my-3 py-5
+   px-3 hover:shadow-2xl  hover:bg-slate-600 cursor-pointer hover:text-white
+   hover:scale-[1.02]
+}

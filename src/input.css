@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-
+/* 
 .mobile-menu-header {
     clip-path: polygon(0 0, 100% 0, 100% 52%, 6% 100%, 0 100%);
 }
@@ -46,7 +46,7 @@
 /* Add CSS here */
 
 /* First Slider */
- .range-slider {
+ /* .range-slider {
     max-width: 100%;
     position: relative;
     display: flex;
@@ -62,10 +62,10 @@
   background-image: linear-gradient(#121d4c, #121d4c);
   background-size: 70% 100%;
   background-repeat: no-repeat;
-}
+} */
 
 /* Input Thumb */
-.slider-1::-webkit-slider-thumb {
+/* .slider-1::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 20px;
   width: 20px;
@@ -96,10 +96,10 @@
   cursor: pointer;
   box-shadow: 0 0 2px 0 #555;
   transition: background .3s ease-in-out;
-}
+} */
 
 /* Input Track */
-.slider-1::-webkit-slider-runnable-track  {
+/* .slider-1::-webkit-slider-runnable-track  {
   -webkit-appearance: none;
   box-shadow: none;
   border: none;
@@ -109,9 +109,9 @@
 .slider-1::-moz-range-track {
   -webkit-appearance: none;
 
-}
+} */
 /* Second slider */
-
+/*
 .slider-2 {
  -webkit-appearance: none;
   margin-right: 15px;
@@ -135,8 +135,8 @@
   box-shadow: none;
   border: none;
   background: transparent;
-  /* background: #121d4c */
-}
+  
+} 
 .slider-2::-webkit-slider-thumb {
   height: 33px;
   width: 48px;
@@ -146,4 +146,16 @@
   -webkit-appearance: none;
   margin-top: -1.5px;
   transition: background .3s ease-in-out;
+} */ 
+
+.Job_position{
+  @apply col-span-2 font-bold
+}
+
+.Job_location {
+  @apply flex items-center gap-1 col-span-2
+}
+
+.Job_type {
+  @apply col-span-2
 }

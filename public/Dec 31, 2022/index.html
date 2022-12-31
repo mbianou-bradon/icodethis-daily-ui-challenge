@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Statistics</title>
 </head>
 <body class="bg-[#e8edfe]">
-    <div class="w-full max-w-2xl text-slate-800 text-center rounded-lg bg-white">
+    <div class="w-full text-slate-800 text-center rounded-lg bg-white">
         <div class="flex items-center justify-between [&>*]:p-8 [&>*]:rounded-xl [&>*]:cursor-pointer [&>*:hover]:bg-[#7d82f0] [&>*:hover]:text-white [&>*:hover]:shadow-md [&>*:hover]:shadow-[#7d82f0] [&>*>p]:text-xl [&>*>p]:font-semibold">
             <div> 
                 <h2>Impressions</h2>
@@ -31,8 +32,11 @@
             </div>
         </div>
 
-
+        <div>
+            <canvas id="chart" class="w-full"></canvas>
+        </div>
 
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>

@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="../style.css">
     <title>Article Page</title>
 </head>
-<body class="text-slate-800 font-body">
+<body class="text-slate-800 font-body [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-150">
 
     <nav class="">
-        <section class="flex items-center justify-between px-10 py-4 border-b">
-            <ul class="flex items-center gap-8 [&>*:hover]:underline [&>*]:cursor-pointer">
+        <section class="flex items-center justify-between px-4 sm:px-10 py-4 border-b">
+            <div class="md:hidden text-4xl cursor-pointer">
+                <iconify-icon icon="ic:round-menu"></iconify-icon>
+            </div>
+            <ul class="hidden md:flex items-center gap-8 [&>*:hover]:underline [&>*]:cursor-pointer">
                 <li class="flex items-center gap-1">
                     <h2>Product</h2>
                     <div class="text-2xl mt-2">
@@ -29,15 +32,17 @@
             </ul>
 
             <div class="flex items-center gap-4">
-                <div class="px-6 py-3 border rounded-full hover:text-white hover:bg-slate-800 cursor-pointer"><h2>Log In</h2></div>
+                <div class="hidden sm:block px-6 py-3 border rounded-full hover:text-white hover:bg-slate-800 cursor-pointer"><h2>Log In</h2></div>
 
                 <div class="px-6 py-3 border rounded-full text-white hover:text-slate-800 bg-slate-800 hover:bg-white cursor-pointer"><h2>Get started</h2></div>
             </div>
         </section>
 
-        <section class="flex items-center justify-between px-10 py-4 mb-10">
-
-            <ul class="flex items-center gap-8 [&>*:hover]:underline [&>*]:cursor-pointer">
+        <section class="flex items-center justify-between px-4 sm:px-10 py-4 mb-6">
+            <div class="sm:hidden text-4xl cursor-pointer hover:scale-105">
+                <iconify-icon icon="ri:menu-unfold-fill"></iconify-icon>
+            </div>
+            <ul class="hidden sm:flex items-center gap-8 [&>*:hover]:underline [&>*]:cursor-pointer">
                 <li>Project</li>
                 <li>Remote</li>
                 <li>Teamwork</li>
@@ -45,7 +50,7 @@
                 <li>Marketing</li>
             </ul>
 
-            <div class="text-4xl">
+            <div class="text-4xl cursor-pointer">
                 <iconify-icon icon="ic:outline-search"></iconify-icon>
             </div>
         </section>
@@ -54,55 +59,99 @@
 
 
 
-    <main class="px-10">
-        <section>
-            <h1 class="text-4xl font-bold">Productivity</h1>
+    <main class="px-4 md:px-10 mb-10">
+        <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold">Productivity</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-4">
+            <section class="sm:col-span-2 py-6 sm:py-0 border-b sm:border-b-0">
+                
 
-            <div class="w-1/2 my-8 rounded-lg overflow-hidden">
-                <img src="https://images.pexels.com/photos/1427513/pexels-photo-1427513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            </div>
-
-            <h2 class="text-2xl font-semibold mb-3">
-                Little Things Do Make A Difference
-            </h2>
-
-            <p class="my-6">
-                Why do you want to motivate yourself? Actually, just answering that 
-                question, fully can be one of the better ways to get your daily motivation.
-            </p>
-
-            <div class="flex items-center gap-1">
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgX3bY6OJeEnnyxwjWzVaerCnVyg81kprrg&usqp=CAU" alt="" class="h-10 rounded-full aspect-square object-cover object-center hover:scale-110 cursor-pointer">
+                <div class="w-full sm:w-4/5 my-8 rounded-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/1427513/pexels-photo-1427513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                 </div>
 
-                <h2>Kathryn Shelton</h2>
-            </div>
-        </section>
+                <h2 class="text-2xl sm:text-4xl font-semibold mb-3">
+                    Little Things Do Make A Difference
+                </h2>
 
+                <p class="text-lg sm:text-xl my-4 sm:my-6 sm:w-1/2">
+                    Why do you want to motivate yourself? Actually, just answering that 
+                    question, fully can be one of the better ways to get your daily motivation.
+                </p>
 
-        <section>
-            <h2>Recent articles</h2>
-
-            <div>
-                <div>
-                    <img src="https://images.pexels.com/photos/1845269/pexels-photo-1845269.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
-                </div>
-
-                <div>
-                    <h2>Common Symbols And Their Meanings</h2>
-
-                    <div class="flex items-center gap-1">
-                        <div>
-                            <img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/people/s/ey-suzi-russell-gilford-v2.jpg.rendition.450.300.jpg" alt="" class="h-10 rounded-full aspect-square object-cover object-center hover:scale-110 cursor-pointer">
-                        </div>
-
-                        <h2>Susie Russell</h2>
+                <div class="flex items-center gap-1">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgX3bY6OJeEnnyxwjWzVaerCnVyg81kprrg&usqp=CAU" alt="" class="h-10 sm:h-14 rounded-full aspect-square object-cover object-center hover:scale-110 cursor-pointer">
                     </div>
 
+                    <h2>Kathryn Shelton</h2>
                 </div>
-            </div>
-        </section>
+            </section>
+
+
+            <section>
+                <h2 class="text-3xl font-semibold mb-4">Recent articles</h2>
+                <div class="[&>*]:grid [&>*]:grid-cols-1 [&>*]:sm:grid-cols-3 [&>*]:items-center [&>*]:gap-5">
+                    <div class="">
+                        <div class="col-span-1">
+                            <img src="https://images.pexels.com/photos/1845269/pexels-photo-1845269.jpeg?auto=compress&cs=tinysrgb&w=300" alt="" class="h-[180px] w-full sm:w-[180px] object-cover object-center aspect-video">
+                        </div>
+
+                        <div class="col-span-2">
+                            <h2 class="text-2xl sm:text-3xl font-semibold mb-5">Common Symbols And Their Meanings</h2>
+
+                            <div class="flex items-center gap-1">
+                                <div>
+                                    <img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/people/s/ey-suzi-russell-gilford-v2.jpg.rendition.450.300.jpg" alt="" class="h-10 sm:h-14 rounded-full aspect-square object-cover object-center hover:scale-110 cursor-pointer">
+                                </div>
+
+                                <h2>Susie Russell</h2>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class=" my-5">
+                        <div>
+                            <img src="https://flexify1.s3.eu-west-2.amazonaws.com/fileuploads/2020/10/06212616/200207_Fora_GreatEastern_002-1170x785.jpg" alt="" class="h-[180px] w-full sm:w-[180px] object-cover object-center aspect-video">
+                        </div>
+
+                        <div class="col-span-2">
+                            <h2 class="text-2xl sm:text-3xl font-semibold mb-5">Success Steps For Your Business</h2>
+
+                            <div class="flex items-center gap-1">
+                                <div>
+                                    <img src="https://avatars.githubusercontent.com/u/37558983?v=4" alt="" class="h-10 sm:h-14 rounded-full aspect-square object-cover object-center hover:scale-110 cursor-pointer">
+                                </div>
+
+                                <h2>Kimboh Lovette</h2>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="">
+                        <div>
+                            <img src="https://csadvisory.si/img/5913af82-0b84-40ca-8d1b-542b34e7bf27/csa-corpo2.jpg?fm=jpg&q=80&fit=max&crop=2759%2C2727%2C0%2C214" alt="" class="h-[180px] w-full sm:w-[180px] object-cover object-center aspect-video">
+                        </div>
+
+                        <div class="col-span-2">
+                            <h2 class="text-2xl sm:text-3xl font-semibold mb-5">The Strength Of Your Belief</h2>
+
+                            <div class="flex items-center gap-1">
+                                <div>
+                                    <img src="https://media.licdn.com/dms/image/C4D03AQGnKKN9Sp6IHQ/profile-displayphoto-shrink_200_200/0/1623243126073?e=1678320000&v=beta&t=LeSokx3thwUpS2CkJsRn3de1I0WHvzbPUS4ZC_KwogY" alt="" class="h-10 sm:h-14 rounded-full aspect-square object-cover object-center hover:scale-110 cursor-pointer">
+                                </div>
+
+                                <h2>Samba Carlson</h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>

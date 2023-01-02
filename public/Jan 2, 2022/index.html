@@ -7,33 +7,37 @@
     <link rel="stylesheet" href="../style.css">
     <title>Article Page</title>
 </head>
-<body>
+<body class="text-slate-800 font-body">
 
-    <nav>
-        <section>
-            <ul>
-                <li>
+    <nav class="">
+        <section class="flex items-center justify-between px-10 py-4 border-b">
+            <ul class="flex items-center gap-8 [&>*:hover]:underline [&>*]:cursor-pointer">
+                <li class="flex items-center gap-1">
                     <h2>Product</h2>
-                    <div></div>
+                    <div class="text-2xl mt-2">
+                        <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded"></iconify-icon>
+                    </div>
                 </li>
                 <li>Pricing</li>
-                <li>
+                <li class="flex items-center gap-1">
                     <h2>Use Cases</h2>
-                    <div></div>
+                    <div class="text-2xl mt-2">
+                        <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded"></iconify-icon>
+                    </div>
                 </li>
                 <li>Blog</li>
             </ul>
 
-            <div>
-                <div><h2>Log In</h2></div>
+            <div class="flex items-center gap-4">
+                <div class="px-6 py-3 border rounded-full hover:text-white hover:bg-slate-800 cursor-pointer"><h2>Log In</h2></div>
 
-                <div><h2>Get started</h2></div>
+                <div class="px-6 py-3 border rounded-full text-white hover:text-slate-800 bg-slate-800 hover:bg-white cursor-pointer"><h2>Get started</h2></div>
             </div>
         </section>
 
-        <section>
+        <section class="flex items-center justify-between px-10 py-4 mb-10">
 
-            <ul>
+            <ul class="flex items-center gap-8 [&>*:hover]:underline [&>*]:cursor-pointer">
                 <li>Project</li>
                 <li>Remote</li>
                 <li>Teamwork</li>
@@ -41,8 +45,8 @@
                 <li>Marketing</li>
             </ul>
 
-            <div>
-
+            <div class="text-4xl">
+                <iconify-icon icon="ic:outline-search"></iconify-icon>
             </div>
         </section>
 
@@ -50,26 +54,26 @@
 
 
 
-    <main>
+    <main class="px-10">
         <section>
-            <h1>Productivity</h1>
+            <h1 class="text-4xl font-bold">Productivity</h1>
 
-            <div>
+            <div class="w-1/2 my-8 rounded-lg overflow-hidden">
                 <img src="https://images.pexels.com/photos/1427513/pexels-photo-1427513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
             </div>
 
-            <h2>
-                Littlw Things Do Make A Difference
+            <h2 class="text-2xl font-semibold mb-3">
+                Little Things Do Make A Difference
             </h2>
 
-            <p>
+            <p class="my-6">
                 Why do you want to motivate yourself? Actually, just answering that 
                 question, fully can be one of the better ways to get your daily motivation.
             </p>
 
-            <div>
+            <div class="flex items-center gap-1">
                 <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgX3bY6OJeEnnyxwjWzVaerCnVyg81kprrg&usqp=CAU" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgX3bY6OJeEnnyxwjWzVaerCnVyg81kprrg&usqp=CAU" alt="" class="h-10 rounded-full aspect-square object-cover object-center hover:scale-110 cursor-pointer">
                 </div>
 
                 <h2>Kathryn Shelton</h2>
@@ -88,9 +92,9 @@
                 <div>
                     <h2>Common Symbols And Their Meanings</h2>
 
-                    <div>
+                    <div class="flex items-center gap-1">
                         <div>
-                            <img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/people/s/ey-suzi-russell-gilford-v2.jpg.rendition.450.300.jpg" alt="">
+                            <img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/people/s/ey-suzi-russell-gilford-v2.jpg.rendition.450.300.jpg" alt="" class="h-10 rounded-full aspect-square object-cover object-center hover:scale-110 cursor-pointer">
                         </div>
 
                         <h2>Susie Russell</h2>
@@ -100,6 +104,6 @@
             </div>
         </section>
     </main>
-    
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
 </html>

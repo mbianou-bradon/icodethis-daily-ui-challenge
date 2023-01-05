@@ -7,39 +7,48 @@
     <link rel="stylesheet" href="../style.css">
     <title>Blog Post</title>
 </head>
-<body>
-    <div>
-        <div class="w-full max-w-3xl grid grid-cols-1 md:grid-cols-2">
-            <div class="relative">
-                <img src="https://c0.wallpaperflare.com/preview/488/562/575/liechtenstein-mountains-mountain-alp.jpg" alt="">
-                <div class="absolute text-white text-4xl bg-slate-50 hover:text-[#4282b1]">
+
+<body class="bg-gradient-to-tr from-white to-[#37b2b0] sm:flex justify-center items-center min-h-screen [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
+    <div class="bg-white space-y-6 shadow-2xl rounded w-full max-w-6xl grid grid-cols-1 md:grid-cols-2">
+        <div class="relative h-full">
+            <img src="https://c0.wallpaperflare.com/preview/488/562/575/liechtenstein-mountains-mountain-alp.jpg" alt="" class="h-full aspect-video object-cover object-center">
+             <div class="absolute top-14 left-5 text-white text-4xl text-center p-1 pt-2 bg-slate-50 bg-opacity-30 hover:bg-[#274c63] hover:text-[#4282b1] cursor-pointer">
                     <iconify-icon icon="ic:baseline-chevron-left"></iconify-icon>
+                    </div>
                 </div>
-            </div>
-
-            <div>
-                <div class="blog_title text-4xl text-[#4282b1] font-bold">
-                    <p>Rhoncus sit scelerisque at etiam, leo lorem est vel</p>
-                </div>
-
-                <div class="blog_description text-sm text-[#97b5c6]">
-                    <p>Nec lacus eros diam ipsum dignissim aliquet, amet a in, quisque libero turpis mollis. Eiusmod magna congue 
-                        eu elementum, eleifend in non egestas in. Turpis vel ligula, nulla vel sit.</p>
-                </div>
-
-                <div class="blog_body text-[#274c63]">
-                    <p>Dolor felis nec, justo tristique sed amet, enim deserunt pellentesque in, torquent aliquet pellentesque justo, 
-                        suspendisse proin sed dui massa. Erat nunc orci velit aenean sit, non nulla
-                        justo vel ante mi, in donec felis praesent quia tincidunt, mauris elementum venenatis facilisis aenean, donec 
-                        non dolor mollis tortor. Et molestie libero non felis. Urna sapien quis netus.  
-                        Recusandae nibh orci, egestas mauris nec sem dapibus mi quisque, lacus libero metus nunc dui, sapien sed. Eros 
-                        lectus justo
-                    </p>
+        
+                <div class="p-8 relative">
+                    <div class="absolute text-4xl -top-2 sm:top-6 right-5 text-[#97b5c6] hover:text-[#4282b1] cursor-pointer">
+                        <iconify-icon icon="material-symbols:bookmark"></iconify-icon>
+                    </div>
+                    <div class="blog_title text-2xl sm:text-5xl text-[#4282b1] font-bold">
+                        <p>Rhoncus sit scelerisque at etiam, leo lorem est vel</p>
+                    </div>
+        
+                    <div class="blog_description sm:text-lg text-[#97b5c6] mt-4 mb-8">
+                        <p>Nec lacus eros diam ipsum dignissim aliquet, amet a in, quisque libero turpis mollis. Eiusmod magna
+                            congue
+                            eu elementum, eleifend in non egestas in. Turpis vel ligula, nulla vel sit.</p>
+                    </div>
+        
+                    <div class="blog_body text-lg sm:text-2xl leading-8 sm:leading-10 text-[#274c63]">
+                        <p>Dolor felis nec, justo tristique sed amet, enim deserunt pellentesque in, torquent aliquet
+                            pellentesque justo,
+                            suspendisse proin sed dui massa. Erat nunc orci velit aenean sit, non nulla
+                            justo vel ante mi, in donec felis praesent quia tincidunt, mauris elementum venenatis facilisis
+                            aenean, donec
+                            non dolor mollis tortor. Et molestie libero non felis. Urna sapien quis netus.
+                            Recusandae nibh orci, egestas mauris nec sem dapibus mi quisque, lacus libero metus nunc dui, sapien
+                            sed. Eros
+                            lectus justo
+                        </p>
+                    </div>
+        
+                    <div class="absolute bottom-0 bg-white opacity-80 w-4/5 sm:w-[90%] py-14"></div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
 </html>

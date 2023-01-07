@@ -7,40 +7,40 @@
     <link rel="stylesheet" href="../style.css">
     <title>Feedback Form</title>
 </head>
-<body>
+<body class="bg-gradient-to-tr from-white to-[#0091ea] flex justify-center items-center min-h-screen px-4">
 
-    <div class="w-full max-w-md shadow-md shadow-[#0091ea] text-slate-700">
-        <div>
-            <div class="header">
-                <h2 class="text-4xl text-[#0091ea]">Send us some feddback!</h2>
-                <p class="text-">Do you have a siggestion or found some bug? let us 
+    <div class="w-full max-w-md shadow-md shadow-[#0091ea] text-slate-700  ">
+        <div class="grid grid-rows-3 gap-2 bg-[#edf1f7] [&>*]:h-fit">
+            <div class="header row-start-1 row-end-1 mt-8 px-6">
+                <h2 class="text-3xl text-[#0091ea] font-bold mb-5">Send us some feedback!</h2>
+                <p class="">Do you have a siggestion or found some bug? let us 
                     know in the field below.
                 </p>
             </div>
 
-            <div>
-                <input type="text" name="" id="" placeholder="Describe your issue or idea...">
+            <div class="row-start-2 row-end-2 bg-white px-6">
+               <textarea name="" id="" cols="40" rows="6" placeholder="Describe your issue or idea..." class="border-0 focus:ring-0 focus:ring-offset-0 resize-none min-w-0 w-4/5"></textarea>
             </div>
 
-            <div class="px-4">
-                <div class="flex items-center justify-between text-[#99a0ac] [&>*]:flex [&>*]:items-center [&>*]:gap-2 [&>*]:">
+            <div class="px-6 my-10 row-start-3 row-end-3">
+                <div class="flex items-center justify-between text-[#99a0ac] [&>*]:flex [&>*]:items-center [&>*]:gap-2">
                     <div>
-                        <input type="radio" name="Bug" id="">
+                        <input type="radio" name="feedback" id="feedback" class="focus:ring-0 focus:ring-offset-0">
                         <h2>Bug</h2>
                     </div>
 
                     <div>
-                        <input type="radio" name="Comment" id="">
+                        <input type="radio" name="feedback" id="feedback" class="focus:ring-0 focus:ring-offset-0">
                         <h2>Comment</h2>
                     </div>
 
                     <div>
-                        <input type="radio" name="other" id="">
+                        <input type="radio" name="feedback" id="feedback" class="focus:ring-0 focus:ring-offset-0">
                         <h2>Other</h2>
                     </div>
                 </div>
 
-                <div class="text-white font-semibold bg-[#0091ea] py-4">
+                <div class="text-white text-center text-lg font-semibold bg-[#0091ea] hover:bg-[#067ac2] py-4 cursor-pointer focus:scale-75 mt-8">
                     <h2>Send Feedback</h2>
                 </div>
             </div>

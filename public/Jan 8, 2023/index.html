@@ -7,95 +7,101 @@
     <link rel="stylesheet" href="../style.css">
     <title>Movie card</title>
 </head>
-<body class="bg-[#f5f7fa]">
-    <div class="w-full max-w-6xl h-full bg-white p-8">
-        <div>
-            <div class="Movie-title flex items-center">
-                <div class="mr-auto">
-                    <h2 class="text-5xl">The Woman King</h2>
-                    <p class="text-blue-600">Action & Drama</p>
-                </div>
-
-                <div class="rating text-2xl"><p class="text-slate-400"><span class="font-bold text-blue-600">6.7</span>/10</p></div>
-            </div>
-
-            <div class="Movie-details flex items-center gap-10 my-10">
-                <div class="Movie-image w-fit h-full">
-                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbmu-tgsp2vT-BvapBc4GtzdnBve-CXPLsaImCfi9fdiU0G2lt" alt="" class="h-[25rem] object-cover object-center">
-                </div>
-
-                <div class="Movie-info w-1/2">
-                    <div class="Movie-description w-4/5">
-                        <h2 class="text-2xl font-semibold">About the Movie</h2>
-
-                        <p class="text-lg mt-3 mb-8">
-                            In the 1800s, a group of all-female warriors 
-                            protects the African kingdom of Dahomey with 
-                            skills and fierceness unlike anything the world 
-                            has ever seen. Faced with a new threat, Gen. Nanisca 
-                            trains the next generation of recruits to fight against 
-                            a foreign enemy that's determined to destroy their way of life.
-                        </p>
-
+<body class="bg-[#f5f7fa] flex justify-center items-center min-h-screen">
+    <div class="space-y-6 shadow-lg rounded w-full max-w-6xl h-full bg-white p-8 [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
+            <div>
+                <div class="Movie-title flex items-center flex-wrap gap-y-5">
+                    <div class="mr-auto">
+                        <h2 class="text-3xl md:text-5xl">The Woman King</h2>
+                        <p class="text-blue-600">Action & Drama</p>
                     </div>
-
-                    <div class="Movie-staff flex justify-between">
-                        <div class="Movie-actors">
-                            <h2 class="text-xl font-semibold">Actors</h2>
-                            <ul class="text-blue-600 [&>*]:cursor-pointer [&>*:hover]:underline [&>*]:my-2">
-                                <li><a href="">Viola Davis</a></li>
-                                <li><a href="">Lashana Lynch</a></li>
-                                <li><a href="">Thuso Mbedu</a></li>
-                                <li><a href="">John Boyce</a></li>
-                                <li><a href="">Sheila Atim</a></li>
-                            </ul>
-
-                            <a href="" class="text-blue-600 font-semibold cursor-pointer underline hover:no-underline">More</a>
+        
+                    <div class="rating text-2xl">
+                        <p class="text-slate-400"><span class="font-bold text-blue-600">6.7</span>/10</p>
+                    </div>
+                </div>
+        
+                <div class="Movie-details flex items-center flex-wrap gap-10 my-10">
+                    <div class="Movie-image w-fit h-full">
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbmu-tgsp2vT-BvapBc4GtzdnBve-CXPLsaImCfi9fdiU0G2lt" alt="" class="h-[28rem] aspect-square object-cover object-center">
+                    </div>
+        
+                    <div class="Movie-info lg:w-1/2">
+                        <div class="Movie-description w-full lg:w-4/5">
+                            <h2 class="text-2xl font-semibold">About the Movie</h2>
+        
+                            <p class="text-lg mt-3 mb-8">
+                                In the 1800s, a group of all-female warriors
+                                protects the African kingdom of Dahomey with
+                                skills and fierceness unlike anything the world
+                                has ever seen. Faced with a new threat, Gen. Nanisca
+                                trains the next generation of recruits to fight against
+                                a foreign enemy that's determined to destroy their way of life.
+                            </p>
+        
                         </div>
-
-                        <div class="Movie-director-andscreenwriter">
-                            <div class="director mb-10">
-                                <h2 class="text-xl font-semibold mb-2">Director</h2>
-                                <a href="" class="text-blue-600 cursor-pointer hover:underline">Gina Prince-Bythewood</a>
+        
+                        <div class="Movie-staff flex justify-between flex-wrap gap-y-5">
+                            <div class="Movie-actors">
+                                <h2 class="text-xl font-semibold">Actors</h2>
+                                <ul class="text-blue-600 [&>*]:cursor-pointer [&>*:hover]:underline [&>*]:my-2">
+                                    <li><a href="">Viola Davis</a></li>
+                                    <li><a href="">Lashana Lynch</a></li>
+                                    <li><a href="">Thuso Mbedu</a></li>
+                                    <li><a href="">John Boyce</a></li>
+                                    <li><a href="">Sheila Atim</a></li>
+                                </ul>
+        
+                                <a href=""
+                                    class="text-blue-600 font-semibold cursor-pointer underline hover:no-underline">More</a>
                             </div>
-
-                            <div class="screenwriter">
-                                <h2 class="text-xl font-semibold mb-2">Screenwriter</h2>
-                                <a href="" class="text-blue-600 cursor-pointer hover:underline">Polly Morgan</a>
+        
+                            <div class="Movie-director-andscreenwriter">
+                                <div class="director mb-10">
+                                    <h2 class="text-xl font-semibold mb-2">Director</h2>
+                                    <a href="" class="text-blue-600 cursor-pointer hover:underline">Gina Prince-Bythewood</a>
+                                </div>
+        
+                                <div class="screenwriter">
+                                    <h2 class="text-xl font-semibold mb-2">Screenwriter</h2>
+                                    <a href="" class="text-blue-600 cursor-pointer hover:underline">Polly Morgan</a>
+                                </div>
+                            </div>
+        
+                            <div class="Producers">
+                                <h2 class="text-xl font-semibold">Producers</h2>
+                                <ul class="text-blue-600 [&>*]:cursor-pointer [&>*:hover]:underline [&>*]:my-2">
+                                    <li><a href="">Cathy Schulman</a></li>
+                                    <li><a href="">Viola Davis</a></li>
+                                    <li><a href="">Juluis Tennon</a></li>
+                                </ul>
                             </div>
                         </div>
-
-                        <div class="Producers">
-                            <h2 class="text-xl font-semibold">Producers</h2>
-                            <ul class="text-blue-600 [&>*]:cursor-pointer [&>*:hover]:underline [&>*]:my-2">
-                                <li><a href="">Cathy Schulman</a></li>
-                                <li><a href="">Viola Davis</a></li>
-                                <li><a href="">Juluis Tennon</a></li>
-                            </ul>
+                    </div>
+                </div>
+        
+                <div class="Movie-purchase flex items-center justify-between flex-wrap gap-y-5">
+                    <div class="purchase flex items-center justify-between">
+                        <h2 class="font-semibold mr-20 md:mr-44">$25.00</h2>
+        
+                        <div
+                            class="px-4 py-2 border-4 border-slate-800 rounded-full hover:text-white hover:bg-slate-800 cursor-pointer">
+                            <h2>BUY</h2>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="Movie-purchase flex items-center justify-between">
-                <div class="purchase flex items-center justify-between">
-                    <h2 class="font-semibold mr-48">$25.00</h2>
-
-                    <div class="px-4 py-2 border-4 border-slate-800 rounded-full hover:text-white hover:bg-slate-800 cursor-pointer">
-                        <h2>BUY</h2>
-                    </div>
-                </div>
-
-                <div class="Movie-trailer flex items-center gap-2 rounded-full text-white text-2xl cursor-pointer bg-black py-1 pl-3 pr-1">
-                    <h2 class="text-lg">WATCH TRAILER</h2>
-                    <div class="text-black bg-white rounded-full px-2 hover:text-white hover:bg-orange-500">
-                        <iconify-icon icon="material-symbols:play-arrow" class="mt-1"></iconify-icon>
+        
+                    <div
+                        class="Movie-trailer flex items-center gap-2 rounded-full text-white text-2xl cursor-pointer bg-black py-1 pl-3 pr-1 hover:text-white hover:bg-orange-500">
+                        <h2 class="text-lg">WATCH TRAILER</h2>
+                        <div class="text-black bg-white rounded-full px-2 ">
+                            <iconify-icon icon="material-symbols:play-arrow" class="mt-1"></iconify-icon>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
+
 </html>

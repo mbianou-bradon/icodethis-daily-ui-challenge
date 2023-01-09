@@ -165,3 +165,23 @@
    px-3 hover:shadow-2xl  hover:bg-slate-600 cursor-pointer hover:text-white
    hover:scale-[1.02]
 } */
+
+
+.Tv-screen{
+    height: 45px;
+    overflow: hidden; 
+}
+.Tv-screen::after{
+    content: "";
+    border: 1px solid transparent;
+    border-bottom-color: #5a889d !important;
+    width: 90%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 51%;
+    transform: translate(-50%);
+    box-shadow: inset 0px 0px 8px 0px #5a889d;
+
+}

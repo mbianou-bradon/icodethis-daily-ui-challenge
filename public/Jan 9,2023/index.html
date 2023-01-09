@@ -7,32 +7,33 @@
     <link rel="stylesheet" href="../style.css">
     <title>Movie Ticket</title>
 </head>
-<body>
+<body class="bg-[#e9f2ef] flex justify-center items-center min-h-screen">
     
-    <div>
+    <div class="space-y-6 shadow-lg rounded w-full max-w-lg bg-[#f9fafc] text-[#5a889d] [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
         <div>
-            <div class="header">
-                <div>
+            <div class="header relative text-white">
+                <div class="absolute text-3xl top-5 left-5 z-30 rounded-xl px-2 py-1 bg-white bg-opacity-20 hover:bg-[#ec407a] cursor-pointer">
                     <iconify-icon icon="ph:arrow-left-duotone"></iconify-icon>
                 </div>
 
-                <div>
-                    <img src="https://rukminim1.flixcart.com/image/416/416/jmwch3k0/poster/8/t/p/medium-wall-poster-guardians-of-the-galaxy-vol-2-good-bad-evil-original-imaf9pbc5trfvhse.jpeg?q=70" alt="">
+                <div class="w-full bg-black ">
+                    <img src="data:image/jpeg;base64,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" alt="" 
+                    class="w-full aspect-video opacity-70">
                 </div>
 
-                <div>
-                    <h2>Guardians of the Galaxy Vol 2</h2>
-                    <p>
-                        <div>
+                <div class="absolute bottom-0 px-4 font-semibold sm:text-lg">
+                    <h2 class="pl-1 sm:text-2xl">Guardians of the Galaxy Vol 2</h2>
+                    <div class="flex items-center sm:my-2">
+                        <div class="text-2xl">
                             <iconify-icon icon="ic:outline-location-on"></iconify-icon>
                         </div>
-                        Cheplex Entertainemebt Toronto ON
-                    </p>
+                        <h2>Cheplex Entertainemebt Toronto ON</h2>
+                    </div>
                 </div>
             </div>
 
-            <div class="main">
-                <div class="ref flex items-center justify-around [&>*]:flex [&>*]:items-center [&>*]:gap-2">
+            <div class="main px-4">
+                <div class="ref flex items-center justify-around my-5 [&>*]:flex [&>*]:items-center [&>*]:gap-2">
                     <div>
                         <div>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
@@ -41,31 +42,31 @@
                     </div>
 
                     <div>
-                        <div>
+                        <div class="text-[#c9d8df]">
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                         </div>
                         <h2>Blocked</h2>
                     </div>
 
                     <div>
-                        <div>
+                        <div class="text-[#ec407a]">
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                         </div>
                         <h2>Selected</h2>
                     </div>
                 </div>
 
-                <div class="main-positions">
+                <div class="main-positions [&>*]:flex [&>*]:items-center [&>*]:justify-between [&>*]:my-1 sm:text-2xl">
                     <div>
-                        <div>
-                            <h2>G</h2>
+                        <div class="flex items-center gap-1 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
+                            <h2 class="mr-2 text-lg text-slate-400">G</h2>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                         </div>
 
-                        <div>
+                        <div class="mt-2 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
@@ -74,15 +75,49 @@
                     </div>
 
                     <div>
-                        <div>
-                            <h2>F</h2>
+                        <div class="flex items-center gap-1 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
+                            <h2 class="mr-2 text-lg text-slate-400">F</h2>
+                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                        </div>
+
+                        <div class="mt-2 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
+                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-1 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
+                            <h2 class="mr-2 text-lg text-slate-400">E</h2>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                         </div>
 
-                        <div>
+                        <div class="mt-2 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
+                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-1 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
+                            <h2 class="mr-2 text-lg text-slate-400">D</h2>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#ec407a]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#ec407a]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch"class="text-[#ec407a]" ></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
+                        </div>
+
+                        <div class="mt-2 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
@@ -91,32 +126,49 @@
                     </div>
 
                     <div>
-                        <div>
-                            <h2>E</h2>
+                        <div class="flex items-center gap-1 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
+                            <h2 class="mr-2 text-lg text-slate-400">C</h2>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
-                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
-                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                         </div>
 
-                        <div>
-                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
-                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
+                        <div class="mt-2 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                         </div>
                     </div>
 
                     <div>
-                        <div>
-                            <h2>D</h2>
+                        <div class="flex items-center gap-1 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
+                            <h2 class="mr-2 text-lg text-slate-400">B</h2>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#c9d8df]"></iconify-icon>
+                        </div>
+
+                        <div class="mt-2 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
+                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#ec407a]"></iconify-icon>
+                            <iconify-icon icon="fa-solid:couch" class="text-[#ec407a]"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-1 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
+                            <h2 class="mr-2 text-lg text-slate-400">A</h2>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                         </div>
 
-                        <div>
+                        <div class="mt-2 [&>*:hover]:text-slate-700 [&>*]:cursor-pointer">
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
                             <iconify-icon icon="fa-solid:couch"></iconify-icon>
@@ -124,24 +176,29 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="screen relative">
+                    <div class="absolute -top-5 left-[45%]"><h2>Screen</h2></div>
+                    <div class="Tv-screen relative mt-8 mb-5"></div>
+                </div>
             </div>
 
-            <div class="footer">
-                <div>
+            <div class="footer text-white relative grid grid-cols-4 ">
+                <div class="bg-[#db3769] col-span-1 text-center font-semibold py-4">
                     <h2>Date</h2>
                     <h2>Tickets</h2>
                     <h2>TOTAL</h2>
                 </div>
 
-                <div>
+                <div class="bg-[#ec407a] col-span-3 pl-2 py-4">
                     <h2>Jul 11, 19:15</h2>
                     <h2>3</h2>
-                    <h2>$31</h2>
+                    <h2 class="font-semibold">$31</h2>
                 </div>
 
-                <div>
+                <div class="bg-white absolute top-4 right-7 px-4 sm:px-6 py-2 rounded-2xl flex items-center text-black hover:text-white hover:bg-slate-700 cursor-pointer">
                     <h2>Next</h2>
-                    <div>
+                    <div class="text-4xl mt-2">
                         <iconify-icon icon="material-symbols:chevron-right"></iconify-icon>
                     </div>
                 </div>

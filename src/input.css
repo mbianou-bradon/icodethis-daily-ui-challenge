@@ -166,7 +166,7 @@
    hover:scale-[1.02]
 } */
 
-
+/* 
 .Tv-screen{
     height: 45px;
     overflow: hidden; 
@@ -184,4 +184,9 @@
     transform: translate(-50%);
     box-shadow: inset 0px 0px 8px 0px #5a889d;
 
+} */
+
+.active {
+  background: #10182f !important; 
+  color:white;
 }

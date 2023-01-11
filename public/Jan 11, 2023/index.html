@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Pagination 2</title>
 </head>
-<body>
-    <div>
-        <div>
-            <div class="prev">
+<body class="bg-gradient-to from-pink-400 to-black flex items-center justify-center min-h-screen">
+    <div class="w-fit px-6 py-6 text-center relative bg-black shadow-lg">
+        <div class="flex items-center my-auto">
+            <div class="prev text-pink-500 text-sm cursor-pointer">
                 <h2>PREV</h2>
             </div>
 
-            <div>
+            <div class="flex items-center mx-14 gap-10 text-slate-300 [&>*]:cursor-pointer [&>*:hover]:text-pink-500 [&>*:hover]:ring-2 [&>*]:px-3 [&>*]:py-1 [&>*]:rounded-full [&>*:hover]:ring-pink-500">
                 <div>
                     <h2>1</h2>
                 </div>
@@ -29,7 +30,7 @@
                 <div>
                     <h2>8</h2>
                 </div>
-                <div>
+                <div class="text-pink-500 ring-2 px-3 py-1 rounded-full ring-pink-500">
                     <h2>9</h2>
                 </div>
                 <div>
@@ -49,9 +50,12 @@
                 </div>
             </div>
 
-            <div class="NEXT">
+            <div class="NEXT text-pink-500 text-sm cursor-pointer hover:scale-150">
                 <h2>NEXT</h2>
             </div>
+        </div>
+        <div class="items text-slate-400 absolute -bottom-10 left-1/2">
+            <p>- 1477 items -</p>
         </div>
     </div>
 </body>

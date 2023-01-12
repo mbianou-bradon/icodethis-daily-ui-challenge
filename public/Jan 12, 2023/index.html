@@ -7,34 +7,60 @@
     <link rel="stylesheet" href="../style.css">
     <title>Poll</title>
 </head>
-<body>
-    <div>
+<body class="bg-[#3d656d] flex items-center justify-center min-h-screen">
+    <div class="bg-white w-full shadow-2xl max-w-md pb-8 space-y-5 text-lg text-slate-600 rounded-2xl overflow-hidden [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
         <div>
-            <div>
-                <p>if you write a book about failure,
+            <div class="w-full text-center bg-blue-200 py-8 text-slate-600">
+                <p class="w-[65%] mx-auto">if you write a book about failure,
                     and it doesn't sell, is it called success?
                 </p>
             </div>
 
-            <div>
+            <div class="flex justify-center flex-col gap-y-10 my-10 [&>*]:px-4 text-sm [&>*]:border-b [&>*]:border-slate-100 [&>*]:pb-5">
                 <div>
-                    <div>
-                        <input type="checkbox" name="first" id="vote">
+                    <div class="flex items-center gap-1">
+                        <input type="checkbox" name="first" id="vote1" class="h-6 w-6 rounded focus:outline-none active:outline-none cursor-pointer">
                         <label for="first">Definitely a success.</label>
                     </div>
                     
-                    <div>
-                        <div>
-                            <div></div>
+                    <div class="flex items-center gap-1">
+                        <div class="w-full h-4 rounded-full bg-slate-100">
+                            <div class="bg-green-500 w-[63%] rounded-full h-full"></div>
                         </div>
-                        <h2>65%</h2>
+                        <h2 class="text-lg font-bold">65%</h2>
+                    </div>
+                </div>  
+                <div>
+                    <div class="flex items-center gap-1">
+                        <input type="checkbox" name="second" id="vote2" class="h-6 w-6 rounded focus:outline-none active:outline-none cursor-pointer">
+                        <label for="second">No.</label>
+                    </div>
+                    
+                    <div class="flex items-center gap-1">
+                        <div class="w-full h-4 rounded-full bg-slate-100">
+                            <div class="bg-red-500 w-[12%] rounded-full h-full"></div>
+                        </div>
+                        <h2 class="text-lg font-bold">12%</h2>
                     </div>
                 </div>
-
+                <div>
+                    <div class="flex items-center gap-1">
+                        <input type="checkbox" name="third" id="vote3" class="h-6 w-6 rounded focus:outline-none active:outline-none cursor-pointer">
+                        <label for="third">Only if it's in the How To section of the library..</label>
+                    </div>
+                    
+                    <div class="flex items-center gap-1">
+                        <div class="w-full h-4 rounded-full bg-slate-100">
+                            <div class="bg-orange-400 w-[23%] rounded-full h-full"></div>
+                        </div>
+                        <h2 class="text-lg font-bold">23%</h2>
+                    </div>
+                </div>
+               
 
             </div>
 
-            <div>
+            <div class="bg-blue-600 text-white font-semibold rounded-2xl cursor-pointer w-fit px-6 py-3 hover:bg-blue-700 active:scale-90 shadow-2xl mx-auto">
                 <h2>Submit</h2>
             </div>
         </div>

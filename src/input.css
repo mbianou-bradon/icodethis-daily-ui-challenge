@@ -186,7 +186,26 @@
 
 } */
 
-.active {
+/* .active {
   background: #10182f !important; 
   color:white;
+} */
+
+
+@media (min-width: 600px) {
+ .pricing{
+  position: relative;
+}
+
+.pricing::after{
+    content: "";
+    position: absolute;
+    bottom: -4.5rem;
+    left: -13%;
+    background: rgb(153,26,34,0.8);
+    width: 125%;
+    height: 10rem;
+    border-radius: 50%;
+    z-index: -1;
+}
 }

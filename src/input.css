@@ -192,7 +192,7 @@
 } */
 
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
  .pricing{
   position: relative;
 }
@@ -208,4 +208,24 @@
     border-radius: 50%;
     z-index: -1;
 }
+} */
+
+body {
+  background: radial-gradient(circle,rgba(61, 196, 192, 1) 8%,rgba(39, 153, 158, 1) 51%,rgba(19, 130, 144, 1) 88%);
+
+}
+
+.label::before{
+  content: "";
+  width:00px;
+  height: 00px;
+  position: absolute;
+  top: -0.32rem;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  border-inline-start: 0.35rem solid  #005164;
+  border-inline-end: 0.35rem solid transparent;
+  border-block-start: 0.35rem solid #005164;
+  border-block-end: 0.35rem solid transparent;
+ 
 }

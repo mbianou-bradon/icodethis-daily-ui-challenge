@@ -231,9 +231,24 @@
 } */
 
 .circle {
-  width: 120px;
-  height: 120px;
+  width: 7.5rem;
+  height: 7.5rem;
   background: conic-gradient(#ecbb00 36deg, #8068fa 36deg 170deg, #00e7c0 170deg);
   border-radius: 50%;
 
+}
+
+.rotation {
+    animation-name: rotation;
+    animation-duration: 2500ms;
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes rotation {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(720deg);
+    }
 }

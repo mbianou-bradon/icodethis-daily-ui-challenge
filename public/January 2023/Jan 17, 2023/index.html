@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>Project Chart</title>
 </head>
-<body class="bg-blue-400">
-    <div class="w-full max-w-[20rem] space-y-5 rounded-lg mx-auto">
+<body class="bg-blue-400 flex justify-center min-h-screen">
+    <div class="w-full max-w-[20rem] mt-10 space-y-5 rounded-lg [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
         <div class=" relative">
             <div class="max-w-[18rem] py-5 bg-white">
                 <div class="w-28 mx-auto rounded-full border-[0.65rem] border-slate-200 mb-1 overflow-hidden">
@@ -21,15 +21,15 @@
                     </div>
                     <p class="mx-auto text-sm w-4/5">Mauris ac quam quisque, donec ac, praesent in hymenaeos wisi</p>
                 </div>
-                <div class="mx-auto mb-4 text-blue-400 border border-blue-400 rounded-full px-5 py-1 w-fit hover:bg-blue-400 hover:text-white cursor-pointer ring-2 ring-blue-500 ring-offset-2 active:scale-90"><p>Details</p></div>
+                <div id="open-menu" class="mx-auto mb-4 text-blue-400 border border-blue-400 rounded-full px-5 py-1 w-fit hover:bg-blue-400 hover:text-white cursor-pointer ring-2 ring-blue-500 ring-offset-2 active:scale-90"><p>Details</p></div>
             </div>
 
-            <div class="w-full max-w-[19rem] bg-slate-900 text-slate-300 py-6 text-center absolute -bottom-[14.5rem] -left-2">
+            <div id="project" class="hidden w-full max-w-[19rem] bg-slate-900 text-slate-300 py-6 text-center absolute -bottom-[14.5rem] -left-2">
                 <h2 class="text-2xl font-semibold">Project</h2>
 
-                <div class="absolute text-2xl top-2 right-2 cursor-pointer"><iconify-icon icon="radix-icons:cross-2"></iconify-icon></div>
+                <div id="close-menu" class="absolute text-2xl top-2 right-2 cursor-pointer"><iconify-icon icon="radix-icons:cross-2"></iconify-icon></div>
 
-                <div class="circle relative mx-auto my-5 before:absolute before:content-[''] before:w-[90%] before:h-[90%] before:top-[0.35rem] before:left-[0.35rem] before:translate(-50%, -50%) before:bg-slate-900 before:rounded-[50%]">
+                <div id="circular" class="circle relative mx-auto my-5 before:absolute before:content-[''] before:w-[90%] before:h-[90%] before:top-[0.35rem] before:left-[0.35rem] before:translate(-50%, -50%) before:bg-slate-900 before:rounded-[50%]">
                     <div class="absolute top-[1.8rem] left-[2.5rem]">
                         <h2 class="text-2xl font-semibold">314</h2>
                         <p class="text-sm text-slate-400">Total</p>
@@ -66,5 +66,6 @@
     </div>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

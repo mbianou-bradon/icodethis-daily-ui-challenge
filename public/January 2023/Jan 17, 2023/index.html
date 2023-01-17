@@ -8,15 +8,15 @@
     <title>Project Chart</title>
 </head>
 <body class="bg-blue-400">
-    <div class="w-full max-w-[18rem]">
-        <div>
-            <div class="py-9 bg-white">
-                <div>
-                    <img src="" alt="">
+    <div class="w-full max-w-[20rem] space-y-5 rounded-lg mx-auto">
+        <div class=" relative">
+            <div class="max-w-[18rem] py-5 bg-white">
+                <div class="w-28 mx-auto rounded-full border-[0.65rem] border-slate-200 mb-1 overflow-hidden">
+                    <img src="https://pbs.twimg.com/profile_images/1344692250308182016/dLKsLKYT_400x400.jpg" alt="" class="aspect-square object-center object-cover">
                 </div>
                 <div class="text-center mb-3">
                     <div class="mb-4">
-                        <h2 class="font-semibold">Mbianou Bradon</h2>
+                        <h2 class="font-semibold mb-3">Mbianou Bradon</h2>
                         <div class="mx-auto text-blue-400 border border-blue-400 rounded-full px-5 py-1 w-fit hover:bg-blue-400 hover:text-white cursor-pointer"><p>UI/UX Designer</p></div>
                     </div>
                     <p class="mx-auto text-sm w-4/5">Mauris ac quam quisque, donec ac, praesent in hymenaeos wisi</p>
@@ -24,13 +24,15 @@
                 <div class="mx-auto mb-4 text-blue-400 border border-blue-400 rounded-full px-5 py-1 w-fit hover:bg-blue-400 hover:text-white cursor-pointer ring-2 ring-blue-500 ring-offset-2 active:scale-90"><p>Details</p></div>
             </div>
 
-            <div class="bg-slate-900 text-slate-300 py-9 text-center">
-                <h2>Project</h2>
+            <div class="w-full max-w-[19rem] bg-slate-900 text-slate-300 py-6 text-center absolute -bottom-[14.5rem] -left-2">
+                <h2 class="text-2xl font-semibold">Project</h2>
 
-                <div>
-                    <div>
-                        <h2>314</h2>
-                        <p>Total</p>
+                <div class="absolute text-2xl top-2 right-2 cursor-pointer"><iconify-icon icon="radix-icons:cross-2"></iconify-icon></div>
+
+                <div class="circle relative mx-auto my-5 before:absolute before:content-[''] before:w-[90%] before:h-[90%] before:top-[0.35rem] before:left-[0.35rem] before:translate(-50%, -50%) before:bg-slate-900 before:rounded-[50%]">
+                    <div class="absolute top-[1.8rem] left-[2.5rem]">
+                        <h2 class="text-2xl font-semibold">314</h2>
+                        <p class="text-sm text-slate-400">Total</p>
                     </div>
                 </div>
 
@@ -38,29 +40,31 @@
                     <div>
                         <h2>167</h2>
                         <p>Completed</p>
-                        <div>
-
+                        <div class="text-xs text-green-300">
+                            <iconify-icon icon="ic:baseline-circle"></iconify-icon>
                         </div>
                     </div>
 
                     <div>
                         <h2>24</h2>
                         <p>Overdue</p>
-                        <div>
-
+                        <div class="text-xs text-yellow-500">
+                            <iconify-icon icon="ic:baseline-circle"></iconify-icon>
                         </div>
                     </div>
 
                     <div>
                         <h2>123</h2>
                         <p>In Progress</p>
-                        <div>
-
+                        <div class="text-xs text-purple-500">
+                            <iconify-icon icon="ic:baseline-circle"></iconify-icon>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
 </html>

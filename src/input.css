@@ -229,3 +229,11 @@
   border-block-end: 0.35rem solid transparent;
  
 } */
+
+.circle {
+  width: 120px;
+  height: 120px;
+  background: conic-gradient(#ecbb00 36deg, #8068fa 36deg 170deg, #00e7c0 170deg);
+  border-radius: 50%;
+
+}

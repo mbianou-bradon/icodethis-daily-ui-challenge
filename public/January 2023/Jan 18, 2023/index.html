@@ -8,65 +8,120 @@
     <title>Company Card</title>
 </head>
 <body>
-    <div>
+    <div class="w-full max-w-2xl text-slate-200">
         <div>
-            <div>
-                <div>
-                    <div>
+            <div class="bg-slate-700 grid grid-cols-3 px-10 py-10">
+
+                <!-- <div>
+                    <iconify-icon icon="ic:round-keyboard-arrow-left"></iconify-icon>
+                </div> -->
+
+                <div class="flex flex-col justify-center">
+                    <div class="w-[10rem] bg-white rounded-full">
                         <img src="" alt="">
                     </div>
                     <div>
-                        <div class="rating">
-
+                        <div class="rating text-xl text-yellow-500">
+                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                            <iconify-icon icon="carbon:star-half"></iconify-icon>
                         </div>
 
-                        <div class="reviews"><h2>2278 reviews</h2></div>
+                        <div class="reviews text-xs"><h2>2278 reviews</h2></div>
                     </div>
                 </div>
 
-                <div>
-                    <div>
-                        <h2><span>#1.</span> GOOGLE</h2>
-                        <a href="http://www.google.com">http://www.google.com</a>
+                <div class="col-span-2">
+                    <div class="mb-7">
+                        <h2 class="font-semibold"><span>#1.</span> GOOGLE</h2>
+                        <a href="http://www.google.com" class="text-pink-600">http://www.google.com</a>
                     </div>
 
-                    <p>
+                    <p class="text-xs w-[85%] leading-2 space-y-5">
                         Google LLC is an American multinational technology company that
                         specializes in internet-related services and products. These include online advertising technologies,
                          search, cloud computing, software, and hardware.
                     </p>
                 </div>
+
+                <!-- <div>
+                    <iconify-icon icon="ic:round-keyboard-arrow-right"></iconify-icon>
+                </div> -->
             </div>
 
 
-            <div>
-                <div>
+            <div class="grid grid-cols-3 bg-slate-800 px-5 py-8">
+                <div class="text-sm [&>*]:mb-5">
                     <div>
-                        <h2>TOTAL EMPLOYEES</h2>
-                        <p>72,053</p>
+                        <h2 class="mb-1">TOTAL EMPLOYEES</h2>
+                        <p class="text-xl font-semibold">72,053</p>
                     </div>
 
                     <div>
-                        <h2>HOB OPENINGS</h2>
-                        <p>1278</p>
+                        <h2 class="mb-1">JOB OPENINGS</h2>
+                        <p class="text-xl text-pink-600 font-semibold">1278</p>
                     </div>
                 </div>
 
-                <div>
-                    <h2>PAID TIME OFF</h2>
+                <div class="col-span-2">
+                    <h2 class="font-semibold">PAID TIME OFF</h2>
 
-                    <div>
-                        <div><h2>General pto</h2></div>
+                    <div class="[&>*]:grid [&>*]:grid-cols-2 [&>*]:gap-9 text-sm [&>*]:my-4">
+                        <div>
+                            <div><h2>General pto</h2></div>
+
+                            <div class="flex items-center gap-1">
+                                <div class="bg-slate-900 w-[10rem] rounded-full overflow-hidden"><div class="bg-pink-600 w-[35%] py-1 rounded-full"></div></div>
+                                <h2>15</h2>
+                            </div>
+                        </div>
 
                         <div>
-                            <div><div></div></div>
-                            <h2>15</h2>
+                            <div><h2>Total PTO after 5 years</h2></div>
+
+                            <div class="flex items-center gap-1">
+                                <div class="bg-slate-900 w-[10rem] rounded-full overflow-hidden"><div class="bg-pink-600 w-[50%] py-1 rounded-full"></div></div>
+                                <h2>20</h2>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div><h2>For volunteering</h2></div>
+
+                            <div class="flex items-center gap-1">
+                                <div class="bg-slate-900 w-[10rem] rounded-full overflow-hidden"><div class="bg-pink-600 w-[40%] py-1 rounded-full"></div></div>
+                                <h2>25</h2>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div><h2>General PTO for part-timers</h2></div>
+
+                            <div class="flex items-center gap-1">
+                                <div class="bg-slate-900 w-[10rem] rounded-full overflow-hidden"><div class="bg-pink-600 w-[25%] py-1 rounded-full"></div></div>
+                                <h2>7</h2>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div><h2># Sick days for part-timers</h2></div>
+
+                            <div class="flex items-center gap-1">
+                                <div class="bg-slate-900 w-[10rem] rounded-full overflow-hidden"><div class="bg-pink-600 w-[0%] py-1"></div></div>
+                                <h2>0</h2>
+                            </div>
                         </div>
 
                     </div>
                 </div>
             </div>
+
+            
         </div>
     </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
 </html>

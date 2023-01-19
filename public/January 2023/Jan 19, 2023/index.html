@@ -7,24 +7,40 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>Profile Tooltip</title>
 </head>
-<body>
-    <div>
-        <div>
-            <div>
-                <div>
-                    <img src="" alt="">
+<body class="bg-gradient-to-r from-[#8875d5] to-[#423b87] flex items-center justify-center">
+    <div class="w-full max-w-lg relative mt-10">
+        <div id="tooltip" class="hidden absolute bg-[#1d1a36] rounded-lg">
+            <div class="max-w-[20rem] flex gap-2 px-2 py-7 text-sm">
+                <div class="h-14 w-14 rounded-full overflow-hidden">
+                    <img src="https://pbs.twimg.com/profile_images/1344692250308182016/dLKsLKYT_400x400.jpg" alt="" class="aspect-square object-center object-cover">
                 </div>
 
                 <div>
-                    <div>
-                        <h2>Mbianou Bradon</h2>
-                        <p>UX Designer <span>@iknite</span></p>
+                    <div class="mb-5">
+                        <h2 class="font-semibold text-[14px]">Mbianou Bradon</h2>
+                        <p class="mt-1">UX Designer <span class="text-[#6952f9]">@iknite</span></p>
                     </div>
 
-                    <div><h2>Message</h2></div>
+                    <div id="out" class="cursor-pointer text-center w-fit px-3 py-3 bg-[#6952f9] text-xs font-semibold border border-[#6952f9] hover:bg-white hover:text-[#6952f9] active:scale-95 rounded-md"><h2>Message</h2></div>
                 </div>
+
+                <div id="arrow" class="w-4 h-4 rotate-45 absolute arrow1"></div>
+            </div>
+        </div>
+
+        <div id="profile" class="absolute -bottom-[18rem] left-10 cursor-pointer active:scale-95">
+            <div class="h-16 w-16 rounded-full overflow-hidden p-1.5 bg-slate-900">
+                <img src="https://pbs.twimg.com/profile_images/1344692250308182016/dLKsLKYT_400x400.jpg" alt="" class="rounded-full aspect-square object-center object-cover">
+            </div>
+        </div>
+
+        <div id="profile2" class="absolute -bottom-[18rem] -right-[1rem] cursor-pointer active:scale-95">
+            <div class="h-16 w-16 rounded-full overflow-hidden p-1.5 bg-slate-900">
+                <img src="https://pbs.twimg.com/profile_images/1344692250308182016/dLKsLKYT_400x400.jpg" alt="" class="rounded-full aspect-square object-center object-cover">
             </div>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

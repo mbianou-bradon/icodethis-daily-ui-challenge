@@ -230,14 +230,14 @@
  
 } */
 
-.circle {
+/* .circle {
   width: 7.5rem;
   height: 7.5rem;
   background: conic-gradient(#ecbb00 36deg, #8068fa 36deg 170deg, #00e7c0 170deg);
   border-radius: 50%;
 
 }
-
+*/
 .rotation {
     animation-name: rotation;
     animation-duration: 2500ms;
@@ -251,4 +251,30 @@
     to {
         transform:rotate(720deg);
     }
+} 
+
+.tooltip1 {
+  bottom: -13rem;
+  left:-2.5rem;
+  color: white;
+  background: #1d1a36;
+}
+
+.tooltip2 {
+  top: 11rem; 
+  right:4rem;
+  background: white;
+  color: #1d1a36 !important;
+}
+
+.arrow1{
+  bottom: -0.5rem;
+  left: 50%;
+  background: #1d1a36;
+}
+
+.arrow2{
+  right: -0.5rem;
+  top: 50%;
+  background: white;
 }

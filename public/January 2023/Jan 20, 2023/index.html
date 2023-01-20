@@ -7,27 +7,27 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>Portfolio Profile</title>
 </head>
-<body>
-    <main>
+<body class="bg-slate-900 flex items-center justify-center min-h-screen">
+    <main class="max-w-4xl h-fit px-8 bg-slate-50 text-slate-800 [&_*]: [&_*]: [&_*]:">
         <!-- Top session -->
-        <div class="grid grid-cols-3">
+        <div class="grid grid-cols-4">
             <div>
-                <div>
-                    <img src="https://pbs.twimg.com/profile_images/1344692250308182016/dLKsLKYT_400x400.jpg" alt="">
+                <div class="w-3/5">
+                    <img src="https://pbs.twimg.com/profile_images/1344692250308182016/dLKsLKYT_400x400.jpg" alt="" class="h-full">
                 </div>
             </div>
 
 
-            <div class="col-span-2">
-                <div class="grid grid-cols-4">
-                    <div class="col-span-2">
+            <div class="col-span-3 text-sm p-4">
+                <div class="grid grid-cols-3 [&>*]:border-b-2 [&>*]:pb-3 relative">
+                    <div class="border-r-2">
                         <div>
-                            <h2>Mbianou Bradon</h2>
-                            <p>- Frontend developer</p>
+                            <h2 class="font-semibold text-slate-800 mb-2 italic text-[1rem]">Mbianou Bradon</h2>
+                            <p class="text-slate-300 mb-1">- Frontend developer</p>
                         </div>
 
                         <!-- Location -->
-                        <div>
+                        <div class="flex items-center gap-1 text-slate-300 text-xs">
                             <div>
                                 <iconify-icon icon="material-symbols:location-on-rounded"></iconify-icon>
                             </div>
@@ -35,7 +35,7 @@
                         </div>
                     </div>
 
-                    <div class="flex">
+                    <div class="flex justify-around text-2xl [&>*>h2]:text-[1rem] [&>*>h2]:font-semibold border-r-2 [&>*]:flex [&>*]:flex-col [&>*]:justify-center [&>*]:items-center ">
                         <div>
                             <div>
                                 <iconify-icon icon="bx:image"></iconify-icon>
@@ -59,8 +59,8 @@
                     </div>
 
                     <!-- Follow -->
-                    <div>
-                        <div>
+                    <div class="flex items-center justify-center">
+                        <div class="flex items-center gap-3 bg-yellow-400 h-fit px-4 py-2 text-white font-semibold rounded hover:bg-slate-700 cursor-pointer">
                             <div>
                                 <iconify-icon icon="material-symbols:person-add"></iconify-icon>
                             </div>
@@ -69,33 +69,76 @@
                         </div>
                     </div>
 
+                    <!-- Float Menu -->
+
+                    <div class="flex items-center justify-center flex-col gap-1 bg-slate-300 w-fit text-lg [&>*]:rounded-lg [&>*]:py-2 [&>*]:px-4 [&>*:hover]:bg-slate-600 [&>*:hover]:text-slate-200 absolute -top-5 -right-[6.1rem]">
+                        <div>
+                            <iconify-icon icon="ph:dots-three-outline-vertical-fill"></iconify-icon>
+                        </div>
+                        <div>
+                            <iconify-icon icon="mdi:bell"></iconify-icon>
+                        </div>
+
+                        <div>
+                            <iconify-icon icon="material-symbols:edit"></iconify-icon>
+                        </div>
+
+                        <div>
+                            <iconify-icon icon="ic:baseline-share"></iconify-icon>
+                        </div>
+                    </div>
+
                 </div>
 
 
                 <!-- About session -->
 
-                <div>
-                    <div>
-                        <h2>About Me</h2>
+                <div class="grid grid-cols-2 gap-16 my-5">
+                    <div class="">
+                        <h2 class="font-semibold text-lg">About Me</h2>
 
-                        <p>
+                        <p class="text-slate-300 text-xs my-3">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolor similique corrupti impedit esse unde molestias sit ut neque nobis!
                         </p>
 
-                        <p>
+                        <p class="text-slate-300 text-xs">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam natus placeat rerum numquam quae. Molestiae ipsa, ipsum sit quis sint vel.
                         </p>
                     </div>
 
                     <div>
-                        <h2>Skills</h2>
+                        <h2 class="font-semibold text-lg">Skills</h2>
 
-                        <div>
+                        <div class="mt-5 flex flex-col gap-y-3 [&>*]:grid [&>*]:grid-cols-2 [&>*>h2]:text-xs text-slate-500 [&>*>div]:pr- [&>*>div]:h-fit">
                             <div>
                                 <h2>Equipment</h2>
-                                <div>
-                                    <div></div>
-                                    <div></div>
+                                <div class="bg-slate-400 w-[90%] rounded-full relative">
+                                    <div class="bg-slate-900 w-4/5 p-1 rounded-full"></div>
+                                    <div class="bg-slate-900 rounded-full p-1.5 w-fit absolute right-[19%] -top-[0.1rem] cursor-pointer"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Editing</h2>
+                                <div class="bg-slate-400 w-[90%] rounded-full relative">
+                                    <div class="bg-slate-900 w-[50%] p-1 rounded-full"></div>
+                                    <div class="bg-slate-900 rounded-full p-1.5 w-fit absolute right-[49%] -top-[0.1rem] cursor-pointer"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Marketing</h2>
+                                <div class="bg-slate-400 w-[90%] rounded-full relative">
+                                    <div class="bg-slate-900 w-[30%] p-1 rounded-full"></div>
+                                    <div class="bg-slate-900 rounded-full p-1.5 w-fit absolute right-[69%] -top-[0.1rem] cursor-pointer"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Design</h2>
+                                <div class="bg-slate-400 w-[90%] rounded-full relative">
+                                    <div class="bg-slate-900 w-[90%] p-1 rounded-full"></div>
+                                    <div class="bg-slate-900 rounded-full p-1.5 w-fit absolute right-[9%] -top-[0.1rem] cursor-pointer"></div>
                                 </div>
                             </div>
 
@@ -118,25 +161,109 @@
 
         <!-- Bottom Session -->
         <div>
-            <h2>Pictures</h2>
+            <h2 class="font-semibold text-lg mb-3">Project Pictures</h2>
 
             <!-- Photo Grid -->
 
-            <div>
+            <div class="grid grid-cols-4 grid-rows-2 gap-3 [&>*]:opacity-[70%] [&>*:hover]:opacity-[100%] [&>*]:relative">
                 <!-- <div><img src="" alt=""></div> -->
-                <div><img src="https://pbs.twimg.com/media/FkV2HJoWYAIfjoC.jpg" alt=""></div>
-                <div><img src="https://media.licdn.com/dms/image/C4E22AQF1M9KjINvVgw/feedshare-shrink_2048_1536/0/1671705675748?e=1675296000&v=beta&t=Q11IClVDBpE2cIIrRPAIUlgTSh0bBb3s0AUjTMbVDf4" alt=""></div>
-                <div><img src="https://pbs.twimg.com/media/Fj3Gp8eXoAINQNU.jpg" alt=""></div>
-                <div><img src="http://t1.gstatic.com/images?q=tbn:ANd9GcRq2g4Wc2_et9xsiGJQZwf7F1DxZSP-_iSWuSwWmT0CwU0eIZUQ" alt=""></div>
-                <div><img src="https://pbs.twimg.com/media/FkkRKr4WAAMRyx3.jpg" alt=""></div>
-                <div><img src="https://pbs.twimg.com/media/FlX432wWQAEU6OQ.png" alt=""></div>
-                <div><img src="https://pbs.twimg.com/media/Fj6rBBTXgAAPspZ.jpg:large" alt=""></div>
-                <div><img src="https://media.licdn.com/dms/image/C4E05AQHxjQxD9Za_3w/videocover-low/0/1672040383977?e=2147483647&v=beta&t=bVa0yOFrE_95fT7SsIP5DlCs7UuHYUIMUOspkkCd7dI" alt=""></div>
+                <div class="row-start-1 row-end-2 ">
+                    <img src="https://pbs.twimg.com/media/FkV2HJoWYAIfjoC.jpg" alt="" class="h-full aspect-square object-center object-cover">
+
+                    <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
+                        <div class="text-[#de295a] text-lg">
+                            <iconify-icon icon="mdi:cards-heart"></iconify-icon>
+                        </div>
+                        <h2>24 Likes</h2>
+                    </div>
+                </div>
+
+                <div class="col-start-2 col-end-4 row-start-1 row-end-2">
+                    <img src="https://media.licdn.com/dms/image/C4E05AQHxjQxD9Za_3w/videocover-low/0/1672040383977?e=2147483647&v=beta&t=bVa0yOFrE_95fT7SsIP5DlCs7UuHYUIMUOspkkCd7dI" alt="">
+
+                    <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
+                        <div class="text-[#de295a] text-lg">
+                            <iconify-icon icon="mdi:cards-heart"></iconify-icon>
+                        </div>
+                        <h2>28 Likes</h2>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://pbs.twimg.com/media/FlX432wWQAEU6OQ.png" alt="" class="h-full aspect-square object-center object-cover">
+                    
+                    <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
+                        <div class="text-[#de295a] text-lg">
+                            <iconify-icon icon="mdi:cards-heart"></iconify-icon>
+                        </div>
+                        <h2>16 Likes</h2>
+                    </div>
+                </div>
+
+                <div class="row-start-2 col-start-2">
+
+                    <div class="mb-5 relative">
+                        <img src="https://pbs.twimg.com/media/Fj3Gp8eXoAINQNU.jpg" alt="">
+                        <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
+                            <div class="text-[#de295a] text-lg">
+                                <iconify-icon icon="mdi:cards-heart"></iconify-icon>
+                            </div>
+                            <h2>20 Likes</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <img src="https://pbs.twimg.com/media/FkkRKr4WAAMRyx3.jpg" alt="">
+
+                        <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
+                            <div class="text-[#de295a] text-lg">
+                                <iconify-icon icon="mdi:cards-heart"></iconify-icon>
+                            </div>
+                            <h2>124 Likes</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-start-2 col-start-4">
+                    <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcRq2g4Wc2_et9xsiGJQZwf7F1DxZSP-_iSWuSwWmT0CwU0eIZUQ" alt="" class="h-full aspect-square object-center object-cover">
+                    
+                    <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
+                        <div class="text-[#de295a] text-lg">
+                            <iconify-icon icon="mdi:cards-heart"></iconify-icon>
+                        </div>
+                        <h2>204 Likes</h2>
+                    </div>
+                </div>
+
+                <div class="row-start-2 col-start-3">
+                    <img src="https://media.licdn.com/dms/image/C4E22AQF1M9KjINvVgw/feedshare-shrink_2048_1536/0/1671705675748?e=1675296000&v=beta&t=Q11IClVDBpE2cIIrRPAIUlgTSh0bBb3s0AUjTMbVDf4" alt="" class="h-full aspect-square object-center object-cover">
+
+                    <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
+                        <div class="text-[#de295a] text-lg">
+                            <iconify-icon icon="mdi:cards-heart"></iconify-icon>
+                        </div>
+                        <h2>74 Likes</h2>
+                    </div>
+                </div>
+
+
+                <div class="row-start-2 row-end-2">
+                    <img src="https://pbs.twimg.com/media/Fj6rBBTXgAAPspZ.jpg:large" alt="" class="h-full aspect-square object-center object-cover">
+
+                    <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
+                        <div class="text-[#de295a] text-lg">
+                            <iconify-icon icon="mdi:cards-heart"></iconify-icon>
+                        </div>
+                        <h2>56 Likes</h2>
+                    </div>
+                </div>
+
+                
 
 
             </div>
 
-            <div>
+            <div class="text-slate-800 bg-slate-300 font-semibold px-4 py-1 rounded w-fit cursor-pointer active:scale-90 border border-slate-300 hover:bg-white">
                 <h2>Load more</h2>
             </div>
         </div>

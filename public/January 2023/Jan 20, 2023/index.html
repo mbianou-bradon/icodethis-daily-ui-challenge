@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>Portfolio Profile</title>
 </head>
-<body class="bg-slate-900 flex items-center justify-center min-h-screen">
-    <main class="max-w-4xl h-fit px-8 bg-slate-50 text-slate-800 [&_*]: [&_*]: [&_*]:">
+<body class="bg-slate-900 flex items-center justify-center min-h-screen selection:text-white selection:bg-slate-800">
+    <main class="max-w-4xl h-fit px-8 bg-slate-50 text-slate-800 sm:mt-10 md:mt-20 [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
         <!-- Top session -->
-        <div class="grid grid-cols-4">
-            <div>
-                <div class="w-3/5">
-                    <img src="https://pbs.twimg.com/profile_images/1344692250308182016/dLKsLKYT_400x400.jpg" alt="" class="h-full">
+        <div class="grid grid-cols-1 md:grid-cols-4 pt-4 sm:pt-0">
+            <div class="relative mx-auto md:mx-0">
+                <div class="w-fit md:w-4/5 bg-slate-200 shadow-lg shadow-slate-700 p-0.5 h-3/5 md:absolute -top-5">
+                    <img src="https://pbs.twimg.com/profile_images/1344692250308182016/dLKsLKYT_400x400.jpg" alt="" class="h-full aspect-square object-center object-cover">
                 </div>
             </div>
 
 
-            <div class="col-span-3 text-sm p-4">
-                <div class="grid grid-cols-3 [&>*]:border-b-2 [&>*]:pb-3 relative">
-                    <div class="border-r-2">
+            <div class="md:col-span-3 text-sm md:p-4">
+                <div class="grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 [&>*]:border-b-2 [&>*]:pb-3 mb-5 md:mb-0 relative">
+                    <div class="md:border-r-2">
                         <div>
                             <h2 class="font-semibold text-slate-800 mb-2 italic text-[1rem]">Mbianou Bradon</h2>
                             <p class="text-slate-300 mb-1">- Frontend developer</p>
@@ -35,7 +35,7 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-around text-2xl [&>*>h2]:text-[1rem] [&>*>h2]:font-semibold border-r-2 [&>*]:flex [&>*]:flex-col [&>*]:justify-center [&>*]:items-center ">
+                    <div class="flex justify-around text-2xl [&>*>h2]:text-[1rem] [&>*>h2]:font-semibold md:border-r-2 [&>*]:flex [&>*]:flex-col [&>*]:justify-center [&>*]:items-center [&>*:hover]:text-[#d92b53] [&>*]:cursor-pointer">
                         <div>
                             <div>
                                 <iconify-icon icon="bx:image"></iconify-icon>
@@ -71,7 +71,7 @@
 
                     <!-- Float Menu -->
 
-                    <div class="flex items-center justify-center flex-col gap-1 bg-slate-300 w-fit text-lg [&>*]:rounded-lg [&>*]:py-2 [&>*]:px-4 [&>*:hover]:bg-slate-600 [&>*:hover]:text-slate-200 absolute -top-5 -right-[6.1rem]">
+                    <div class=" hidden lg:flex items-center justify-center flex-col gap-1 bg-slate-300 w-fit text-lg [&>*]:rounded-lg [&>*]:py-2 [&>*]:px-4 [&>*:hover]:bg-slate-600 [&>*:hover]:text-slate-200 absolute -top-4 -right-[6.1rem]">
                         <div>
                             <iconify-icon icon="ph:dots-three-outline-vertical-fill"></iconify-icon>
                         </div>
@@ -93,7 +93,7 @@
 
                 <!-- About session -->
 
-                <div class="grid grid-cols-2 gap-16 my-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-16 mb-7 md:mb-5">
                     <div class="">
                         <h2 class="font-semibold text-lg">About Me</h2>
 
@@ -160,14 +160,14 @@
 
 
         <!-- Bottom Session -->
-        <div>
+        <div class="flex flex-col">
             <h2 class="font-semibold text-lg mb-3">Project Pictures</h2>
 
             <!-- Photo Grid -->
 
-            <div class="grid grid-cols-4 grid-rows-2 gap-3 [&>*]:opacity-[70%] [&>*:hover]:opacity-[100%] [&>*]:relative">
+            <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 grid-rows-2 gap-3 [&>*]:opacity-[70%] [&>*:hover]:opacity-[100%] [&>*]:relative mb-6">
                 <!-- <div><img src="" alt=""></div> -->
-                <div class="row-start-1 row-end-2 ">
+                <div class="md:row-start-1 md:row-end-2 ">
                     <img src="https://pbs.twimg.com/media/FkV2HJoWYAIfjoC.jpg" alt="" class="h-full aspect-square object-center object-cover">
 
                     <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
@@ -178,7 +178,7 @@
                     </div>
                 </div>
 
-                <div class="col-start-2 col-end-4 row-start-1 row-end-2">
+                <div class="hidden md:block sm:col-start-2 sm:col-end-4 sm:row-start-1 sm:row-end-2">
                     <img src="https://media.licdn.com/dms/image/C4E05AQHxjQxD9Za_3w/videocover-low/0/1672040383977?e=2147483647&v=beta&t=bVa0yOFrE_95fT7SsIP5DlCs7UuHYUIMUOspkkCd7dI" alt="">
 
                     <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
@@ -200,7 +200,7 @@
                     </div>
                 </div>
 
-                <div class="row-start-2 col-start-2">
+                <div class="hidden md:block sm:row-start-2 sm:col-start-2">
 
                     <div class="mb-5 relative">
                         <img src="https://pbs.twimg.com/media/Fj3Gp8eXoAINQNU.jpg" alt="">
@@ -224,7 +224,7 @@
                     </div>
                 </div>
 
-                <div class="row-start-2 col-start-4">
+                <div class="md:row-start-2 md:col-start-4">
                     <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcRq2g4Wc2_et9xsiGJQZwf7F1DxZSP-_iSWuSwWmT0CwU0eIZUQ" alt="" class="h-full aspect-square object-center object-cover">
                     
                     <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
@@ -235,7 +235,7 @@
                     </div>
                 </div>
 
-                <div class="row-start-2 col-start-3">
+                <div class="md:row-start-2 md:col-start-3">
                     <img src="https://media.licdn.com/dms/image/C4E22AQF1M9KjINvVgw/feedshare-shrink_2048_1536/0/1671705675748?e=1675296000&v=beta&t=Q11IClVDBpE2cIIrRPAIUlgTSh0bBb3s0AUjTMbVDf4" alt="" class="h-full aspect-square object-center object-cover">
 
                     <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
@@ -247,7 +247,7 @@
                 </div>
 
 
-                <div class="row-start-2 row-end-2">
+                <div class="md:row-start-2 md:row-end-2">
                     <img src="https://pbs.twimg.com/media/Fj6rBBTXgAAPspZ.jpg:large" alt="" class="h-full aspect-square object-center object-cover">
 
                     <div class="bg-slate-700 bg-opacity-75 flex items-center gap-1 px-3 py-0.5 font-semibold text-xs absolute bottom-0 left-0">
@@ -263,7 +263,7 @@
 
             </div>
 
-            <div class="text-slate-800 bg-slate-300 font-semibold px-4 py-1 rounded w-fit cursor-pointer active:scale-90 border border-slate-300 hover:bg-white">
+            <div class="text-slate-800 bg-slate-300 font-semibold px-4 py-1 rounded w-fit cursor-pointer active:scale-90 border border-slate-300 hover:bg-white place-self-end">
                 <h2>Load more</h2>
             </div>
         </div>

@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>Sign In form</title>
 </head>
-<body class="bg-[#edf3ff] flex items-center justify-center min-h-screen selection:text-white selection:bg-[#4d49e8]">
-    <div class="w-full max-w-[20rem] h-fit text-slate-900 text-xs bg-white pt-4 pb-6 px-10 md:px-12 rounded-lg [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
+<body class="bg-[#edf3ff] flex items-center justify-center min-h-screen selection:text-white selection:bg-[#4d49e8] relative">
+    <div class="w-full relative shadow shadow-[#4d49e8] max-w-[20rem] h-fit text-slate-900 text-xs bg-white pt-4 pb-6 px-10 md:px-12 rounded-lg [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
         <div>
             <div class="relative after:content-[''] after:absolute after:sm:w-[105%] after:w-[95%] after:h-[150%] after:bg-[#4d49e8] after:rounded-lg after:z-[-1] after:-top-[5rem] after:sm:-right-[5rem] after:right-1">
                 <h2 class="text-3xl font-semibold my-6">Sign in</h2>
                 <div class="font-semibold">
                     <h2 class="mb-1">Username or email</h2>
-                    <input type="text" name="username" id="userName" class="border-slate-300 rounded w-[14rem] text-xs">
+                    <input type="text" name="username" id="userName" class="border-slate-300 rounded w-[14rem] text-xs text-[#4d49e8]">
                 </div>
 
                 <div class="my-4 font-semibold">
                     <h2 class="mb-1">Password</h2>
-                    <input type="password" name="password" id="password" class="border-slate-300 rounded w-[14rem] text-xs">
+                    <input type="password" name="password" id="password" class="border-slate-300 rounded w-[14rem] text-xs text-[#4d49e8]">
                 </div>
 
                 <div class="flex items-center justify-between">
-                    <div class="text-white font-semibold bg-[#4d49e8] px-3 sm:px-5 py-2 sm:py-3 border border-[#4d49e8] hover:text-[#4d49e8] hover:bg-white cursor-pointer rounded-full w-fit">
+                    <div id="sign" class="text-white font-semibold bg-[#4d49e8] px-3 sm:px-5 py-2 sm:py-3 border border-[#4d49e8] hover:text-[#4d49e8] hover:bg-white cursor-pointer rounded-full w-fit">
                         <h2>Sign in</h2>
                     </div>
 
@@ -38,6 +38,25 @@
 
 
         </div>
+
+        
+        
     </div>
+
+    <div id="myModal" class="modal absolute w-full h-full z-[1] top-0 left-0">
+
+        <!-- Modal content -->
+        <div class="relative w-full h-full">
+            <div class="modal-content absolute bg-white w-1/5 h-[] font-semibold text-xl text-[#4d49e8] px-5 py-20 rounded top-[40%] right-[35%]">
+                <span id="close" class="absolute top-0 right-1 text-2xl cursor-pointer">&times;</span>
+                <div class="text-center">
+                    <h2>Sign in Successfull</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

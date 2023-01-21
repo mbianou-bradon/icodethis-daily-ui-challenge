@@ -238,7 +238,7 @@
 
 }
 */
-.rotation {
+/* .rotation {
     animation-name: rotation;
     animation-duration: 2500ms;
     animation-timing-function: ease-in-out; 
@@ -277,4 +277,23 @@
   right: -0.5rem;
   top: 50%;
   background: white;
+} */
+
+.modal {
+  display: none;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  animation-name: modalentrance;
+}
+
+@keyframes modalentrance {
+  from {
+    top:-25rem; 
+    opacity:0
+  }
+
+  to {
+    top:0; 
+    opacity:1
+  }
 }

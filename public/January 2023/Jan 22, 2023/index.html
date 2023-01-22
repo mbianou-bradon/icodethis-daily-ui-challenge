@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>Signup Form</title>
 </head>
-<body class="bg-[#f4f9ff] flex items-center justify-center min-h-screen">
-    <div class="w-full max-w-md text-slate-900 bg-[#d9e2f3] p-3 rounded-xl">
-        <div class="bg-white rounded-xl text-center px-20 py-4 ">
+<body class="bg-slate-900 flex items-center justify-center min-h-screen selection:text-white selection:bg-slate-900">
+    <div class="w-full max-w-md text-slate-900 bg-slate-300 p-4 rounded-xl [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
+        <div class="bg-white rounded-xl text-center px-14 sm:px-20 py-4 ">
             <div class="my-5 w-full [&>*]:mx-auto">
                 <h2 class="text-2xl w-4/5 font-semibold mb-3">Join the community</h2>
                 <p class="text-sm text-center w-[97%]">Take your art to the next level. Get it 
@@ -17,20 +17,20 @@
                 </p>
             </div>
 
-            <div class="bg-[#4968ad] text-white font-semibold shadow-sm shadow-[#4968ad] py-2 rounded cursor-pointer hover:bg-[]"><h2>Join with Facebook</h2></div>
+            <div class="bg-[#4968ad] text-white text-sm font-semibold shadow-sm shadow-[#4968ad] py-2 rounded cursor-pointer hover:scale-105"><h2>Join with Facebook</h2></div>
 
-            <p class="text-slate-500 my-3">Or</p>
+            <p class="text-slate-300 my-3 font-semibold relative before:content-[''] before:absolute before:w-[35%] before:bg-slate-300 before:h-0.5 before:left-4 before:rounded-full before:top-1/2 after:content-[''] after:absolute after:w-[35%] after:bg-slate-300 after:h-0.5 after:right-4 after:rounded-full after:top-1/2">Or</p>
 
-            <div class="grid grid-cols-2 [&>*]:border [&>*]:border-slate-300 [&>*]:mb-3 gap-2 [&>*]:rounded [&>*]:text-slate-300 [&>*]:w-full">
-                <input type="text" placeholder="First name">
-                <input type="text" placeholder="Last name">
+            <div class="grid grid-cols-2 [&>*]:border [&>*]:border-slate-300 [&>*]:mb-3 gap-2 [&>*]:rounded [&>*]:text-slate-600 [&>*]:w-full [&>*:focus]:ring-slate-900">
+                <input type="text" placeholder="First name" class="col-span-2 sm:col-span-1">
+                <input type="text" placeholder="Last name" class="col-span-2 sm:col-span-1">
                 <input type="email" placeholder="Email" class="col-span-2">
                 <input type="password" placeholder="Password" class="col-span-2">
             </div>
 
             <div>
-                <div class="bg-[#1e2c4b] text-white font-semibold py-2 rounded text-center cursor-pointer shadow-sm shadow-[#1e2c4b]"><h2>Create New Account</h2></div>
-                <div class="[&>span]:text-[#4968ad] text-[0.7rem] my-5 [&>span]:cursor-pointer w-[90%] mx-auto">
+                <div class="bg-[#1e2c4b] text-white text-sm font-semibold py-2 rounded text-center cursor-pointer shadow-sm shadow-[#1e2c4b] border border-[#1e2c4b] hover:bg-white hover:text-[#1e2c4b]"><h2>Create New Account</h2></div>
+                <div class="[&>span]:text-[#4968ad] text-[0.7rem] my-5 [&>span]:cursor-pointer [&>span:hover]:underline w-[90%] mx-auto">
                     By joining you agree to our <span>Terms of Service</span>
                     and <span>Privacy Policy</span>
                 </div>

@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+body {
+    background: #ddf0f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header__sign_in {
+    font-size: 1.7rem;
+    margin-block-end: 1rem;
+}
+
+header {
+    background: white;
+    width: 20rem;
+    height: fit-content;
+    border-radius: 0.5rem;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+label {
+    font-size: 0.8rem;
+    display: block;
+    margin-block-end: 0.2rem;
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+    margin-block-end: 1rem;
+    border: 0.05rem solid rgb(199, 196, 196);
+    border-radius: 0.2rem;
+    padding-inline-start: 0.4rem;
+}
+
+.sign__password {
+    display: flex;
+    align-items: center;
+    margin-block: 1rem;
+}
+
+.sign__password h4, .no__account h4 {
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.sign__password h4:hover, .no__account h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid blueviolet;
+    margin-inline-end: auto;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: blueviolet;
+}
+
+.no__account {
+    text-align: center;
+}
+.no__account h4, a {
+    color: black;
+    margin-block: 1rem;
+}
+
+.no__account a:hover {
+    text-decoration: none;
+}
+
+header::after {
+    content: "";
+    width: 95%;
+    height: 120%;
+    background: blueviolet;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: -2.5rem;
+    right: -2rem;
+    z-index: -1;
+}

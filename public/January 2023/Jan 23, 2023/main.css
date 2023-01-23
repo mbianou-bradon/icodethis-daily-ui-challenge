@@ -1,0 +1,110 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(to bottom right, #72b652 , #066569);
+    background-position: center;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+#container {
+  display: grid;
+  grid-gap: 0.1rem;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+  padding: 1rem;
+  border: 1px solid rgb(207, 207, 207, 0.3);
+  text-align: center;
+  color: transparent;
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+.grid-item::before {
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    bottom: -0.3rem;
+    left: -0.3rem;
+    cursor: pointer;
+}
+
+.red {
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    top: 49%;
+    right: 49.2%;
+}
+
+.red1 {
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    top: 49%;
+    right: 80.4%;
+}
+
+.red2 {
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    top: 22.1%;
+    right: 14.75%;
+}
+
+.red3 {
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    top: 81.2%;
+    right: 64.8%;
+}
+
+.red4 {
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    top: 81.3%;
+    right: 14.75%;
+}
+
+.red5 {
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    top: 11.2%;
+    left: 3.44%;
+}
+
+.red6 {
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    top: 16.7%;
+    right: 61.65%;
+}

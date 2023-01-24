@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Banner</title>
+</head>
+<body class="flex items-center justify-between min-h-screen">
+    <div id="main" class="flex justify-center items-center w-full min-h-screen px-4 bg-white bg-opacity-[15%] relative [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-300">
+        <div id="sub_main" class="bg-black w-full max-w-4xl sm:h-28 rounded overflow-hidden">
+            <div class="grid grid-cols-2 gap-y-8 relative [&>*]:place-self-center sm:flex items-center justify-between flex-wrap h-full py-4 sm:py-0">
+                <div class="h-full col-span-2">
+                    <img src="https://superstarsbio.com/wp-content/uploads/2019/07/Wagner-Moura-poster-300x169.jpg" alt="" class="h-full aspect-video sm:aspect-auto rounded sm:rounded-none">
+                </div>
+
+                <div class="col-span-2 text-white text-center">
+                    <h2 class="text-sm">NEW SEASON OF</h2>
+                    <p class="text-5xl font-semibold">NARCOS</p>
+                </div>
+
+                <div id="watch" class="col-span-2 w-fit px-5 py-3 mr-4 cursor-pointer rounded-sm text-sm bg-red-600 border border-red-600 hover:text-red-600 active:scale-95 hover:bg-white text-white">
+                    <h2>WATCH TRAILER</h2>
+                </div>
+                <span class="absolute text-slate-50 opacity-20 hover:opacity-100 -top-1 right-1 text-2xl cursor-pointer">&times;</span>
+            </div>
+        </div>
+
+        <div id="tooltip" class="hidden absolute top-0 right-32">
+            <div class="max-w-[27rem] mx-auto bg-slate-800 text-white p-3 rounded-lg relative before:content-[''] before:w-5 before:h-5 before:absolute before:rotate-45 before:-bottom-2 before:left-1/2 before:bg-slate-800">
+                <div>
+                    <div>
+                        <div class="Movie-title flex items-center">
+                            <div class="mr-auto">
+                                <h2 class="">NARCOS</h2>
+                                <p class="text-sm text-blue-600">crime</p>
+                            </div>
+                
+                            <div class="rating text-sm">
+                                <p class="text-slate-400"><span class="font-bold text-blue-600">8.8</span>/10</p>
+                            </div>
+                        </div>
+            
+                        <div class="Movie-details flex items-center gap-5">
+                            <div class="Movie-image w-fit h-full">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/914110/capsule_616x353.jpg?t=1634665529" alt="" class="h-[9rem] aspect-video object-cover object-center">
+                            </div>
+                
+                            <div class="Movie-info w-4/5">
+                                <div class="Movie-description w-full">
+                                    <h2 class="font-semibold">About the Movie</h2>
+                
+                                    <p class="mt-3 mb-8 text-xs">
+                                        In the 1800s, a group of all-female warriors
+                                        protects the African kingdom of Dahomey with
+                                        skills and fierceness unlike anything the world
+                                        has ever seen. Faced with a new threat, Gen. Nanisca
+                                        trains the next generation of recruits to fight against
+                                        a foreign enemy that's determined to destroy their way of life.
+                                    </p>
+                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-xs [&>h2>span]:text-blue-600 [&>h2>span:hover]:underline [&>h2>span]:cursor-pointer">
+                            <h2>Network: <span>Netflix</span></h2>
+                            <h2>Executive producers: <span>José Padilha</span>, <span>Chris Brancato</span>, <span>Carlo Bernard</span>, <span>MORE</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal absolute w-full min-h-screen z-[1] top-0 left-0">
+
+            <!-- Modal content -->
+            <div class="relative w-full h-fit">
+                <div class="modal-content w-full md:w-fit absolute bg-slate-800 bg-opacity-30  font-semibold text-xl text-[#4d49e8] rounded top-32 md:top-32 right-0 md:right-[25%]">
+                    <span id="close" class="absolute top-0 right-1 text-2xl cursor-pointer">&times;</span>
+                    <div class="text-center">
+                        <iframe class="w-full md:w-[35rem] md:h-[19.7rem] aspect-video object-cover" src="https://www.youtube.com/embed/xl8zdCY-abw" frameborder="0" allowfullscreen></iframe>
+    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Alerts</title>
+</head>
+<body class="bg-[#00969f] flex items-center justify-center min-h-screen">
+    <div class="flex flex-col items-center gap-10 w-full"> 
+        <div class="w-full max-w-md bg-white">
+            <div class="flex items-center justify-between px-4 py-4 gap-2">
+                <div><iconify-icon class="text-green-500 text-2xl" icon="mdi:tick-circle"></iconify-icon></div>
+                <h2 class="text-sm text-green-500 font-semibold">Your object has been successfully created</h2>
+                <div><iconify-icon class="text-2xl text-slate-300 hover:text-slate-500 hover:scale-110 rounded cursor-pointer mt-1" icon="system-uicons:cross"></iconify-icon></div>
+            </div>
+        </div>
+
+        <div class="w-full max-w-md bg-white">
+            <div class="flex items-center justify-between px-4 py-4 gap-2">
+                <div><iconify-icon class="text-red-500 text-2xl mt-1" icon="charm:circle-cross"></iconify-icon></div>
+                <h2 class="text-sm text-red-500 font-semibold">Your object couldn't been created</h2>
+                <div><iconify-icon class="text-2xl text-slate-300 hover:text-slate-500 hover:scale-110 rounded cursor-pointer mt-1" icon="system-uicons:cross"></iconify-icon></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

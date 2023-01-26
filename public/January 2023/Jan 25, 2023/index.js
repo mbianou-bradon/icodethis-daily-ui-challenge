@@ -1,6 +1,7 @@
 const root = document.getElementById('root')
 const newAlert = document.getElementById('newAlert')
 const close = document.querySelectorAll(".close")
+const tooltip = document.getElementById("cool");
 
 console.log(close)
 
@@ -20,6 +21,7 @@ const moreAlert = [
 
 newAlert.addEventListener("click", () => {
     generateAlert();
+    tooltip.classList.add("hidden")
 });
 
 function generateAlert(givenAlert) {
@@ -55,4 +57,14 @@ close.forEach((remove) => {
   remove.addEventListener('click', () => {
     remove.parentNode.remove();
   });
+})
+
+
+newAlert.addEventListener("mouseenter", ()=>{
+    tooltip.classList.remove("hidden")
+})
+
+
+newAlert.addEventListener("mouseleave", ()=>{
+    tooltip.classList.add("hidden")
 })

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Calendar</title>
+</head>
+<body class="bg-slate-900 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-[21rem]">
+        <div>
+            <div class="bg-[#85848c] p-2 text-slate-100 flex items-center justify-between [&>div]:text-2xl">
+                <div class="pt-1 cursor-pointer hover:scale-110"><iconify-icon icon="ic:round-keyboard-arrow-left"></iconify-icon></div>
+                <h2>January</h2>
+                <div class="pt-1 cursor-pointer hover:scale-110"><iconify-icon icon="ic:round-keyboard-arrow-right"></iconify-icon></div>
+            </div>
+
+            <div class="bg-[#726a75] p-6 text-slate-100 [&>*]:grid [&>*]:grid-cols-7 [&>*]:gap-8 [&>*>li]:place-self-center [&>*>li]:rounded-full [&>*>li]:w-8 [&>*>li]:h-8 text-center [&>*>li]:pt-1 [&>*>li:hover]:bg-[#4fc4f5] [&>*>li]:cursor-pointer [&>*>li:hover]:text-[#5b5c73]">
+                <ul class="font-semibold">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                </ul>
+
+                <ul>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                </ul>
+
+                <ul>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                </ul>
+
+                <ul>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                </ul>
+
+                <ul>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                    <li class="text-slate-400/20">1</li>
+                    <li class="text-slate-400/20">2</li>
+                    <li class="text-slate-400/20">3</li>
+                    <li class="text-slate-400/20">4</li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-y-1">
+                <div class="flex gap-1 bg-white">
+                    <div class="bg-slate-200 text-2xl w-12 h-12 flex justify-center items-center"><iconify-icon icon="ic:round-access-alarm"></iconify-icon></div>
+                    <div>
+                        <h2 class="text-lg">Meeting with my Mentor</h2>
+                        <p class="text-slate-400 text-sm">16:00</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-1 bg-white">
+                    <div class="bg-slate-200 text-2xl w-12 h-12 flex justify-center items-center"><iconify-icon icon="ic:round-access-alarm"></iconify-icon></div>
+                    <div>
+                        <h2 class="text-lg">Go to the Gym</h2>
+                        <p class="text-slate-400 text-sm">19:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+</html>

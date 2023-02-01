@@ -304,6 +304,18 @@ body {
   }
 } */
 
-.verifiedBadge:hover .badge {
+/* .verifiedBadge:hover .badge {
   display: block;
+} */
+
+.menuDarkMode {
+  @apply bg-slate-900 text-slate-200
+}
+
+.bodyDarkMode {
+  @apply bg-white
+}
+
+.gotoAppDarkMode {
+  @apply hover:bg-white hover:text-slate-900 shadow-none
 }

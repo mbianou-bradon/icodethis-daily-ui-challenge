@@ -7,32 +7,36 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>App Card</title>
 </head>
-<body>
-    <div class="w-full max-w-[18rem]">
+<body id="root" class="bg-slate-900 flex items-center justify-center min-h-screen [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200 ">
+    <div class="w-full max-w-[17rem] text-slate-900 rounded overflow-hidden">
         <div>
-            <div>
-                <div>
-                    <div><iconify-icon icon="material-symbols:dark-mode"></iconify-icon></div>
-                    <div><iconify-icon icon="entypo:dots-three-horizontal"></iconify-icon></div>
+            <div class="text-white h-[12rem] bg-blue-600 py-4 px-4">
+                <div class="flex items-center justify-between [&>*]:cursor-pointer">
+                    <div id="mode" class="[&>*]:border [&>*]:border-white [&>*]:w-7 [&>*]:h-7 [&>*]:text-center [&>*]:pt-1 [&>*]:rounded-full">
+                        <div id="dark-mode"><iconify-icon icon="material-symbols:dark-mode"></iconify-icon></div>
+                        <div id="light-mode" class="hidden"><iconify-icon icon="material-symbols:light-mode"></iconify-icon></div>
+
+                    </div>
+                    <div class="hover:-rotate-90"><iconify-icon icon="entypo:dots-three-horizontal"></iconify-icon></div>
                 </div>
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRm7kGqCkgYsmAB6DF1nIDCzi7FMcOOL047zeQjoq3fI8tmSWCfbfOu8-QfXJKu2-jH74&usqp=CAU" alt="">
+                <div class="w-14 h-14 mx-auto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRm7kGqCkgYsmAB6DF1nIDCzi7FMcOOL047zeQjoq3fI8tmSWCfbfOu8-QfXJKu2-jH74&usqp=CAU" alt="" >
                 </div>
 
-                <div>
-                    <h2>Untercom <span>APP</span></h2>
-                    <p>Convert your hottest leads</p>
+                <div class="text-center">
+                    <h2 class="font-semibold mb-2">Untercom <span class="bg-blue-700 p-0.5 text-sm rounded">APP</span></h2>
+                    <p class="text-sm text-slate-200">Convert your hottest leads</p>
                 </div>
             </div>
 
-            <div>
-                <ul class="flex flex-col items-center justify-center">
+            <div id="menu" class="h-[18rem] bg-white px-4 py-14">
+                <ul class=" flex flex-col items-center gap-y-5 h-full [&>*:hover]:underline">
                     <li><a href="">About</a></li>
                     <li><a href="">Setting</a></li>
                     <li><a href="">Help</a></li>
                 </ul>
 
-                <div class="border border-slate-300 rounded-md">
+                <div id="app" class="border border-slate-300 rounded-md py-2 text-center shadow-inner shadow-slate-200 hover:text-white hover:bg-slate-900 cursor-pointer hover:shadow-md active:scale-95">
                     <h2>Got to App</h2>
                 </div>
             </div>
@@ -40,5 +44,6 @@
     </div>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
     <title>Document</title>
 </head>
-<body>
-    <div>
+<body class="bg-slate-900 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-4xl px-6 py-4 bg-white rounded-lg">
         <div>
-            <div>
-                <h2>Recently added</h2>
-                <p>The latest tools that help you and your team build softwares better, together</p>
+            <div class="text-center mt-5 mb-8">
+                <h2 class="font-semibold mb-1">Recently added</h2>
+                <p class="text-xs">The latest tools that help you and your team build softwares better, together</p>
             </div>
 
-            <div>
-                <div>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="[&>*]:w-full [&>*]:mb-5 [&>*]:flex  [&>*]:gap-3 [&>*>div>h2]:text-sm [&>*>div>h2]:font-semibold [&>*>div>h2]:mb-1 [&>*>div>h2]:flex [&>*>div>h2]:items-center [&>*>div>h2]:gap-1 [&>*>div>h2>span]:text-[1rem] [&>*>div>h2>span]:text-green-700 [&>*>div>h2>span]:block [&>*>div>h2>span]:pt-1 [&>*>div>h2>span]:cursor-pointer [&>*>div>p]:text-xs [&>*>div>p]:w-3/5">
                     <div>
-                        <div class="logo">
+                        <div class="logo w-12 h-12 bg-red-500 rounded-full">
                             <img src="" alt="">
                         </div>
 
@@ -28,7 +29,7 @@
                     </div>
 
                     <div>
-                        <div class="logo">
+                        <div class="logo w-12 h-12 bg-red-500 rounded-full">
                             <img src="" alt="">
                         </div>
 
@@ -39,7 +40,7 @@
                     </div>
 
                     <div>
-                        <div class="logo">
+                        <div class="logo w-12 h-12 bg-red-500 rounded-full">
                             <img src="" alt="">
                         </div>
 
@@ -50,45 +51,47 @@
                     </div>
                 </div>
 
-                <div>
+                
+                <div class="[&>*]:w-full [&>*]:mb-5 [&>*]:flex  [&>*]:gap-3 [&>*>div>h2]:text-sm [&>*>div>h2]:font-semibold [&>*>div>h2]:mb-1 [&>*>div>h2]:flex [&>*>div>h2]:items-center [&>*>div>h2]:gap-1 [&>*>div>h2>span]:text-[1rem] [&>*>div>h2>span]:text-green-700 [&>*>div>h2>span]:block [&>*>div>h2>span]:pt-1 [&>*>div>h2>span]:cursor-pointer [&>*>div>p]:text-xs [&>*>div>p]:w-3/5">
                     <div>
-                        <div>
-                            <div class="logo">
+                        <div class="logo w-12 h-12 bg-red-500 rounded-full">
                                 <img src="" alt="">
-                            </div>
-
-                            <div>
-                                <h2>DeepScan <span><iconify-icon icon="material-symbols:verified"></iconify-icon></span></h2>
-                                <p>DeepScan is an advanced static analysis tool engineered to support JavaScript, TypeScript, React, and Vue.js.</p>
-                            </div>
                         </div>
 
                         <div>
-                            <div class="logo">
-                                <img src="" alt="">
-                            </div>
-
-                            <div>
-                                <h2>LeanBoard <span><iconify-icon icon="material-symbols:verified"></iconify-icon></span></h2>
-                                <p>Lean Board is a collaborative whiteboard with sticky notes which seamlessly connects with your GitHub issue</p>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="logo">
-                                <img src="" alt="">
-                            </div>
-
-                            <div>
-                                <h2>ODIN <span><iconify-icon icon="material-symbols:verified"></iconify-icon></span></h2>
-                                <p>The top apps in the world rely on Instabug for bug reporting, crash reporting, and in-app user feedback.</p>
-                            </div>
+                            <h2>DeepScan <span><iconify-icon icon="material-symbols:verified"></iconify-icon></span></h2>
+                            <p>DeepScan is an advanced static analysis tool engineered to support JavaScript, TypeScript, React, and Vue.js.</p>
                         </div>
                     </div>
+
+                    <div>
+                        <div class="logo w-12 h-12 bg-red-500 rounded-full">
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <h2>LeanBoard <span><iconify-icon icon="material-symbols:verified"></iconify-icon></span></h2>
+                            <p>Lean Board is a collaborative whiteboard with sticky notes which seamlessly connects with your GitHub issue</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="logo w-12 h-12 bg-red-500 rounded-full">
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <h2>ODIN <span><iconify-icon icon="material-symbols:verified"></iconify-icon></span></h2>
+                            <p>The top apps in the world rely on Instabug for bug reporting, crash reporting, and in-app user feedback.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div><h2>View all</h2></div>
+            <div class="bg-slate-900 text-white w-fit px-5 py-2 rounded hover:bg-white hover:text-slate-900 cursor-pointer border border-slate-900 text-sm active:scale-95 mx-auto my-5"><h2>View all</h2></div>
         </div>
     </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
 </body>
 </html>

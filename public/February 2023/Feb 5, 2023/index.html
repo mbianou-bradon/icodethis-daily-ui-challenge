@@ -10,9 +10,9 @@
 <body class="bg-slate-200 flex items-center justify-center min-h-screen">
     <div class="w-full md:max-w-3xl p-8 bg-white rounded shadow-md">
         <div>
-            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 [&>*>div]:w-10 [&>*>div]:h-10 [&>*>div]:rounded-full [&>*>div:hover]:bg-slate-900 [&>*>div:hover]:text-slate-100 [&>*>div]:cursor-pointer [&>*>ul]:text-sm [&>*>ul>h2]:font-semibold [&>*>ul>h2]:text-[1rem] [&>*>ul>h2]:mb-2 [&>*>ul>li:hover]:underline [&>*>ul>li]:cursor-pointer [&>*>ul>li]:w-fit [&>*>ul>li]:text-xs [&>*>ul>li]:mb-2">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 [&>*>div]:w-10 [&>*>div]:h-10 [&>*>div]:rounded-full [&>*>div:hover]:bg-slate-900/90 [&>*>div]:flex [&>*>div]:items-center [&>*>div]:justify-center [&>*>div]:mb-2 [&>*>div:hover]:text-slate-100 [&>*>div]:cursor-pointer [&>*>ul>h2]:text-sm [&>*>ul>h2]:font-semibold [&>*>ul>h2]:text-[1rem] [&>*>ul>h2]:mb-2 [&>*>ul>li:hover]:underline [&>*>ul>li]:cursor-pointer [&>*>ul>li]:w-fit [&>*>ul>li]:text-xs [&>*>ul>li]:mb-2">
                 <li>
-                    <div></div>
+                    <div class="text-blue-400 bg-blue-100/70"><iconify-icon icon="heroicons:newspaper-20-solid"></iconify-icon></div>
                     <ul>
                         <h2>News</h2>
                         <li>Clothes</li>
@@ -21,7 +21,7 @@
                 </li>
 
                 <li>
-                    <div></div>
+                    <div class="text-purple-600 bg-purple-100/70"><iconify-icon icon="mdi:gift"></iconify-icon></div>
                     <ul>
                         <h2>Gifts</h2>
                         <li>Gift Cards</li>
@@ -29,7 +29,7 @@
                 </li>
 
                 <li>
-                    <div></div>
+                    <div class="text-red-400 bg-red-100/70"><iconify-icon icon="ph:squares-four-fill"></iconify-icon></div>
                     <ul>
                         <h2>Shop by Product</h2>
                         <li>Dresses</li>
@@ -37,13 +37,13 @@
                         <li>Shoe</li>
                         <li>Underwear</li>
                         <li>Shorts</li>
-                        <li>T-shirts</li>
-                        <li>More...</li>
+                        <li id="extra" class="hidden">T-shirts</li>
+                        <li id="more" class="text-blue-500">More...</li>
                     </ul>
                 </li>
 
                 <li>
-                    <div></div>
+                    <div class="text-yellow-400 bg-yellow-100/70"><iconify-icon icon="ion:megaphone"></iconify-icon></div>
                     <ul>
                         <h2>Promotion</h2>
                         <li>Party essentials</li>
@@ -53,5 +53,8 @@
             </ul>
         </div>
     </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

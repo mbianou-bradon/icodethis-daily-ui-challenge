@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Music Player</title>
+</head>
+<body class="bg-slate-400 flex items-center justify-center min-h-screen">
+    <div class="relative w-[17.5rem] text-sm bg-white text-slate-800 px-4 py-4 [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
+        <div>
+            <div class="flex items-start justify-center">
+                <div id="menu" class="text-2xl cursor-pointer">
+                    <iconify-icon icon="mdi:menu"></iconify-icon>
+                </div>
+                <div class="text-center mx-auto text-xs mt-1">
+                    <h2>PLAYING NOW</h2>
+                    <p class="font-semibold text-[0.8rem] my-1.5">Living Hope</p>
+                    <h2 class="text-[0.6rem]">- HillSong -</h2>
+                </div>
+                <div class="text-2xl cursor-pointer">
+                    <iconify-icon icon="fluent:add-square-20-regular"></iconify-icon>
+                </div>
+            </div>
+            <div class="h-[10rem] py-4">
+                <img src="https://i.ytimg.com/vi/9l7lIisdyMk/maxresdefault.jpg" alt="" class="w-[70%] h-full mx-auto">
+            </div>
+            <div>
+                <div class="w-full bg-slate-300 rounded-full"><div class="rounded-full bg-gradient-to-r from-blue-500 to-blue-400 p-0.5 w-[70%]"></div></div>
+                <div class="flex items-center justify-between text-xs mt-0.5">
+                    <h2>3:47</h2>
+                    <h2>5:45</h2>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-around text-lg my-1 [&>*:hover]:text-emerald-400 [&>*]:cursor-pointer">
+                <div>
+                    <iconify-icon icon="ph:repeat"></iconify-icon>
+                </div>
+
+                <div>
+                    <iconify-icon icon="radix-icons:track-previous"></iconify-icon>
+                </div>
+                <div class="text-4xl">
+                    <iconify-icon icon="ic:outline-play-circle"></iconify-icon>
+                </div>
+                <div>
+                    <iconify-icon icon="radix-icons:track-next"></iconify-icon>
+                </div>
+                <div class="text-[1rem]">
+                    <iconify-icon icon="ps:random"></iconify-icon>
+                </div>
+            </div>
+
+            <ul class="px-4 text-xs [&>*>div]:flex [&>*>div]:justify-between [&>*]:justify-between [&>*]:mb-2.5 list-disc marker:text-transparent marker:text-lg marker:mx-0 [&>*:hover]:marker:text-emerald-400 [&>*]:cursor-pointer [&>*:hover]:scale-105 [&>*:hover]:font-semibold">
+                <li>
+                    <div>
+                        <h2>King Of King</h2>
+                        <p>6:25</p>
+                    </div>
+                    
+                </li>
+
+                <li class="scale-105 marker:text-emerald-400 font-semibold">
+                    <div>
+                        <h2>Living Hope</h2>
+                        <p>5:45</p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div>
+                        <h2>I Give You My Heart</h2>
+                        <p>4:12</p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div>
+                        <h2>In Jesus' Name</h2>
+                        <p>2:15</p>
+                    </div>
+                    
+                </li>
+            </ul>
+
+           
+        </div>
+
+        <div id="more" class="absolute hidden top-10 left-0 bg-slate-900 text-white h-[92%] w-full">
+            <ul class="px-4 py-8 text-xs [&>*>div]:flex [&>*>div]:justify-between [&>*]:justify-between [&>*]:mb-4 [&>*:hover]:text-emerald-400 [&>*]:cursor-pointer [&>*:hover]:scale-105 [&>*:hover]:font-semibold">
+                <li>
+                    <div>
+                        <h2>I Surrunder</h2>
+                        <p>3:21</p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div>
+                        <h2>Mighty to Save</h2>
+                        <p>6:18</p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div>
+                        <h2>A Thousand Hallelujahs</h2>
+                        <p>5:18</p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div>
+                        <h2>Seasons</h2>
+                        <p>1:27</p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div>
+                        <h2>Worthy is the Lamb</h2>
+                        <p>4:18</p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div>
+                        <h2>As You Find Me</h2>
+                        <p>5:45</p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div>
+                        <h2>The Passion</h2>
+                        <p>3:44</p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div>
+                        <h2>God is Able</h2>
+                        <p>7:44</p>
+                    </div>
+                    
+                </li>
+
+                 <li>
+                    <div>
+                        <h2>Grace To Grace</h2>
+                        <p>5:35</p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div>
+                        <h2>Seasons</h2>
+                        <p>1:27</p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div>
+                        <h2>Worthy is the Lamb</h2>
+                        <p>4:18</p>
+                    </div>
+                    
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

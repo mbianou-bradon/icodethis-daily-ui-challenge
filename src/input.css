@@ -320,7 +320,7 @@ body {
   @apply hover:bg-white hover:text-slate-900 shadow-none
 } */
 
-input {
+/* input {
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -329,7 +329,7 @@ input {
   margin: 10px;
   border-radius: 5px;
   overflow: hidden;
-  /* box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5); */
+
 }
 .accordion_label {
   display: flex;
@@ -337,8 +337,6 @@ input {
   padding: 1em;
   font-weight: bold;
   cursor: pointer;
-  /* background: #333; */
-  /* color: #fff; */
 }
 .accordion_content {
   max-height: 0;
@@ -361,4 +359,4 @@ input:checked ~ .accordion_label {
 
 .accordion_content {
     font-size: 0.8rem;
-}
+} */

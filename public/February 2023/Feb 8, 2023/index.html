@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Search Bar</title>
+</head>
+<body class="bg-slate-800 flex items-center justify-center min-h-screen [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-150">
+    <div class="w-full max-w-3xl">
+        <div>
+            <form class="relative flex items-centers justify-center">
+                <input type="text" id="search" placeholder="Enter your search here" class="border-0 focus:ring-0 focus:outline-0 w-[60%] bg-slate-600 rounded-l-lg pl-4 text-sm text-slate-200">
+                <button class="ring-4 ring-slate-600 ring-offset-[0.55rem] shadow-transparent ring-offset-slate-800 hover:ring-offset-rose-500  hover:bg-rose-500 bg-transparent rounded-[50%] active:scale-95 cursor-pointer">
+                    <h2 class="rounded-full border-4 border-rose-500 w-16 h-16  text-rose-500 text-2xl text-center justify-center flex items-center font-semibold hover:border-slate-600 hover:text-slate-600">GO</h2>
+                </button>
+
+                <div class="absolute -bottom-8 left-[17%] text-sm flex border-0 focus:outline-0 focus:ring-0 text-rose-500 mt-1 cursor-pointer">
+                    <h2>filters</h2>
+                    <div class="text-lg">
+                        <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded"></iconify-icon>
+                    </div>   
+                </div>
+            </form>
+            
+           
+            
+        </div>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+</body>
+</html>

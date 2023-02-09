@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Song Card</title>
+</head>
+<body class="bg-slate-200 flex items-center justify-center min-h-screen">
+    <div class="w-full md:max-w-sm h-20 bg-white rounded">
+        <div class="flex items-center justify-center h-full relative">
+            <div class="h-[5.5rem] w-[5.5rem] absolute -bottom-5 left-5">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmJp0mpA_jeH0PzNNa3D1GiO4osLVEq3YvaA&usqp=CAU" alt="" class="h-full w-auto aspect-video rounded shadow-md shadow-slate-900">
+            </div>
+            <div class="flex items-center relative select-none">
+                <div>
+                   <h2 class="font-semibold">HillSongs</h2>
+                    <p class="text-xs italic text-slate-700">I surrender all to you</p> 
+                </div>
+                <div id="music" class="w-10 h-10 text-2xl text-emerald-400 cursor-pointer bg-white border-4 border-slate-300/50 rounded-[50%] flex items-center justify-center absolute -right-[6rem] hover:bg-emerald-400 hover:text-white active:scale-95">
+                    <iconify-icon id="play" icon="material-symbols:play-arrow-rounded"></iconify-icon>
+                    <iconify-icon id="pause" class="hidden" icon="ic:outline-pause"></iconify-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,3 +1,5 @@
+// Add JavaScript code here
+
 const root = document.getElementById('root');
 
 const cardData = [
@@ -13,7 +15,7 @@ const cardData = [
         description: "Corporate Coworking Bootstrap 4 Theme",
         price: "$49"
     },
-     {
+    {
         imgage: "https://themesberg.s3.us-east-2.amazonaws.com/public/products/pixel-lite/pixel-lite-preview.jpg",
         title: "Pixel Pro - Bootstrap 4 UI KIT",
         description: "Premium Bootstrap 4 UI Kit with Sass & Gulp",
@@ -34,8 +36,8 @@ const cardData = [
 ]
 
 root.innerHTML = cardData.map(card => {
-    return(
-    `   <div class = "w-full sm:max-w-[18rem] p-3 bg-white rounded-sm">
+    return (
+        `   <div class = "w-[18rem] p-3 bg-white rounded-sm hover:text-white">
             <div class="h-40 mb-2">
                 <img src=${card.imgage} alt="" class="h-full object-cover w-full">
             </div>
@@ -44,7 +46,7 @@ root.innerHTML = cardData.map(card => {
                     <h2 class="w-3/5">${card.title}</h2>
                     <p class="absolute top-0 right-1">${card.price}</p>
                 </div>
-                <div class="text-xs text-slate-200">
+                <div class="text-xs text-slate-400">
                     <p>${card.description}</p>
                 </div>
             </div>

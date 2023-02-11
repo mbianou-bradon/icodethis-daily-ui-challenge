@@ -191,7 +191,7 @@
   color:white;
 } */
 
-
+/* 
 @media (min-width: 600px) {
  .pricing{
   position: relative;
@@ -208,7 +208,7 @@
     border-radius: 50%;
     z-index: -1;
 }
-}
+} */
 /* body {
   background: radial-gradient(circle,rgba(61, 196, 192, 1) 8%,rgba(39, 153, 158, 1) 51%,rgba(19, 130, 144, 1) 88%);
 
@@ -358,4 +358,15 @@ input:checked ~ .accordion_label {
 
 .accordion_content {
     font-size: 0.8rem;
+} */
+
+
+/* .round{
+  animation: rorate 10s linear infinite;
+}
+
+@keyframes rorate {
+  100% {
+    rotate: 360deg;
+  }
 } */

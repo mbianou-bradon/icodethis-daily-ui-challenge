@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>User Card</title>
+</head>
+<body class="bg-slate-100 text-sm font-[poppins] selection:text-slate-900 selection:bg-white flex items-center justify-center min-h-screen [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-150">
+    <div class="w-[18rem] bg-white py-5 pr-4 rounded-lg">
+        <div class="grid grid-cols-3">
+        
+            <div class="w-16 h-16 rounded-full p-1.5 bg-slate-200 justify-self-center hover:scale-105 hover:bg-yellow-300">
+                <img src="https://pbs.twimg.com/profile_images/1344692250308182016/dLKsLKYT_400x400.jpg" alt="" class="h-full object-cover rounded-full">
+            </div>
+                
+            
+
+            <div class="col-span-2">
+                <div clas>
+                    <h2 class="font-semibold">Mbianou Bradon</h2>
+                    <p class="text-[0.7rem]">Frontend Developer</p>
+                </div>
+                <div class="[&>*]:flex [&>*]:items-center [&>*]:gap-1 [&>*>h2]:text-xs">
+                    <div>
+                        <div class="text-2xl pt-1 text-yellow-300">
+                            <iconify-icon icon="ic:round-star-outline"></iconify-icon>
+                        </div>
+                        <h2>4.5 Rating</h2>
+                    </div>
+
+                    <div>
+                        <div class="text-xl pt-1 text-green-600">
+                            <iconify-icon icon="simple-line-icons:badge"></iconify-icon>
+                        </div>
+                        <h2>3,337 Reviews</h2>
+                    </div>
+
+                    <div>
+                        <div class="text-xl pt-1 text-rose-600">
+                            <iconify-icon icon="mdi:cards-heart-outline"></iconify-icon>
+                        </div>
+                        <h2>495 Likes</h2>
+                    </div>
+                </div>
+
+                <div class="text-[0.6rem] leading-5">
+                    <p class="leading-5">Mbianou Bradon has been making UI/UX content for the more than 3 month+ as a frontend developer. He is currently enrold at ALX Africa where is he learning Software Engineering per Holberton University Curriculum.</p>
+                    <div id="more" class="hidden">
+                        <p>He enjoys doing challenges on <span class="text-blue-500 underline hover:no-underline cursor-pointer">iCodethis Platform</span> . A platform that gives you the opportunity to increase and sharpen you UI design using HTML, CSS and JS. Of course you can use any CSS Library or framework of your own</p>
+                        <p>Want to know more about Bradon? Check his profiles: 
+                            <div class="flex items-center gap-3 text-lg [&>*]:h-fit [&>*]:pt-1 [&>*:hover]:bg-white [&>*:hover]:text-slate-900 [&>*]:bg-slate-900 [&>*]:text-white [&>*]:px-2 [&>*]:border [&>*]:rounded [&>*]:cursor-pointer">
+                                <div>
+                                    <a href="https://twitter.com/Mbianou_Bradon" target="_blank"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/mbianou-bradon/" target="_blank"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div id="btn" class="text-xs mt-3 px-2 py-2 border w-fit hover:bg-slate-900 hover:text-white cursor-pointer rounded active:scale-95"><h2>Show more</h2></div>
+            </div>    
+        </div>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

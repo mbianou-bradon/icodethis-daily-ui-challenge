@@ -7,38 +7,15 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>User Profiles</title>
 </head>
-<body>
-    <div class=" relative">
-        <div class="w-full h-[50%] bg-gradient-to-r from-purple-700 to-purple-400 absolute top-0 left-0"></div>
-        <div id="root" class="w-full sm:max-3xl">
-            <div class="w-full sm:max-w-[15rem] h-[18rem] bg-white hover:shadow-sm hover:shadow-emerald-200">
-                <div class="flex items-center justify-center flex-col h-[70%] relative">
-
-                    <div class="absolute top-2 right-2 hover:scale-105 cursor-pointer text-xl">
-                        <iconify-icon icon="ph:dots-three-outline-fill"></iconify-icon>
-                    </div>
-
-
-                    <div class="w-24 h-24 rounded-full shadow-md p-0.5 mb-1 hover:scale-105">
-                        <img src="https://theboardr.blob.core.windows.net/headshots/29847_900.jpg" alt="" class="h-full rounded-full object-cover">
-                    </div>
-                    <div class="font-semibold"><h2>Jay Resses</h2></div>
-                </div>
-                <div class="flex items-center justify-evenly text-center h-[30%] bg-slate-100 [&>*>h2]:font-semibold [&>*>h2]:text-lg">
-                    <div>
-                        <h2>2</h2>
-                        <p>Projects</p>
-                    </div>
-
-                    <div>
-                        <h2>6</h2>
-                        <p>Prototypes</p>
-                    </div>
-                </div>
-            </div>
+<body class="bg-slate-200">
+    <div class=" relative flex items-center justify-center min-h-screen">
+        <div class="w-full h-[30%] bg-gradient-to-r from-purple-700 to-purple-400 absolute top-0 left-0"></div>
+        <div id="root" class="w-full sm:max-w-3xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 z-10">
+            
         </div>
     </div>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

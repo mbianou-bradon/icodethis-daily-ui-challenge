@@ -5,7 +5,7 @@ const data = [
         name: "Jay Resse",
         project: 2,
         prototypes: 6,
-        image: "https://images.unsplash.com/photo-150439"
+        image: "https://theboardr.blob.core.windows.net/headshots/29847_900.jpg"
     },
     {
         name: "Carlos Ramos",
@@ -42,12 +42,30 @@ const data = [
 
 root.innerHTML = data.map(project => {
     return `
-    <div class="card">
-        div
-        <div class="card-body">
-            <h5 class="card-title">${project.name}</h5>
-            <p class="card-text">Project: ${project.project}</p>
+        <div class="w-full sm:max-w-[15rem] h-[18rem] bg-white hover:shadow-sm hover:shadow-emerald-200">
+            <div class="flex items-center justify-center flex-col h-[70%] relative">
+
+                <div class="absolute top-2 right-2 hover:scale-105 cursor-pointer text-xl text-slate-400">
+                    <iconify-icon icon="ph:dots-three-outline-fill"></iconify-icon>
+                </div>
+
+
+                <div class="w-24 h-24 rounded-full shadow-md p-0.5 mb-1 hover:scale-105">
+                    <img src=${project.image} alt="" class="h-full rounded-full object-cover">
+                </div>
+                <div class="font-semibold"><h2>${project.name}</h2></div>
+            </div>
+            <div class="flex items-center justify-evenly text-center h-[30%] bg-slate-100 [&>*>h2]:font-semibold [&>*>h2]:text-lg">
+                <div>
+                    <h2>${project.project}</h2>
+                    <p>Projects</p>
+                </div>
+
+                <div>
+                    <h2>${project.prototypes}</h2>
+                    <p>Prototypes</p>
+                </div>
+            </div>
         </div>
-    </div>
     `
 }).join("");

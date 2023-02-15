@@ -7,13 +7,63 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>Video Player</title>
 </head>
-<body>
-    <div>
-        <div class="bg-red-500 min-h-screen">
-            <video class="w-[30rem] h-[25rem]" controls poster="">
-                <source src="/public/assets/icodethis63.mp4" type="video/mp4">
-            </video>
+<body class="bg-slate-900 flex items-center justify-center min-h-screen text-white">
+    <div class="w-full md:max-w-2xl">
+        <div class="bg-blue-500 p-10">
+          
+            <div class="relative ">
+                <div class="flex items-center gap-5 text-lg absolute top-2 right-4 [&>*]:cursor-pointer">
+                    <!-- Share -->
+                    <div>
+                        <iconify-icon icon="material-symbols:share"></iconify-icon>
+                    </div>
+                    <!-- Menu -->
+                    <div>
+                        <iconify-icon icon="mdi:menu"></iconify-icon>
+                    </div>
+                </div>
+
+                <div class="absolute bg-slate-800/50 px-4 py-1 text-white top-1 left-2">
+                    <h2>Finding Nemo</h2>
+                </div>
+
+                <!-- Image -->
+                <img src="https://lumiere-a.akamaihd.net/v1/images/pp_findingnemo_herobannermobile_19752_7810e507.jpeg?region=0,0,640,480" alt="">
+
+                <div class="w-[97%] text-lg flex items-center justify-between px-3 py-2 bg-slate-800/50 absolute text-white bottom-2 mx-2 [&>*:hover]:cursor-pointer">
+                    <!-- Play and Pause Button -->
+                    <div>
+                        <iconify-icon icon="material-symbols:play-arrow-rounded"></iconify-icon>
+                        <iconify-icon class="hidden" icon="ic:baseline-pause"></iconify-icon>
+                    </div>
+
+                    <div class="w-3/5 h-2 bg-slate-50/50 rounded-full flex">
+                        <div class="bg-yellow-500 w-[35%] h-full rounded-full relative">
+                            <div class="w-3 h-3 rounded-full bg-blue-600 absolute right-0 -top-0.5"></div>
+                        </div>
+                        <div class="w-[5%] h-full bg-blue-300/50 rounded-full"></div>
+                    </div>
+
+                    <!-- Volume -->
+                    <div>
+                        <iconify-icon icon="charm:sound-up"></iconify-icon>
+                    </div>
+
+                    <!-- HD -->
+                    <div>
+                        <iconify-icon icon="mdi:hd"></iconify-icon>
+                    </div>
+
+                    <!-- Full screen icon -->
+                    <div>
+                        <iconify-icon icon="fluent:full-screen-minimize-24-filled"></iconify-icon>
+                    </div>
+                </div>
+            </div>
         </div>
+          
     </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
 </body>
 </html>

@@ -13,18 +13,18 @@
             <div class="flex items-center justify-between flex-wrap gap-y-3 mb-10">
                 <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Choose your plan</h2>
                 <div class="flex text-xs rounded-full bg-slate-300 w-fit [&>*]:px-2 [&>*]:py-1 [&>*:hover]:bg-white [&>*:hover]:shadow-sm [&>*:hover]:shadow-slate-800 p-0.5 [&>*]:cursor-pointer [&>*]:rounded-full gap-3">
-                    <p>Monthly</p>
-                    <p>Yearly</p>
+                    <p id="month">Monthly</p>
+                    <p id="year" class="bg-white">Yearly</p>
                 </div>
             </div>
 
-            <div class="flex items-center justify-between flex-wrap gap-y-5 [&>*:hover]:shadow-md [&>*:hover]:shadow-slate-900 [&>*>h2]:text-lg [&>*>h2]:font-bold [&>*>h2]:text-slate-900 [&>*]:flex [&>*]:justify-between [&>*]:flex-col [&>*>div>p]:text-sm [&>*>div>p]:text-slate-600 [&>*>p]:text-xs [&>*>p]:text-slate-400 [&>*]:w-full [&>*]:sm:max-w-[18rem] [&>*]:h-[18rem] [&>*]:p-8 [&>*>div>h2]:text-lg [&>*]:bg-white [&>*]:rounded [&>*>div>h2]:font-bold [&>*>div>h2]:text-slate-900">
+            <div class="flex items-center justify-between flex-wrap gap-y-5 [&>*:hover]:shadow-md [&>*:hover]:shadow-slate-900 [&>*>h2]:text-lg [&>*>h2]:font-bold [&>*>h2]:text-slate-900 [&>*]:flex [&>*]:justify-between [&>*]:flex-col [&>*>div>p]:text-sm [&>*>div>p]:text-slate-600 [&>*>p]:text-xs [&>*>p]:text-slate-400 [&>*]:w-full [&>*]:sm:max-w-[18rem] [&>*]:h-[18rem] [&>*]:p-8 [&>*>div>div>h2]:text-lg [&>*]:bg-white [&>*]:rounded [&>*>div>div>h2]:font-bold [&>*>div>div>h2]:text-slate-900">
                 <div>
                     <h2>Starter</h2>
 
                     <div>
-                        <h2><span>$8.99</span>/month</h2>
-                        <p>Billed yearly</p>
+                        <div id="starter"><h2>$8.99/month</h2></div>
+                        <p id="starter_in">Billed yearly</p>
                     </div>
 
                     <p>
@@ -41,8 +41,8 @@
                     <h2>Professional</h2>
 
                     <div>
-                        <h2><span>$21.99</span>/month</h2>
-                        <p>Billed yearly</p>
+                        <div id="pro"><h2>$21.99/month</h2></div>
+                        <p id="pro_in">Billed yearly</p>
                     </div>
 
                     <p>
@@ -56,5 +56,7 @@
             </div>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

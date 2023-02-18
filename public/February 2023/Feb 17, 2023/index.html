@@ -7,92 +7,29 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>kanban</title>
 </head>
-<body>
-    <div class="w-full sm:max-w-sm">
-        <div>
-            <div></div>
-            <div>
-                <h2>In progress</h2>
-                <div>
-                    <div class="p-4 grid grid-cols-5">
-                        <div class="w-12 h-12 rounded-full bg-red-600">
-                            <img src="" alt="">
-                        </div>
-                        <div class="col-span-4">
-                            <div class="flex text-sm justify-between">
-                                <h2 class="px-2 py-0.5 bg-pink-400 text-white rounded text-xs font-semibold">high</h2>
-                                <p class="text-slate-500 text-xs">18 Dec 2022</p>
-                            </div>
-                            <div class="my-3">
-                                <p class="text-l text-blue-500 font-semibold">Prepare structural documentation</p>
-                                <div class="flex gap-1 text-xs font-semibold [&>*]:rounded [&>*]:bg-slate-100 [&>*]:px-1.5 [&>*]:py-0.5 [&>*]:text-slate-400">
-                                    <h2>Development</h2>
-                                    <h2>Architeture</h2>
-                                </div>
-                                <div class="flex justify-between mt-3 [&>*]:flex [&>*]:items-center [&>*>p]:text-xs [&>*]:gap-1 [&>*>div]:text-lg [&>*>div]:pt-1 text-slate-500">
-                                    <div>
-                                        <div>
-                                            <iconify-icon icon="material-symbols:person-4"></iconify-icon>
-                                        </div>
-                                        <p>3 people work on this</p>
-                                    </div>
-
-                                    <div>
-                                        <div>
-                                            <iconify-icon icon="simple-icons:googlemessages"></iconify-icon>
-                                        </div>
-                                        <p>17 comments</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+<body class="bg-slate-300 flex items-center justify-center min-h-screen">
+    <div class="w-full sm:max-w-sm mb-10 [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200 rouned-sm">
+        <div class="bg-slate-100 rounded-b pb-3">
+            <div class="bg-gradient-to-r from-purple-600 to-blue-700 h-2.5 w-full"></div>
+            <div class="px-3">
+                <h2 class="text-xl text-blue-500 font-semibold my-5">In progress</h2>
+                <div id="root" class="[&>*:hover]:bg-slate-900 flex flex-col gap-y-3 mb-5">
+                                
+                </div>
+                <div class="flex items-center justify-center mx-auto w-full text-slate-600 font-bold cursor-pointer hover:bg-slate-300 h-[5rem]">
+                    <div class="text-xl pt-1">
+                        <iconify-icon icon="material-symbols:add"></iconify-icon>
                     </div>
-
-
-
-
-                <div class="p-4 grid grid-cols-5">
-                        <div class="w-12 h-12 rounded-full bg-red-600">
-                            <img src="" alt="">
-                        </div>
-                        <div class="col-span-4">
-                            <div class="flex text-sm justify-between">
-                                <h2 class="px-2 py-0.5 bg-pink-400 text-white rounded text-xs font-semibold">high</h2>
-                                <p class="text-slate-500 text-xs">18 Dec 2022</p>
-                            </div>
-                            <div class="my-3">
-                                <p class="text-l text-blue-500 font-semibold">Prepare structural documentation</p>
-                                <div class="flex gap-1 text-xs font-semibold [&>*]:rounded [&>*]:bg-slate-100 [&>*]:px-1.5 [&>*]:py-0.5 [&>*]:text-slate-400">
-                                    <h2>Development</h2>
-                                    <h2>Architeture</h2>
-                                </div>
-                                <div class="flex justify-between mt-3 [&>*]:flex [&>*]:items-center [&>*>p]:text-xs [&>*]:gap-1 [&>*>div]:text-lg [&>*>div]:pt-1 text-slate-500">
-                                    <div>
-                                        <div>
-                                            <iconify-icon icon="material-symbols:person-4"></iconify-icon>
-                                        </div>
-                                        <p>3 people work on this</p>
-                                    </div>
-
-                                    <div>
-                                        <div>
-                                            <iconify-icon icon="simple-icons:googlemessages"></iconify-icon>
-                                        </div>
-                                        <p>17 comments</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h2>Add New Card</h2>
                 </div>
             </div>
+
         </div>
     </div>
 
 
 
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

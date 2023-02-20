@@ -29,16 +29,16 @@ root.innerHTML = issueData.map(issue => {
     
     return( 
     `
-    <div class="flex flex-col justify-evenly py-3 px-6 w-full sm:max-w-[45rem] h-[12.5rem] bg-white rounded shadow-[0rem_0rem_0.25rem_0.001rem_rgba(147,197,253,1)] relative before:content-[''] before:absolute before:w-1 before:h-1/2 before:bg-slate-300 before:-bottom-14 before:left-[7%] before:-z-10">
+    <div class="flex flex-col justify-evenly py-3 px-6 w-full sm:max-w-[45rem] sm:h-[12.5rem] bg-white rounded shadow-[0rem_0rem_0.25rem_0.001rem_rgba(147,197,253,1)] relative before:content-[''] before:absolute before:w-1 before:h-1/2 before:bg-slate-300 before:-bottom-14 before:left-[7%] before:-z-10">
         <h2 class="text-xs">${issue.date}</h2>
-        <div class="font-semibold flex gap-2 w-[70%]">
-            <h2>${issue.title} <span class="text-sm px-2 py-0.5 text-white ${issue.color} rounded">${issue.status}</span></h2>
+        <div class="font-semibold sm:w-[70%]">
+            <h2>${issue.title} <span class="text-xs px-2 py-0.5 text-white ${issue.color} rounded">${issue.status}</span></h2>
         </div>
-        <p class="text-sm w-[80%] my-5">
+        <p class="text-sm sm:w-[80%] my-5">
             Our engineers have resolved the issue where users unable to rearrange screens in V6 prototypes. Please reach out to our support team
         </p>
 
-        <div class="px-3 py-1.5 text-sm bg-slate-200/30 w-fit rounded"><h2>Full Report</h2></div>
+        <div class="px-3 py-1.5 text-xs bg-slate-200/30 w-fit rounded"><h2>Full Report</h2></div>
     </div>
     `
     )

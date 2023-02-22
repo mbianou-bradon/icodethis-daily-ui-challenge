@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>User Select</title>
+</head>
+<body class="bg-[#1a182d]">
+    <div class="relative flex items-center justify-center min-h-screen">
+        <div id="inputUser" class="py-10 absolute -top-6 z-20 hidden">
+            <div class=" bg-[#141324] w-fit px-10 py-10 border border-purple-400 relative">
+                <div class=" close hidden absolute top-1 right-1 text-purple-600 cursor-pointer hover:shadow-purple-700 shadow shadow-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+
+                </div>
+
+
+
+                <label for="name" class="text-white font-semibold text-lg">Enter userName</label>
+                <div class="flex items-center gap-1 mt-5 pl-1 bg-white rounded-lg w-[20rem]">
+                    <input type="text" id="userName" class="border-0 focus:outline-none focus:border-0 focus:ring-0 w-[80%] text-xs min-w-0 placeholder:text-xs" placeholder="Example: Bradon2000"/>
+                    <button id="add" class="px-4 py-2 bg-slate-900 text-white rounded">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+
+            <div class="w-full sm:min-w-fit min-h-[15rem] flex items-center flex-col py-10 px-8 bg-[#141324] text-white">
+                <h2 class="text-xl font-semibold">Who is playing now?</h2>
+
+                <div class="text-sm my-8 flex flex-wrap justify-center gap-4">
+                    <div id="root" class="flex justify-center flex-wrap gap-4 [&>*]:px-4 [&>*]:py-2 [&>*]:w-[10rem] [&>*]:h-[10rem] [&>*]:bg-[#1a182d] [&>*]:rounded [&>*]:flex [&>*]:items-center [&>*]:flex-col [&>*]:justify-around [&>*:hover]:border-blue-600 [&>*]:border [&>*]:border-transparent">
+                    
+                    </div>
+
+                    <div id="addUser" class="text-blue-700 font-semibold px-4 py-2 w-[10rem] h-[10rem] bg-[#1a182d] rounded flex items-center flex-col justify-center gap-3 cursor-pointer hover:border-blue-600 border border-transparent">
+                        <div class="text-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+
+                        </div>
+                        <h2>Add User</h2>
+                    </div>
+                </div>
+
+                <div id="manage" class="px-4 py-1 border border-blue-700 rounded-full w-fit font-semibold text-blue-700 text-sm hover:shadow-blue-800 shadow shadow-transparent hover:bg-slate-900 hover:text-blue-600 active:scale-[0.98] cursor-pointer select-none">
+                    <h2>Manage users</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

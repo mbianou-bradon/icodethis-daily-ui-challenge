@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+</head>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
+    <div>
+        <div class="w-[20rem] shadow-[0rem_0.1rem_0.1rem_0.001rem_rgba(15,23,42,1)] [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
+
+            <!-- Top Section-->
+            <div class="bg-cyan-60 bg-[url('https://assets.gocity.com/files/groot_london/files/styles/wysiwyg_medium/public/LP_Tower_Bridge%20%281%29.jpg')] bg-cover h-[14rem] text-white px-2 ">
+                <div class="text-sm flex justify-between">
+                    <div class="flex items-center">
+                        <!-- Three dots -->
+                        <div class="flex [&>*]:-mx-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><path fill="currentColor" d="M9.875 7.5a2.375 2.375 0 1 1-4.75 0a2.375 2.375 0 0 1 4.75 0Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><path fill="currentColor" d="M9.875 7.5a2.375 2.375 0 1 1-4.75 0a2.375 2.375 0 0 1 4.75 0Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M7.5 9.125a1.625 1.625 0 1 0 0-3.25a1.625 1.625 0 0 0 0 3.25Zm0 1a2.625 2.625 0 1 0 0-5.25a2.625 2.625 0 0 0 0 5.25Z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h2 class="text-xs">MTN CAM</h2>
+                        <div>
+
+                        </div>
+                        <!-- wifi -->
+                        <div class="text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M17.35 12.79a.72.72 0 0 1-.49-.19a7.24 7.24 0 0 0-9.66 0a.75.75 0 0 1-1.06-.06a.76.76 0 0 1 .07-1.06a8.7 8.7 0 0 1 11.64 0a.76.76 0 0 1 .07 1.06a.79.79 0 0 1-.57.25Z"/><path fill="currentColor" d="M20 10a.76.76 0 0 1-.51-.2a10.87 10.87 0 0 0-15 0a.75.75 0 1 1-1-1.1a12.36 12.36 0 0 1 17 0A.75.75 0 0 1 20 10ZM9.38 15.64a.75.75 0 0 1-.6-.3a.74.74 0 0 1 .15-1.05a5.06 5.06 0 0 1 6.15 0a.75.75 0 0 1 .15 1.05a.76.76 0 0 1-1.05.15a3.59 3.59 0 0 0-4.35 0a.78.78 0 0 1-.45.15ZM12 18.75a.75.75 0 1 1 0-1.5a.75.75 0 0 1 0 1.5Z"/></svg>
+
+                        </div>
+                    </div>
+                    <h2>12:53pm</h2>
+                    <div class="flex items-center gap-0.5">
+                        <h2>81%</h2>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3.12 17.6A3.12 3.12 0 0 1 0 14.48V8.72A3.12 3.12 0 0 1 3.12 5.6h16.016a3.12 3.12 0 0 1 3.12 3.12v5.76a3.12 3.12 0 0 1-3.12 3.12zM1.108 8.72v5.76c0 1.11.9 2.01 2.01 2.01h16.018a2.01 2.01 0 0 0 2.006-2.01V8.72a2.012 2.012 0 0 0-2.009-2.01H3.118c-1.11 0-2.01.9-2.011 2.01zm2.678 6.4a1.31 1.31 0 0 1-1.31-1.311V9.386a1.31 1.31 0 0 1 1.31-1.311h6.03c.724 0 1.31.587 1.31 1.31v4.428a1.312 1.312 0 0 1-1.31 1.311zm18.871-5.41c.789.28 1.344 1.02 1.344 1.889s-.555 1.609-1.33 1.885l-.014.004z"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between text-sm mt-3 mb-14">
+                    <div></div>
+                    <div>
+                        <h2>LONDON, ENGLAND</h2>
+                    </div>
+
+                    <div class="hover:scale-105 cursor-pointer hover:text-blue-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 14.975q-.2 0-.388-.075t-.312-.2l-4.6-4.6q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062Z"/></svg>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="flex font-bold">
+                        <h2 class="text-6xl">23</h2>
+                        <div class="-mx-5 w-10 h-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 30 30"><path fill="currentColor" d="M13.19 9.21c0-.5.18-.93.53-1.28c.36-.36.78-.53 1.28-.53c.49 0 .92.18 1.27.53c.35.36.53.78.53 1.28s-.18.93-.53 1.29c-.35.36-.78.54-1.27.54s-.92-.18-1.28-.54s-.53-.79-.53-1.29zm.88 0c0 .26.09.48.27.67c.19.19.41.28.67.28c.26 0 .48-.09.67-.28s.28-.41.28-.67a.87.87 0 0 0-.28-.66a.947.947 0 0 0-.67-.28c-.26 0-.48.09-.67.27c-.18.18-.27.4-.27.67z"/></svg>
+                        </div>
+                    </div>
+                    <p class="text-xs">Cloudy</p>
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="flex items-center justify-center h-[17rem] text-[#878e9e] bg-white">
+                <div class="[&>*]:flex [&>*]:gap-14 [&>*]:my-1 [&>*]:justify-between [&>*]:py-2 [&>*]:px-6 [&>*]:shadow [&>*]:shadow-transparent [&>*:hover]:shadow-cyan-500 [&>*:hover]:bg-slate-10 [&>*]:rounded [&>*]:cursor-pointer">
+                    <div>
+                        <h2>Sunday</h2>
+                        <div class="flex gap-1">
+                            <h2 class="flex text-sm font-semibold">
+                                20 
+                                <span class="-mx-[0.8rem]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path fill="currentColor" d="M13.19 9.21c0-.5.18-.93.53-1.28c.36-.36.78-.53 1.28-.53c.49 0 .92.18 1.27.53c.35.36.53.78.53 1.28s-.18.93-.53 1.29c-.35.36-.78.54-1.27.54s-.92-.18-1.28-.54s-.53-.79-.53-1.29zm.88 0c0 .26.09.48.27.67c.19.19.41.28.67.28c.26 0 .48-.09.67-.28s.28-.41.28-.67a.87.87 0 0 0-.28-.66a.947.947 0 0 0-.67-.28c-.26 0-.48.09-.67.27c-.18.18-.27.4-.27.67z"/></svg>
+                                </span>
+                            </h2>
+                            <div class="text-sm text-gray-500">
+                                <i class="fa-solid fa-cloud-rain"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2>Monday</h2>
+                        <div class="flex gap-1">
+                            <h2 class="flex text-sm font-semibold">
+                                20 
+                                <span class="-mx-[0.8rem]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path fill="currentColor" d="M13.19 9.21c0-.5.18-.93.53-1.28c.36-.36.78-.53 1.28-.53c.49 0 .92.18 1.27.53c.35.36.53.78.53 1.28s-.18.93-.53 1.29c-.35.36-.78.54-1.27.54s-.92-.18-1.28-.54s-.53-.79-.53-1.29zm.88 0c0 .26.09.48.27.67c.19.19.41.28.67.28c.26 0 .48-.09.67-.28s.28-.41.28-.67a.87.87 0 0 0-.28-.66a.947.947 0 0 0-.67-.28c-.26 0-.48.09-.67.27c-.18.18-.27.4-.27.67z"/></svg>
+                                </span>
+                            </h2>
+                            <div class="text-sm text-blue-400">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2>Tuesday</h2>
+                        <div class="flex gap-1">
+                            <h2 class="flex text-sm font-semibold">
+                                17 
+                                <span class="-mx-[0.8rem]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path fill="currentColor" d="M13.19 9.21c0-.5.18-.93.53-1.28c.36-.36.78-.53 1.28-.53c.49 0 .92.18 1.27.53c.35.36.53.78.53 1.28s-.18.93-.53 1.29c-.35.36-.78.54-1.27.54s-.92-.18-1.28-.54s-.53-.79-.53-1.29zm.88 0c0 .26.09.48.27.67c.19.19.41.28.67.28c.26 0 .48-.09.67-.28s.28-.41.28-.67a.87.87 0 0 0-.28-.66a.947.947 0 0 0-.67-.28c-.26 0-.48.09-.67.27c-.18.18-.27.4-.27.67z"/></svg>
+                                </span>
+                            </h2>
+                            <div class="text-sm text-blue-400">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2>Wednesday</h2>
+                        <div class="flex gap-1">
+                            <h2 class="flex text-sm font-semibold">
+                                15 
+                                <span class="-mx-[0.8rem]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path fill="currentColor" d="M13.19 9.21c0-.5.18-.93.53-1.28c.36-.36.78-.53 1.28-.53c.49 0 .92.18 1.27.53c.35.36.53.78.53 1.28s-.18.93-.53 1.29c-.35.36-.78.54-1.27.54s-.92-.18-1.28-.54s-.53-.79-.53-1.29zm.88 0c0 .26.09.48.27.67c.19.19.41.28.67.28c.26 0 .48-.09.67-.28s.28-.41.28-.67a.87.87 0 0 0-.28-.66a.947.947 0 0 0-.67-.28c-.26 0-.48.09-.67.27c-.18.18-.27.4-.27.67z"/></svg>
+                                </span>
+                            </h2>
+                            <div class="text-sm ">
+                                <i class="fa-solid fa-cloud text-blue-400 z-20"></i>
+                                <i class="fa-solid fa-sun -ml-3 text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2>Thursday</h2>
+                        <div class="flex gap-1">
+                            <h2 class="flex text-sm font-semibold">
+                                18 
+                                <span class="-mx-[0.8rem]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path fill="currentColor" d="M13.19 9.21c0-.5.18-.93.53-1.28c.36-.36.78-.53 1.28-.53c.49 0 .92.18 1.27.53c.35.36.53.78.53 1.28s-.18.93-.53 1.29c-.35.36-.78.54-1.27.54s-.92-.18-1.28-.54s-.53-.79-.53-1.29zm.88 0c0 .26.09.48.27.67c.19.19.41.28.67.28c.26 0 .48-.09.67-.28s.28-.41.28-.67a.87.87 0 0 0-.28-.66a.947.947 0 0 0-.67-.28c-.26 0-.48.09-.67.27c-.18.18-.27.4-.27.67z"/></svg>
+                                </span>
+                            </h2>
+                            <div class="text-sm">
+                                  <i class="fa-solid fa-cloud text-blue-400"></i>
+                                <i class="fa-solid fa-sun -ml-3 text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="bg-[#878e9e] cursor-pointer flex items-center justify-center h-16">
+                <div class="flex items-center text-white">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/></svg>
+                    </div>
+
+                    <h2>Add Location</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

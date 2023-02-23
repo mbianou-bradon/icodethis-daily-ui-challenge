@@ -4,38 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Account Popup</title>
 </head>
-<body>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
     <div>
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <img src="" alt="">
+        <div class="relative">
+            <div id="pop" class="hidden absolute -top-[14rem] w-[15rem] h-[13rem] bg-slate-900 px-2 py-3 rounded-md text-white text-sm">
+                <div class="flex items-center gap-1">
+                    <div class="w-14 h-14 rounded-full p-1">
+                        <img src="/public/assets/Dec 13, 2022/Bradon.jpg" alt="" class="h-full rounded-full">
                     </div>
                     <div>
-                        <h2>Mbianou Bradon</h2>
-                        <p></p>
+                        <h2 class="font-bold">Mbianou Bradon</h2>
+                        <p class="text-xs">@mbianou_bradon</p>
                     </div>
                 </div>
-                <h2>Add Account</h2>
-                <div>
-
+                <h2 class="cursor-pointer text-blue-500 my-4 text-center">Connect other account</h2>
+                <div class="grid grid-cols-2 gap-4 [&>*]:flex [&>*]items-center [&>*]:gap-1 [&>*]:w-fit [&>*]:cursor-pointer">
+                    <div>
+                        <div></div>
+                        <h2>Support</h2>
+                    </div>
+                    <div>
+                        <div></div>
+                        <h2>Settings</h2>
+                    </div>
+                    <div>
+                        <div></div>
+                        <h2>Upgrade</h2>
+                    </div>
+                    <div>
+                        <div></div>
+                        <h2>Logout</h2>
+                    </div>
                 </div>
             </div>
 
 
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div id="profile" class="hn w-[13rem] h-[4.5rem] rounded-full bg-slate-900 flex items-center justify-center gap-3 cursor-pointer shadow-lg shadow-transparent hover:shadow-orange- hover:shadow-[0rem_0rem_0.5rem_0.1rem_rgba(250,90,90,1)] ease-linear transition-shadow duration-200">
+                <div class="w-14 h-14 rounded-full bg-cyan-500 p-0.5">
+                    <img src="/public/assets/Dec 13, 2022/Bradon.jpg" alt="" class="h-full rounded-full">
                 </div>
 
-                <div>
-                    <h2>Mbianou Bradon</h2>
+                <div class="text-white text-sm">
+                    <h2 class="font-bold">Mbianou Bradon</h2>
+                    <p class="text-xs">@mbianou_bradon</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

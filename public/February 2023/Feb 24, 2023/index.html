@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="flex items-center justify-center min-h-screen">
     <div class="w-[30rem] bg-slate-50 h-[20rem]">
         <div class="relative">
-            <div class="text [&>*]:after:border-2 [&>*]:after:border-dashed [&>*]:after:border-red-500 [&>*]:after:absolute [&>*]:after:w-[80%] [&>*]:after:top-1/2 [&>*]:after:right-6 [&>*]:py-5  [&>*]:relative">
+            <div class="text [&>*]:after:border-2 [&>*]:after:border-dashed [&>*]:after:border-slate-300 [&>*]:after:absolute [&>*]:after:w-[80%] [&>*]:after:top-1/2 [&>*]:after:right-6 [&>*]:py-5  [&>*]:relative">
                 <div>
                     <h2>200,000</h2>
                 </div>
@@ -27,7 +27,7 @@
 
                 
             <div>
-                <ul>
+                <ul class="flex  justify-around w-[80%] mx-auto border-t-2 pt-4">
                     <li>Jul</li>
                     <li>Aug</li>
                     <li>Sep</li>
@@ -35,8 +35,16 @@
                     <li>Nov</li>
                     <li>Dec</li>
                 </ul>
+                
             </div>
 
+            <div class="w-[40%] flex gap-0.5 bg-white h-3 -rotate-90 absolute -top-[6.5rem]">
+                <div class="bg-blue-700 w-[55%] h-full"></div>
+                <div class="bg-blue-400 w-[15%] h-full"></div>
+                <div class="bg-orange-400 w-[25%] h-full"></div>
+                <div class="bg-red-500 w-[8%] h-full rounded-r"></div>
+            </div>
+                
             </div>
         </div>
     </div>

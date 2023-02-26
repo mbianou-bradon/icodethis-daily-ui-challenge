@@ -4,70 +4,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
     <title>Document</title>
 </head>
 <body>
     <div>
         <div>
-            <div>
-                <h2>Musique</h2>
-                <div>
-                    <input type="text" name="search" id="search" placeholder="What do you want to listen to today?">
+            <div class=" bg-white border-b h-[5rem] text-slate-400 mb-4 flex items-end">
+                <div class="w-full sm:max-w-4xl mx-auto flex items-end justify-between">
+                    <h2 class="text-2xl">Le Musique</h2>
+                    <div>
+                        <input type="text" name="search" id="search" placeholder="What do you want to listen to today?" class="w-[15rem] border-0 focus:outline-none focus:ring-0 text-xs placeholder:text-xs text-slate-400 placeholder:text-slate-400 min-w-0">
+                    </div>
                 </div>
             </div>
+            <div class="w-full sm:max-w-4xl mx-auto">
+                <div id="hero" class="bg-rose-600 relative h-[12rem]">
+                    <div class="w-[15rem] text-white pl-8 py-3">
+                        <h2 class="text-3xl font-bold">Explore</h2>
+                        <p class="text-sm my-3">
+                            Torquent vel tellus sed cras turpis nibh, 
+                            libero eget euismod, mattis
+                            suscipit lobortis magna
+                        </p>
 
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-            <div>
-                <h2>TOP 3</h2>
-                <div>
-                    <div>
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                        <div>
-                            <!-- Rating and price -->
-                            <div>
-                                <div></div>
-                                <p></p>
+                        <p class="text-sm py-1 bg-white w-fit px-6 text-violet-600 font-bold cursor-pointer hover:bg-violet-600 hover:text-white">
+                            Read More
+                        </p>
+                    </div>
+                    <div class="text-xs flex gap-1 absolute right-2 top-2">
+                        <div class="w-[8rem] bg-red-100 p-0.5">
+                            <div class="w-full h-[8rem]">
+                                <img src="/public/assets/Dec 13, 2022/rihanna.webp" alt="" class="h-full w-full object-cover">
                             </div>
-                            <!-- Title and description -->
                             <div>
-                                <h2></h2>
-                                <p></p>
+                                <div class="mb-2">
+                                    <!-- Rating -->
+                                    <div></div>
+                                    <!-- Price -->
+                                    <p>$20</p>
+                                </div>
+                                <!-- Title -->
+                                <p class="font-bold">Shine Bright</p>
+                            </div>
+                        </div>
+
+                        <div class="w-[8rem] bg-red-100 p-0.5">
+                            <div class="w-full h-[8rem]">
+                                <img src="/public/assets/Dec 13, 2022/rihanna.webp" alt="" class="h-full w-full object-cover">
+                            </div>
+                            <div>
+                                <div class="mb-2">
+                                    <!-- Rating -->
+                                    <div></div>
+                                    <!-- Price -->
+                                    <p>$20</p>
+                                </div>
+                                <!-- Title -->
+                                <p class="font-bold">Shine Bright</p>
+                            </div>
+                        </div>
+
+                        <div class="w-[8rem] bg-red-100 p-0.5">
+                            <div class="w-full h-[8rem]">
+                                <img src="/public/assets/Dec 13, 2022/rihanna.webp" alt="" class="h-full w-full object-cover">
+                            </div>
+                            <div>
+                                <div class="mb-2">
+                                    <!-- Rating -->
+                                    <div></div>
+                                    <!-- Price -->
+                                    <p>$20</p>
+                                </div>
+                                <!-- Title -->
+                                <p class="font-bold">Shine Bright</p>
+                            </div>
+                        </div>
+
+                        <div class="w-[8rem] bg-red-100 p-0.5">
+                            <div class="w-full h-[8rem]">
+                                <img src="/public/assets/Dec 13, 2022/rihanna.webp" alt="" class="h-full w-full object-cover">
+                            </div>
+                            <div>
+                                <div class="mb-2">
+                                    <!-- Rating -->
+                                    <div></div>
+                                    <!-- Price -->
+                                    <p>$20</p>
+                                </div>
+                                <!-- Title -->
+                                <p class="font-bold">Shine Bright</p>
                             </div>
                         </div>
                     </div>
-                    <div></div>
-                    <div></div>
+                    
                 </div>
-            </div>
 
-            <div>
-                <div>
-                    <h2>Recommended for You</h2>
-                    <p>Load More</p>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                        <div>
-                            <div>
-                                <!-- Rating -->
-                                <div></div>
-                                <!-- Price -->
-                                <p></p>
+                <div id="top" class="my-8">
+                    <h2 class="text-slate-400">TOP 3</h2>
+                    <div class="text-xs mt-4 grid grid-cols-3 gap-3">
+                        <div class="w-[18rem] gap-16 grid grid-cols-3 bg-slate-100">
+                            <div class="h-[8rem] w-[6.4rem] bg-red-300">
+                                <img src="/public/assets/Dec 13, 2022/rihanna.webp" alt="" class="h-full object-cover w-full">
                             </div>
-                            <!-- Title -->
-                            <p></p>
+                            <div class="col-span-2">
+                                <!-- Rating and price -->
+                                <div>
+                                    <div></div>
+                                    <p>$20</p>
+                                </div>
+                                <!-- Title and description -->
+                                <div>
+                                    <h2 class="font-bold mb-3">Shine Bright</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, hic.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="w-[18rem] gap-16 grid grid-cols-3 bg-slate-100">
+                            <div class="h-[8rem] w-[6.4rem] bg-red-300">
+                                <img src="/public/assets/Dec 13, 2022/rihanna.webp" alt="" class="h-full object-cover w-full">
+                            </div>
+                            <div class="col-span-2">
+                                <!-- Rating and price -->
+                                <div>
+                                    <div></div>
+                                    <p>$20</p>
+                                </div>
+                                <!-- Title and description -->
+                                <div>
+                                    <h2 class="font-bold mb-3">Shine Bright</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, hic.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[18rem] gap-16 grid grid-cols-3 bg-slate-100">
+                            <div class="h-[8rem] w-[6.4rem] bg-red-300">
+                                <img src="/public/assets/Dec 13, 2022/rihanna.webp" alt="" class="h-full object-cover w-full">
+                            </div>
+                            <div class="col-span-2">
+                                <!-- Rating and price -->
+                                <div>
+                                    <div></div>
+                                    <p>$20</p>
+                                </div>
+                                <!-- Title and description -->
+                                <div>
+                                    <h2 class="font-bold mb-3">Shine Bright</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, hic.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex  items-center justify-between my-4">
+                        <h2 class="text-slate-400">Recommended for You</h2>
+                        <p class="text-violet-600 text-xs font-bold cursor-pointer">Load More</p>
+                    </div>
+                    <div id="recommended" class="text-xs">
+                        <div class="w-[8rem] bg-red-100 p-0.5">
+                            <div class="w-full h-[8rem]">
+                                <img src="/public/assets/Dec 13, 2022/rihanna.webp" alt="" class="h-full w-full object-cover">
+                            </div>
+                            <div>
+                                <div class="mb-2">
+                                    <!-- Rating -->
+                                    <div></div>
+                                    <!-- Price -->
+                                    <p>$20</p>
+                                </div>
+                                <!-- Title -->
+                                <p class="font-bold">Shine Bright</p>
+                            </div>
                         </div>
                     </div>
                 </div>

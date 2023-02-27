@@ -5,78 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/style.css">
-    <title>Document</title>
+    <title>Notes App</title>
 </head>
-<body>
-    <div class="w-full sm:max-w-4xl bg-teal-300">
+<body class="bg-teal-100 flex items-center justify-center min-h-screen text-slate-900 selection:text-white selection:bg-teal-500">
+    <div class="w-full sm:max-w-4xl bg-teal-300 [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
         <div>
-            <div class="flex items-center justify-between border-b shadow mb-3 bg-white">
-                <div class="flex gap-1">
-                    <div></div>
+            <div class="flex items-center justify-between border-b shadow mb-2 bg-white px-4 py-3">
+                <div class="flex items-center gap-1">
+                    <div class="text-slate-500 cursor-pointer hover:text-teal-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21V9l8-6l8 6v12h-6v-7h-4v7H4Z"/></svg>
+                    </div>
                     <div>
                         <h2>Learn How To Motivate Yourself</h2>
                         <p class="text-xs text-slate-500">48 240 total words | 4 sessions</p>
                     </div>
                 </div>
 
-                <div>
+                <div class="text-xs flex gap-5 text-slate-500 [&>*]:cursor-pointer">
                     <h2>Delete</h2>
-                    <div>
+                    <div class="flex items-center">
                         <h2>Export</h2>
-                        <div></div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="currentColor" d="M12 14.975q-.2 0-.388-.075t-.312-.2l-4.6-4.6q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062Z"/></svg>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-5 bg-white py-3">
-                <div class="border-r border-slate-400 px-2">
-                    <div class="mb-4">
-                        <div></div>
-                        <div>
-                            <h2>Sessions</h2>
-                            <p class="text-xs text-slate-500">48240 total words</p>
+            <div class="px-2">
+                <div class="grid grid-rows-5 grid-cols-1 sm:grid-rows-1 sm:grid-cols-5 bg-white py-3">
+                    <div class="border-b sm:border-b-0 sm:border-r border-r-0 border-slate-400 px-2">
+                        <div class="mb-4 flex items-center gap-2">
+                            <div class="text-teal-500 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-4h4v-2h-4V7h-2v4H7v2h4v4Zm1 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
+                            </div>
+                            <div>
+                                <h2>Sessions</h2>
+                                <p class="text-xs text-slate-500">48240 total words</p>
+                            </div>
+                            <div class="cursor-pointer text-slate-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"/></svg>
+                            </div>
                         </div>
-                        <div></div>
-                    </div>
-
-                    <div>
-                        <ul class="[&>*>p]:text-xs [&>*>p]:text-slate-700 [&>*>h2]:text- [&>*>h2]:font-bold [&>*]:py-1 [&>*:hover]:bg-blue-600 [&>*:hover]:text-white [&>*]:cursor-pointer [&>*]:px-4 [&>*]:mb-4 [&>*]:rounded">
-                            <li>
-                                <h2>Intro</h2>
-                                <p>2450 words</p>
-                            </li>
-                             <li>
-                                <h2>Chapter 1</h2>
-                                <p>2450 words</p>
-                            </li>
-                             <li>
-                                <h2>Chapter 2</h2>
-                                <p>2450 words</p>
-                            </li>
-                             <li>
-                                <h2>Chapter 3</h2>
-                                <p>2450 words</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-span-4 px-5">
-                    <div>
-                        <h2>Chapter 2</h2>
 
                         <div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            <ul class="flex flex-wrap sm:block gap-5 [&>*>p]:text-xs [&>*>p]:text-slate-700 [&>*>h2]:text-xs [&>*>h2]:sm:text-[1rem] [&>*>h2]:font-bold [&>*]:py-1 [&>*:hover]:bg-teal-500 [&>*:hover]:text-white [&>*]:cursor-pointer [&>*]:px-4 [&>*]:sm:mb-5 [&>*]:rounded">
+                                <li>
+                                    <h2>Intro</h2>
+                                    <p>2450 words</p>
+                                </li>
+                                <li>
+                                    <h2>Chapter 1</h2>
+                                    <p>2450 words</p>
+                                </li>
+                                <li>
+                                    <h2>Chapter 2</h2>
+                                    <p>2450 words</p>
+                                </li>
+                                <li>
+                                    <h2>Chapter 3</h2>
+                                    <p>2450 words</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div>
+                    <div class="row-span-4 sm:col-span-4 px-5 py-4">
+                        <div class="mb-5 flex justify-between">
+                            <h2 class="text-2xl">Chapter 2</h2>
 
+                            <div class="flex gap-5 text-slate-500 [&>*:hover]:text-teal-500 [&>*:hover]:scale-[1.03] [&>*]:cursor-pointer">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83l3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m6 6l10 9.9m-10 26L16 32m26 9.9L32.1 32m9.8-26L32 15.9M33 6h9v9m0 18v9h-9m-18 0H6v-9m0-18V6h9"/></svg>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256"><path fill="currentColor" d="M156 128a28 28 0 1 1-28-28a28.1 28.1 0 0 1 28 28Zm-28-52a28 28 0 1 0-28-28a28.1 28.1 0 0 0 28 28Zm0 104a28 28 0 1 0 28 28a28.1 28.1 0 0 0-28-28Z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="[&>*]:text-xs [&>*]:mb-5 w-[90%]">
+                            <p>
+                                Being lucky in life is the result of putting yourself into action for good luck to happen to you. 
+                                You've probably heard the statement "The harder I work the luckier I get", Another way of putting it is "Whatever you are ready for is ready for you."
+                            </p>
+
+                            <p> Are you satisfied  with your life, the job you have, or the amount of money you are making? Or are you not satisfied with the feeling that life is somehow passing you by? Chances are one of these reasons fits you because most people aren't satisfied with their lives, and usually one of those reasons is the cause.</p>
+
+                            <p>Success is not a spectator sport, something that just happens before your eyes. It's an experience, a game that must be played to be enjoyed fully.
+                                You need to get involved with life. You'll need to get more involved with your family, friends, people you see every day. Because in that involvement, you'll find you have everything you need to succeed.
+                            </p>
+
+                            <p>
+                                You have within you, right now, at this very moment, all that is necessary for you to become happy, successful person you have always wanted to be. All you need to do is unlockthe riches that have been locked away with-in you.
+                            </p>
+
+                            <p>
+                                Are you ready for a more abundant ad happier life? If you are, then you'll need to know how to put yourself into actions to achieve it. Consider thes discoveries for successful living.
+                            </p>
+                        </div>
+
+                        
                     </div>
-
-                    
                 </div>
             </div>
         </div>

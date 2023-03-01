@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/style.css">
-    <title>Document</title>
+    <title>Photo Gallery</title>
 </head>
 <body class="bg-teal-100 flex items-center justify-center min-h-screen">
     <div class="w-full sm:max-w-4xl bg-white">
         <div>
             <div class="bg-cyan-500 px-4 py-4">
                 <div class="flex justify-end text-white">
-                    <ul class="flex justify-between gap-4 sm:gap-7 flex-wrap text-sm [&>*]:border-b [&>*]:border-transparent [&>*]:pb-0.5 [&>*:hover]:border-rose-500 [&>*]:cursor-pointer">
+                    <ul class="flex justify-between gap-4 sm:gap-7 flex-wrap text-sm [&>*]:border-b [&>*]:border-transparent [&>*]:pb-0.5 [&>*:hover]:border-rose-500 [&>*]:cursor-pointer [&>*]:transition-all [&>*]:ease-linear [&>*]:duration-200">
                         <li>Vectors</li>
                         <li>Illustrations</li>
                         <li>images</li>
@@ -22,38 +22,138 @@
 
                 <div class="flex items-center justify-center text-white flex-wrap h-fit md:h-16 sm:justify-between gap-y-2 gap-x-2 mt-4">
                     <div class="w-[17rem] border border-teal-400 rounded-full px-1 py-1">
-                        <input type="text" name="search" id="search" class="w-full h-8 border-0 focus:outline-none focus:ring-0 rounded-full text-sm italic text-teal-400 placeholder:text-sm placeholder:text-teal-400" placeholder="search">
+                        <input type="text" name="search" id="search" class="w-full h-8 border-0 pl-4 focus:outline-none focus:ring-0 rounded-full text-sm italic text-teal-400 placeholder:text-sm placeholder:text-teal-400" placeholder="search">
                     </div>
-                    <div class="px-6 py-1.5 rounded bg-white hover:bg-rose-400 hover:text-white active:scale-[0.97] text-teal-400 shadow-[0rem_0.2rem_0.5rem_0.007rem_rgb(0,0,0,1)] cursor-pointer text-sm">
+                    <div class="px-6 py-1.5 rounded bg-white hover:bg-rose-400 hover:text-white active:scale-[0.97] text-teal-400 shadow-[0rem_0.2rem_0.5rem_0.007rem_rgb(0,0,0,1)] cursor-pointer text-sm transition-all ease-linear duration-200">
                         <h2>Upload</h2>
                     </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 my-10 px-4 md:px-8 w-[90%] mx-auto [&>*]:w-full [&>*]:h-[14rem] [&>*]:sm:h-[16rem] [&>*]:bg-rose-500 [&>*]:place-self-center [&>*]:overflow-hidden [&>*]:cursor-pointer [&>*]:flex [&>*]:items-end [&>*]:">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 my-10 px-4 md:px-8 w-[90%] mx-auto [&>*]:w-full [&>*]:h-[14rem] [&>*]:sm:h-[16rem] [&>*]:bg-rose-500 [&>*]:place-self-center [&>*]:overflow-hidden [&>*]:cursor-pointer [&>*]:relative [&>*>section]:absolute [&>*>section]:bottom-0 [&>*>div]:w-full [&>*>div]:h-full [&>*>div>img]:object-cover [&>*>div>img]:h-full [&>*>div>img]:w-full  [&>*>div>img]:object-center">
                 <div class="card">
 
-                    <div class="detail bg-slate-900/70 w-full h-[20%] hidde"></div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1611689342806-0863700ce1e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="">
+                    </div>
+
+                    <section class="detail bg-slate-900/70 w-full h-[20%] flex items-center justify-between text-sm text-white px-4">
+                        <div>
+                            <h2 class="font-semibold">The Eagle Vision</h2>
+                            <div class="text-[0.65rem] flex gap-2">
+                                <p>256 likes</p>
+                                <p>36 pictures</p>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="currentColor" d="m7 17.95l5-2.15l5 2.15V5H7v12.95Zm-.6 2.45q-.5.2-.95-.088T5 19.476V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v14.475q0 .55-.45.838t-.95.087L12 18l-5.6 2.4ZM7 5h10H7Z"/></svg>
+                        </div>
+                    </section>
                 </div>
                 <div class="card">
 
-                    <div class="detail bg-slate-900/70 w-full h-[20%] hidden"></div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Snowboard_pow.jpg/1920px-Snowboard_pow.jpg" alt="">
+                    </div>
+
+                    <section class="detail bg-slate-900/70 w-full h-[20%] flex items-center justify-between text-sm text-white px-4 hidden">
+                        <div>
+                            <h2 class="font-semibold">Power is Life</h2>
+                            <div class="text-[0.65rem] flex gap-2">
+                                <p>256 likes</p>
+                                <p>37 shares</p>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="currentColor" d="m7 17.95l5-2.15l5 2.15V5H7v12.95Zm-.6 2.45q-.5.2-.95-.088T5 19.476V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v14.475q0 .55-.45.838t-.95.087L12 18l-5.6 2.4ZM7 5h10H7Z"/></svg>
+                        </div>
+                    </section>
                 </div>
                 <div class="card">
 
-                    <div class="detail bg-slate-900/70 w-full h-[20%] hidden"></div>
+                    <div>
+                        <img src="https://images.pexels.com/photos/625455/pexels-photo-625455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </div>
+
+
+                    <section class="detail bg-slate-900/70 w-full h-[20%] flex items-center justify-between text-sm text-white px-4 hidden">
+                        <div>
+                            <h2 class="font-semibold">Beauty in Little things</h2>
+                            <div class="text-[0.65rem] flex gap-2">
+                                <p>481 likes</p>
+                                <p>54 shares</p>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="currentColor" d="m7 17.95l5-2.15l5 2.15V5H7v12.95Zm-.6 2.45q-.5.2-.95-.088T5 19.476V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v14.475q0 .55-.45.838t-.95.087L12 18l-5.6 2.4ZM7 5h10H7Z"/></svg>
+                        </div>
+                    </section>
                 </div>
+
+
                 <div class="card">
 
-                    <div class="detail bg-slate-900/70 w-full h-[20%] hidden"></div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1656189505583-548c35fbc86d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHNlYXJjaGluZyUyMHRoZSUyMGdsb2JlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+
+
+
+                    <section class="detail bg-slate-900/70 w-full h-[20%] flex items-center justify-between text-sm text-white px-4 hidden">
+                        <div>
+                            <h2 class="font-semibold">The World is so small</h2>
+                            <div class="text-[0.65rem] flex gap-2">
+                                <p>278 likes</p>
+                                <p>6 shares</p>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="currentColor" d="m7 17.95l5-2.15l5 2.15V5H7v12.95Zm-.6 2.45q-.5.2-.95-.088T5 19.476V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v14.475q0 .55-.45.838t-.95.087L12 18l-5.6 2.4ZM7 5h10H7Z"/></svg>
+                        </div>
+                    </section>
                 </div>
+
+
                 <div class="card">
 
-                    <div class="detail bg-slate-900/70 w-full h-[20%] hidden"></div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1553697388-94e804e2f0f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+
+                    <section class="detail bg-slate-900/70 w-full h-[20%] flex items-center justify-between text-sm text-white px-4 hidden">
+                        <div>
+                            <h2 class="font-semibold">Life is too short</h2>
+                            <div class="text-[0.65rem] flex gap-2">
+                                <p>256 likes</p>
+                                <p>36 pictures</p>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="currentColor" d="m7 17.95l5-2.15l5 2.15V5H7v12.95Zm-.6 2.45q-.5.2-.95-.088T5 19.476V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v14.475q0 .55-.45.838t-.95.087L12 18l-5.6 2.4ZM7 5h10H7Z"/></svg>
+                        </div>
+                    </section>
                 </div>
+
+
                 <div class="card">
 
-                    <div class="detail bg-slate-900/70 w-full h-[20%] hidden"></div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Haifa_White_Tigers-9129-13.jpg/1920px-Haifa_White_Tigers-9129-13.jpg" alt="">
+                    </div>
+
+
+                    <section class="detail bg-slate-900/70 w-full h-[20%] flex items-center justify-between text-sm text-white px-4 hidden">
+                        <div>
+                            <h2 class="font-semibold">Haifa white tigers</h2>
+                            <div class="text-[0.65rem] flex gap-2">
+                                <p>156 likes</p>
+                                <p>16 shares</p>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="currentColor" d="m7 17.95l5-2.15l5 2.15V5H7v12.95Zm-.6 2.45q-.5.2-.95-.088T5 19.476V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v14.475q0 .55-.45.838t-.95.087L12 18l-5.6 2.4ZM7 5h10H7Z"/></svg>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>

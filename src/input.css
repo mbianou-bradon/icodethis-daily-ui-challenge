@@ -373,7 +373,7 @@ input:checked ~ .accordion_label {
 
 .card:hover .detail{
 
-  display: block;
+  display: flex;
 }
 
 .detail {

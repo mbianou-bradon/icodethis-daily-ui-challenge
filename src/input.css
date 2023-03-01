@@ -370,3 +370,26 @@ input:checked ~ .accordion_label {
     rotate: 360deg;
   }
 } */
+
+.card:hover .detail{
+
+  display: block;
+}
+
+.detail {
+  animation: entrance 0.5s linear;
+}
+
+@keyframes entrance {
+  0%{
+    display: none;
+    transform: translateY(90px)
+  }
+  50%{
+    display: block;
+    transform: translateY(50px)
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

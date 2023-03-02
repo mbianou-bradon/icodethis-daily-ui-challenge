@@ -371,7 +371,7 @@ input:checked ~ .accordion_label {
   }
 } */
 
-.card:hover .detail{
+/* .card:hover .detail{
 
   display: flex;
 }
@@ -384,6 +384,28 @@ input:checked ~ .accordion_label {
   0%{
     display: none;
     transform: translateY(90px)
+  }
+  50%{
+    display: block;
+    transform: translateY(50px)
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} */
+
+.card:hover .detail{
+
+  display: flex;
+}
+
+.detail {
+  animation: entrance 0.5s linear;
+}
+
+@keyframes entrance {
+  0%{
+    transform: translateX(90px)
   }
   50%{
     display: block;

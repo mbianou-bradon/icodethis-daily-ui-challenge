@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Friend Request</title>
+</head>
+<body class="bg-[#f8f5f5] flex items-center justify-center min-h-screen">
+    
+    <div class="bg-white w-[23rem] sm:w-[30rem] relative overflow-hidden shadow-md shadow-[#ff7575]">
+        <div class="w-[24rem] px-72 py-64 bg-gradient-to-r from-[#ff7575] to-[#ff9a50] rounded-[10rem] absolute -right-96 -top-56 rotate-[16deg]"></div>
+
+        <div class="px-6 py-16 rounded-md shadow-md shadow-[#ff7575] relative overflow-hidden">
+                    
+            <!-- Friend Request Header -->
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-semibold">Friend Requests</h2>
+                <p class="text-slate-500 cursor-pointer hover:text-white hover:underline transition-all ease-linear duration-200">View All</p>
+            </div>
+
+                        <!-- Parent Container containing all the friend request subcomponent -->
+            <div class="[&>*div>div>h2]:rounded-sm [&>*div>div>h2]:shadow-md [&>*div>div>h2]:px-6 [&>*div>div>h2]:py-2 [&>*>div>div>img]:rounded-full 
+                [&>*>div>div>img]:aspect-square [&>*>div>div>img]:object-cover [&>*>div>div>img]:object-center [&>*>div>div>img]:h-14 [&>*>div>div>img:hover]:scale-125 
+                [&>*>div>div>img:hover]:transition-all [&>*>div>div>img:hover]:ease-linear [&>*>div>div>img:hover]:duration-300 [&>*>div>div>img] [&>*div>div>div>h2]:text-lg [&>*div>div>div>h2]:font-bold [&>*div>div>div>p]:text-slate-600 [&>*>div]:flex [&>*>div]:items-center [&>*>div]:gap-2 [&>*]:flex [&>*]:items-center [&>*]:justify-between [&>*]:my-10">
+
+                        <!-- First subcomponent -->
+                <div>
+                    <div>
+                                <!-- Profile Image -->
+                        <div><img src="/public/assets/Dec 13, 2022/Bradon.jpg" alt=""></div>
+                        <div>
+                                <!-- Person Name -->
+                            <h2>Mbianou Bradon</h2>
+                                <!-- Number of Mutual Friends -->
+                            <p>7 mutual friends</p>
+                        </div>
+                    </div>
+                                <!-- Confirm Button-->
+                    <div class="bg-white hover:text-white hover:bg-[#ff7575] cursor-pointer transition-all ease-linear duration-300">
+                        <h2>Confirm</h2>
+                    </div>
+                </div>
+
+                            <!-- Second subcomponent -->
+                <div>
+                    <div>
+                                <!-- Profile Image -->
+                        <div><img src="/public/assets/Dec 13, 2022/marienzale.jpeg" alt=""></div>
+
+                        <div>
+                                <!-- Person Name -->
+                            <h2>Marie Nzale</h2>
+                                <!-- Number of Mutual Friends -->
+                            <p>3 mutual friends</p>
+                        </div>
+                    </div>
+                                <!-- Confirm Button-->
+                    <div class="bg-white hover:text-white hover:bg-[#ff7575] cursor-pointer transition-all ease-linear duration-300">
+                        <h2>Confirm</h2>
+                    </div>
+                </div>
+                            
+                            <!-- Third subcomponent -->
+                <div>
+                <div>
+                            <!-- Profile Image -->
+                    <div><img src="/public/assets/Dec 13, 2022/lovette.jpeg" alt=""></div>
+
+                    <div>
+                            <!-- Person Name -->
+                        <h2>Kimboh Lovette</h2>
+                            <!-- Number of Mutual Friends -->
+                        <p>8 mutual friends</p>
+                    </div>
+                </div>
+                            <!-- Confirm Button-->
+                <div class="bg-white hover:text-white hover:bg-[#ff7575] cursor-pointer transition-all ease-linear duration-300">
+                    <h2>Confirm</h2>
+                </div>
+            </div>
+
+            
+        </div>
+        
+        <div class="bg-[#ff7575] w-[20rem] p-52 rounded-full absolute -left-32"></div>
+    </div>
+
+</body>
+</html>

@@ -7,17 +7,25 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>Switch</title>
 </head>
-<body>
+<body class="flex items-center justify-center min-h-screen">
     <div>
         <div>
+            <input type="checkbox" class="sr-only switch peer" name="check" id="check">
+            <label for="check" class="peer-checked:[&>div>div]:translate-x-[5.2rem]">
+                <div class="w-[10rem] bg-slate-300 rounded-full p-1.5 cursor-pointer border border-gray-400 mb-5 hover:shadow-[0rem_0rem_0.5rem_0.05rem_rgb(31,41,55)] transition duration-300">
+                    <div class="w-[4rem] h-[4rem] rounded-full border-[1rem] border-gray-800 bg-white transition duration-500"></div>
+                </div>
 
-            <div class="w-[10rem] bg-slate-300 rounded-full p-1.5 cursor-pointer mt-10 ml-6">
-                <div class="w-[4rem] h-[4rem] rounded-full border-[1rem] border-gray-800 bg-white"></div>
-            </div>
+                
+            </label>
 
-            <div>
+            <input type="checkbox" name="check2" id="check2" class="sr-only peer" checked>
+            <label for="check2" class="peer-checked:[&>div>div]:translate-x-[5.2rem]">
+                <div class="w-[10rem] bg-slate-300 rounded-full p-1.5 cursor-pointer border border-gray-300 hover:shadow-[0rem_0rem_0.5rem_0.002rem_rgba(224,29,72,1)] transition duration-300">
+                    <div class="w-[4rem] h-[4rem] rounded-full border-[1rem] border-rose-600 bg-white transition duration-500"></div>
+                </div>
+            </label>
 
-            </div>
 
         </div>
     </div>

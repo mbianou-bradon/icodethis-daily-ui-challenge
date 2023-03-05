@@ -63,7 +63,7 @@ root.innerHTML = data.map(item => {
 
     return (
         `
-        <div class="flex justify-between hover:bg-slate-900 hover:text-white p-2 rounded-lg">
+        <div class="flex justify-between hover:bg-slate-900 transition-all ease-linear duration-200 cursor-pointer hover:text-white p-2 rounded h-[6rem]">
             <div class="flex items-center gap-4">
                 <div class="w-8 h-8 rounded-full border border-rose-400 flex items-center justify-center">
                     <h1>${item.num}</h1>

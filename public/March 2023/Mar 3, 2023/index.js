@@ -66,19 +66,19 @@ root.innerHTML = data.map(item => {
         <div class="flex justify-between hover:bg-slate-900 transition-all ease-linear duration-200 cursor-pointer hover:text-white p-2 rounded h-[6rem]">
             <div class="flex items-center gap-4">
                 <div class="w-8 h-8 rounded-full border border-rose-400 flex items-center justify-center">
-                    <h1>${item.num}</h1>
+                    <h1 class="text-sm text-[1rem]">${item.num}</h1>
                 </div>
                 <div class="flex gap-4">
                     <div class="w-16 h-16 bg-red-400">
                         <img src=${item.image} alt="" class="h-full object-cover">
                     </div>
                     <div>
-                        <h2 class="text-lg font-semibold">${item.title}</h2>
+                        <h2 class="text-[1rem] sm:text-lg font-semibold">${item.title}</h2>
                         <p class="text-sm">${item.artist}</p>
                     </div>
                 </div>  
             </div> 
-            <p class="text-slate-500">${item.views}</p>
+            <p class="text-slate-500 text-xs sm:text-sm">${item.views}</p>
         </div>
         `
     )

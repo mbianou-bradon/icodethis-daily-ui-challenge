@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 
-/* 
+
 .mobile-menu-header {
     clip-path: polygon(0 0, 100% 0, 100% 52%, 6% 100%, 0 100%);
 }
-
+/*
 .left-arrow { 
     clip-path: polygon(100% 10%, 10% 18%, 100% 80%); 
 }

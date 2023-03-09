@@ -4,54 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
     <title>LogIn Card</title>
 </head>
-<body>
-    <div>
-        <div>
-            <div>
-                <div>
-                    <h2>Log In</h2>
-                    <p>Log in your account to upload or download pictures, videos or music.</p>
+<body
+    class="bg-stone-200 text-slate-800 flex items-center justify-center min-h-screen selection:text-white selection:bg-teal-500">
+    <div
+        class="w-full sm:w-[40rem] mx-2 bg-white rounded-lg overflow-hidden [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-150">
+        <div class="flex justify-center">
+            <div class="sm:w-[65%] p-4 sm:p-8">
+                <div class="mb-7">
+                    <h2 class="text-3xl font-semibold mb-5">Log In</h2>
+                    <p class="text-[0.9rem] sm:w-[90%]">Log in your account to upload or download pictures, videos or
+                        music.</p>
                 </div>
 
-                <div>
-                    <input type="text" name="email" id="email">
+                <div class="w-full my-5">
+                    <input type="text" name="email" id="email" placeholder="Enter your email address" class="w-full rounded border border-slate-300 h-12 focus:ring-0 focus:outline-none focus:border-teal-500 text-sm text-teal-500 placeholder:text-slate-300 pl-4">
                 </div>
 
-                <div>
-                    <div>
+                <div class="flex items-center justify-between">
+                    <div class="text-sm font-semibold text-teal-700">
                         <a href="#">Forgot password?</a>
                     </div>
 
-                    <div>
+                    <div
+                        class="px-7 py-2.5 bg-cyan-700 text-white font-semibold w-fit rounded cursor-pointer shadow-[0rem_0.2rem_0.6rem_rgb(14,116,144,1)] flex gap-1.5">
                         <h2>Next</h2>
-                        <div></div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M13.3 17.275q-.3-.3-.288-.725t.313-.725L16.15 13H5q-.425 0-.713-.288T4 12q0-.425.288-.713T5 11h11.15L13.3 8.15q-.3-.3-.3-.713t.3-.712q.3-.3.713-.3t.712.3L19.3 11.3q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.6 4.6q-.275.275-.687.275t-.713-.3Z" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <p>Or log in with</p>
+                <div class="border-t-2 mt-8 py-6 text-center">
+                    <p class="text-sm text-slate-400 ">Or log in with</p>
 
-                    <div>
-                        <div>
-                            <div></div>
-                            <h2>Facebook</h2>
+                    <div
+                        class="flex justify-between mt-6 mb-9 [&>*]:border [&>*]:border-slate-300 [&>*]:w-[47%] [&>*]:py-2 [&>*]:px-6 [&>*]:rounded [&>*]:font-semib [&>*]:cursor-pointer [&>*]:flex [&>*]:items-center [&>*]:justify-center [&>*]:gap-1">
+                        <div class="hover:border-blue-600">
+                            <div class="text-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
+                                </svg>
+                            </div>
+                            <h2 class="pt-1">Facebook</h2>
                         </div>
 
-                        <div>
-                            <div></div>
-                            <h2>Facebook</h2>
+                        <div class="hover:border-red-400">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48">
+                                    <path fill="#FFC107"
+                                        d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z" />
+                                    <path fill="#FF3D00"
+                                        d="m6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691z" />
+                                    <path fill="#4CAF50"
+                                        d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z" />
+                                    <path fill="#1976D2"
+                                        d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z" />
+                                </svg>
+                            </div>
+                            <h2 class="pt-1">Google</h2>
                         </div>
                     </div>
 
-                    <p>Don't have an account yet?<span>Sign Up</span></p>
+                    <p class="text-sm">Don't have an account
+                        yet?<span class="text-teal-700 underline cursor-pointer hover:no-underline">Sign Up</span></p>
                 </div>
             </div>
 
-            <div>
-                <img src="" alt="">
+            <div class="hidden sm:block sm:w-[35%] bg-blue-400">
+                <img src="https://images.unsplash.com/photo-1569010585141-b9c03b3af6a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="" class="h-full w-full object-cover">
             </div>
+            
         </div>
     </div>
 </body>

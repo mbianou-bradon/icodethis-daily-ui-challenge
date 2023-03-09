@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Carousel</title>
+</head>
+<body class="bg-[#f8efef] text-slate-700 flex items-center justify-center min-h-screen">
+    <div class="w-full sm:max-w-5xl bg-white py-6 flex flex-col items-center justify-center text-center [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
+        <div>
+            <div>
+                <ul class="flex items-center justify-center flex-wrap gap-2 md:gap-10 [&>*]:px-4 [&>*]:py-1 [&>*:hover]:bg-[#fef2f2] [&>*:hover]:text-slate-600 [&>*]:rounded [&>*]:cursor-pointer">
+                    <li class="bg-[#fef2f2] text-slate-600">All</li>
+                    <li>Photography</li>
+                    <li>Fashion</li>
+                    <li>Sculpture</li>
+                </ul>
+            </div>
+
+            <div class="my-12 flex items-center justify-center gap-5">
+                <div class="hidden md:block hover:scale-110 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path fill="currentColor" d="m13.3 17.3l-4.6-4.6q-.15-.15-.212-.325T8.425 12q0-.2.063-.375T8.7 11.3l4.6-4.6q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L10.8 12l3.9 3.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275Z"/></svg>
+                </div>
+
+                <div class="flex flex-wrap gap-5 items-center justify-center [&>*]:w-[15rem] [&>*]:h-[15rem] [&>*]:overflow-hidden [&>*]:border [&>*]:border-red-0 [&>*]:rounded-xl [&>*:hover]:scale-105 [&>*>div>h2]:text-lg [&>*>div>h2]:font-semibold [&>*>div>p]:text-slate-600 [&>*>div>img]:h-full [&>*>div>img]:w-full [&>*>div>img]:object-cover">
+                    <div>
+                        <div class="h-[70%] border-b mb-2">
+                            <img src="https://davidsheltongallery.com/img/upload/b.deardorff.jpg" alt="">
+                        </div>
+                        <div>
+                            <h2>Britta Clay Art</h2>
+                            <p>Sat, 24 October 2023</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="h-[70%] border-b mb-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDY-_XeRrw66P7zHR4NkUxWEF6G288FpTNvQ&usqp=CAU" alt="">
+                        </div>
+                        <div>
+                            <h2>Belgian Balloon Throphy</h2>
+                            <p>Sat, 20 May 2023</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="h-[70%] border-b mb-2">
+                            <img src="https://oceansofgamess.com/wp-content/uploads/2022/09/Way-of-the-Hunter-Free-Download-1-4.jpg" alt="">
+                        </div>
+                        <div>
+                            <h2>Way of the Hunt</h2>
+                            <p>Fri, 14 August 2023</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hidden md:block hover:scale-110 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path fill="currentColor" d="M8.7 17.3q-.275-.275-.275-.7t.275-.7l3.9-3.9l-3.9-3.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.6 4.6q-.275.275-.7.275t-.7-.275Z"/></svg>
+                </div>
+
+            </div>
+
+            <div class="bg-rose-500 text-white px-6 py-3 mx-auto my-5 w-fit rounded-md cursor-pointer border border-rose-500 hover:bg-white hover:text-rose-500">
+                <h2>View more</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

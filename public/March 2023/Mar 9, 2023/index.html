@@ -8,11 +8,10 @@
     <title>LogIn Card</title>
 </head>
 <body
-    class="bg-stone-200 text-slate-800 flex items-center justify-center min-h-screen selection:text-white selection:bg-teal-500">
-    <div
-        class="w-full sm:w-[40rem] mx-2 bg-white rounded-lg overflow-hidden [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-150">
-        <div class="flex justify-center">
-            <div class="sm:w-[65%] p-4 sm:p-8">
+    class="bg-[#f8efef] text-slate-800 flex items-center justify-center min-h-screen selection:text-white selection:bg-teal-500">
+    <div class="w-full sm:w-[40rem] mx-2 bg-white rounded-lg shadow overflow-hidden [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-150">
+        <div class="flex justify-center relative">
+            <div class="sm:w-[65%] px-4 py-9 sm:px-8 sm:py-8">
                 <div class="mb-7">
                     <h2 class="text-3xl font-semibold mb-5">Log In</h2>
                     <p class="text-[0.9rem] sm:w-[90%]">Log in your account to upload or download pictures, videos or
@@ -80,7 +79,14 @@
             <div class="hidden sm:block sm:w-[35%] bg-blue-400">
                 <img src="https://images.unsplash.com/photo-1569010585141-b9c03b3af6a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="" class="h-full w-full object-cover">
             </div>
-            
+
+            <div class="w-9 h-9 rounded-full flex items-center justify-center bg-slate-300 text-white cursor-pointer absolute right-2 top-2 hover:bg-slate-100 hover:text-slate-400">
+                <p class="text-3xl">
+                    &times;
+                </p>
+
+            </div>
+
         </div>
     </div>
 </body>

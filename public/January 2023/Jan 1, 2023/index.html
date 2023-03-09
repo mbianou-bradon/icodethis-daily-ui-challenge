@@ -47,8 +47,15 @@
         
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-1">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 px-8 py-5 focus:outline-none focus:ring-0 focus:ring-offset-0 cursor-pointer shadow-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault56">
+                    <div>
+                        <input type="checkbox" class="sr-only switch peer" name="check" id="check">
+                        <label for="check" class="peer-checked:[&>div>div]:translate-x-[1.55rem] peer-checked:[&>*]:bg-slate-700">
+                            <div class="w-[3.5rem] bg-slate-300 rounded-full p-0.5 cursor-pointer border border-gray-400 transition duration-300">
+                                <div class="w-[1.5rem] h-[1.5rem] rounded-full border-gray-800 bg-white transition duration-500"></div>
+                            </div>
+
+                            
+                        </label>
                     </div>
         
                     <div class="font-bold">

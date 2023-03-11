@@ -8,64 +8,94 @@
     <title>Onboarding</title>
 </head>
 <body class="bg-slate-200 flex items-center justify-center min-h-screen">
-    <div class="bg-white w-full sm:w-[23rem] p-9 rounded-lg relative shadow-[0rem_0.5rem_1rem_0.002rem_rgb(0,0,0,0.5)]">
+    <div
+        class="bg-white w-[23rem] py-9 rounded-lg relative shadow-[0rem_0.5rem_1rem_0.002rem_rgb(0,0,0,0.5)]">
         <div>
-            <div class="border-b mb-9">
+            <div class="border-b mb-9 px-9">
                 <div class="text-xl font-semibold flex items-center justify-between">
                     <h2>Take a quick tour</h2>
                     <div class="cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z" />
+                        </svg>
                     </div>
                 </div>
                 <p class="w-[60%] text-sm my-5">Here are a few steps to help you hit the ground.</p>
                 <div class="flex items-center gap-2 mb-9">
                     <p class="text-xl">40%</p>
-                    <div class="w-full h-3 bg-slate-100 rounded-full"><div class="w-[40%] h-full rounded-full bg-slate-900"></div></div>
+                    <div class="w-full h-3 bg-slate-100 rounded-full">
+                        <div class="w-[40%] h-full rounded-full bg-slate-900"></div>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <ul class="[&>*]:mb-4 [&>*]:flex [&>*]:items-center [&>*]:gap-2 [&>*>label]:text-sm [&>*>label]:cursor-pointer">
+            <div class="px-9">
+                <ul
+                    class="[&>*]:mb-4 [&>*]:flex [&>*]:items-center [&>*]:gap-2 [&>*>label]:text-sm [&>*>label]:cursor-pointer">
                     <li>
-                        <div>
-                            <input type="checkbox" name="check" id="check" checked class="peer w-8 h-8 rounded-full focus:ring-0 focus:outline-none focus:ring-offset-0 active:bg-slate-800 checked:bg-slate-800">
+                        <input type="checkbox" name="check" id="check" checked class="sr-only peer   ">
+                        
+                        <label for="check" class="peer-checked:[&>div]:bg-slate-900 flex items-center gap-2">
+
+                        <div class="w-8 h-8 border border-slate-900 text-white rounded-full bg-slate-90 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59L21 7Z" />
+                    </svg>
                         </div>
-                        <!-- <span class="absolute top-0 left-0 w-8 h-8 rounded-full border border-slate-900"></span> -->
-                        <label for="check" class="peer-checked:[&>span]:bg-slate-900">Experience contextual conversations</label>
+                        <h2> Experience contextual conversations</h2></label>
                     </li>
 
                     <li>
-                        <div>
-                            <input type="checkbox" name="check" id="check" checked class="peer w-8 h-8 rounded-full focus:ring-0 focus:outline-none focus:ring-offset-0 active:bg-slate-800 checked:bg-slate-800">
-                        </div>
-                        <!-- <span class="absolute top-0 left-0 w-8 h-8 rounded-full border border-slate-900"></span> -->
-                        <label for="check" class="peer-checked:[&>span]:bg-slate-900">Brand your customer experience</label>
-                    </li>
+                            <input type="checkbox" name="check" id="check2" checked class="peer sr-only">
 
-                    <li>
-                        <div>
-                            <input type="checkbox" name="check" id="check" class="peer w-8 h-8 rounded-full focus:ring-0 focus:outline-none focus:ring-offset-0 active:bg-slate-800 checked:bg-slate-800 focus:bg-slate-900">
-                        </div>
-                        <!-- <span class="absolute top-0 left-0 w-8 h-8 rounded-full border border-slate-900"></span> -->
-                        <label for="check" class="peer-checked:[&>span]:bg-slate-900">Offer support beyond your website</label>
-                    </li>
-
-                    <li>
-                        <div>
-                            <input type="checkbox" name="check" id="check" class="peer w-8 h-8 rounded-full focus:ring-0 focus:outline-none focus:ring-offset-0 active:bg-slate-800 checked:bg-slate-800">
-                        </div>
-                        <!-- <span class="absolute top-0 left-0 w-8 h-8 rounded-full border border-slate-900"></span> -->
-                        <label for="check" class="peer-checked:[&>span]:bg-slate-900">Top customer support with bots</label>
-                    </li>
-
-                    <li>
-                        <div>
-                            <input type="checkbox" name="check" id="check" class="peer w-8 h-8 rounded-full focus:ring-0 focus:outline-none focus:ring-offset-0 active:bg-slate-800 checked:bg-slate-800">
-                        </div>
-                        <!-- <span class="absolute top-0 left-0 w-8 h-8 rounded-full border border-slate-900"></span> -->
-                        <label for="check" class="peer-checked:[&>span]:bg-slate-900">Build your team</label>
-                    </li>
+                    <label for="check2" class="peer-checked:[&>div]:bg-slate-900 flex items-center gap-2">
                     
+                                            <div class="w-8 h-8 border border-slate-900 text-white rounded-full bg-slate-90 flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59L21 7Z" />
+                                        </svg>
+                                            </div>
+                                            <h2>Brand your customer experience</h2></label>
+                    </li>
+
+                    <li>
+                            <input type="checkbox" name="check" id="check3" class="peer sr-only">
+                       
+                        <label for="check3" class="peer-checked:[&>div]:bg-slate-900 flex items-center gap-2">
+                        
+                                                <div class="w-8 h-8 border border-slate-900 text-white rounded-full bg-slate-90 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                <path fill="currentColor" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59L21 7Z" />
+                                            </svg>
+                                                </div>
+                                                <h2>Offer support beyond your website</h2></label>
+                    </li>
+
+                    <li>
+                            <input type="checkbox" name="check" id="check4" class="peer sr-only">
+                    <label for="check4" class="peer-checked:[&>div]:bg-slate-900 flex items-center gap-2">
+                    
+   <div class="w-8 h-8 border border-slate-900 text-white rounded-full bg-slate-90 flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59L21 7Z" />
+                                        </svg>
+                                            </div>
+        <h2>Top customer support with bots</h2></label>
+                    </li>
+
+                    <li>
+        <input type="checkbox" name="check" id="check" class="peer sr-only">
+                    <label for="check" class="peer-checked:[&>div]:bg-slate-900 flex items-center gap-2">
+                    
+                                            <div class="w-8 h-8 border border-slate-900 text-white rounded-full bg-slate-90 flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59L21 7Z" />
+                                        </svg>
+                                            </div>
+            <h2>Build your team</h2></label>
+                    </li>
+
                 </ul>
 
                 <h2 class="text-sm mt-5 text-slate-600 cursor-pointer w-fit">Skip this</h2>
@@ -73,7 +103,9 @@
         </div>
 
         <div class="absolute -bottom-[3.5rem] right-2">
-            <h2 class="w-fit px-4 py-2 rounded-full bg-slate-900 text-white">Get started <span class="w-7 h-7 rounded-full bg-white text-slate-900 inline-flex items-center justify-center">5</span></h2>
+            <h2 class="w-fit px-4 py-2 rounded-full bg-slate-900 text-white hover:scale-[1.02] transition cursor-pointer">Get started
+                <span class="w-7 h-7 rounded-full bg-white text-slate-900 inline-flex items-center justify-center">5</span>
+            </h2>
         </div>
     </div>
 </body>

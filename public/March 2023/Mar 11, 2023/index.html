@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="/public/style.css">
     <title>Onboarding</title>
 </head>
-<body class="bg-slate-200">
-    <div class="bg-white w-full sm:w-[23rem]">
+<body class="bg-slate-200 flex items-center justify-center min-h-screen">
+    <div class="bg-white w-full sm:w-[23rem] p-9 rounded-lg relative shadow-[0rem_0.5rem_1rem_0.002rem_rgb(0,0,0,0.5)]">
         <div>
-            <div>
-                <div class="text-xl font-semibold">
+            <div class="border-b mb-9">
+                <div class="text-xl font-semibold flex items-center justify-between">
                     <h2>Take a quick tour</h2>
-                    <div>
-
+                    <div class="cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z"/></svg>
                     </div>
                 </div>
                 <p class="w-[60%] text-sm my-5">Here are a few steps to help you hit the ground.</p>
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 mb-9">
                     <p class="text-xl">40%</p>
-                    <div class="w-full h-4 bg-slate-100 rounded-full"><div class="w-[40%] h-full rounded-full bg-slate-900"></div></div>
+                    <div class="w-full h-3 bg-slate-100 rounded-full"><div class="w-[40%] h-full rounded-full bg-slate-900"></div></div>
                 </div>
             </div>
 
             <div>
-                <ul class="[&>*]:flex [&>*]:items-center [&>*]:gap-2">
+                <ul class="[&>*]:mb-4 [&>*]:flex [&>*]:items-center [&>*]:gap-2 [&>*>label]:text-sm [&>*>label]:cursor-pointer">
                     <li>
                         <div>
-                            <input type="checkbox" name="check" id="check" class="peer w-8 h-8 rounded-full focus:ring-0 focus:outline-none focus:ring-offset-0 active:bg-slate-800 checked:bg-slate-800">
+                            <input type="checkbox" name="check" id="check" checked class="peer w-8 h-8 rounded-full focus:ring-0 focus:outline-none focus:ring-offset-0 active:bg-slate-800 checked:bg-slate-800">
                         </div>
                         <!-- <span class="absolute top-0 left-0 w-8 h-8 rounded-full border border-slate-900"></span> -->
                         <label for="check" class="peer-checked:[&>span]:bg-slate-900">Experience contextual conversations</label>
@@ -36,7 +36,7 @@
 
                     <li>
                         <div>
-                            <input type="checkbox" name="check" id="check" class="peer w-8 h-8 rounded-full focus:ring-0 focus:outline-none focus:ring-offset-0 active:bg-slate-800 checked:bg-slate-800">
+                            <input type="checkbox" name="check" id="check" checked class="peer w-8 h-8 rounded-full focus:ring-0 focus:outline-none focus:ring-offset-0 active:bg-slate-800 checked:bg-slate-800">
                         </div>
                         <!-- <span class="absolute top-0 left-0 w-8 h-8 rounded-full border border-slate-900"></span> -->
                         <label for="check" class="peer-checked:[&>span]:bg-slate-900">Brand your customer experience</label>
@@ -44,7 +44,7 @@
 
                     <li>
                         <div>
-                            <input type="checkbox" name="check" id="check" class="peer w-8 h-8 rounded-full focus:ring-0 focus:outline-none focus:ring-offset-0 active:bg-slate-800 checked:bg-slate-800">
+                            <input type="checkbox" name="check" id="check" class="peer w-8 h-8 rounded-full focus:ring-0 focus:outline-none focus:ring-offset-0 active:bg-slate-800 checked:bg-slate-800 focus:bg-slate-900">
                         </div>
                         <!-- <span class="absolute top-0 left-0 w-8 h-8 rounded-full border border-slate-900"></span> -->
                         <label for="check" class="peer-checked:[&>span]:bg-slate-900">Offer support beyond your website</label>
@@ -67,7 +67,13 @@
                     </li>
                     
                 </ul>
+
+                <h2 class="text-sm mt-5 text-slate-600 cursor-pointer w-fit">Skip this</h2>
             </div>
+        </div>
+
+        <div class="absolute -bottom-[3.5rem] right-2">
+            <h2 class="w-fit px-4 py-2 rounded-full bg-slate-900 text-white">Get started <span class="w-7 h-7 rounded-full bg-white text-slate-900 inline-flex items-center justify-center">5</span></h2>
         </div>
     </div>
 </body>

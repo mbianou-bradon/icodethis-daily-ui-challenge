@@ -1,10 +1,10 @@
 const root = document.getElementById("root")
 
 
-const data = [
+const userData = [
     {
         name: "Mbianou Bradon",
-        profile : "https://pbs.twimg.com/profile_images/1344692250308182016/dLKsLKYT_400x400.jpg"
+        profile : "https://res.cloudinary.com/practicaldev/image/fetch/s--4JL5abHt--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1035172/ddd0c7d5-5a6b-4191-b822-02745bea888d.png"
     },
     {
         name: "Kimboh Lovette",
@@ -21,7 +21,7 @@ const data = [
 
 ]
 
-root.innerHTML = data.map(friend => {
+root.innerHTML = userData.map(friend => {
     return (
         `<div class="flex items-center gap-2 mb-5">
             <div class="w-14 h-14 rounded-full p-1 hover:scale-105 bg-blue-200/80 overflow-hidden">
@@ -42,15 +42,7 @@ window.addEventListener("click", (e) => {
             ? (e.target.textContent = "unfollow")
             : (e.target.textContent = "follow");
        
-        // if (e.target.textContent = "unfollow"){
-        //     e.target.classList.remove("bg-blue-700")
-        //     e.target.classList.add("bg-white")
-        //     e.target.classList.add("text-blue-700")
-        // } else {
-        //     e.target.classList.add("bg-blue-700")
-        //     e.target.classList.remove("bg-white")
-        //     e.target.classList.remove("text-blue-700")
-        // }
+    
         e.target.classList.toggle("follow_friend");
     }
 

@@ -307,7 +307,7 @@ body {
   display: block;
 } */
 
-/* .menuDarkMode {
+.menuDarkMode {
   @apply bg-slate-900 text-slate-200
 }
 
@@ -317,13 +317,13 @@ body {
 
 .gotoAppDarkMode {
   @apply hover:bg-white hover:text-slate-900 shadow-none
-} */
+}
 
 /* input {
   position: absolute;
   opacity: 0;
   z-index: -1;
-}
+} */
 .accordion {
   margin: 10px;
   border-radius: 5px;
@@ -331,8 +331,8 @@ body {
 
 }
 .accordion_label {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   padding: 1em;
   font-weight: bold;
   cursor: pointer;
@@ -358,7 +358,7 @@ input:checked ~ .accordion_label {
 
 .accordion_content {
     font-size: 0.8rem;
-} */
+} 
 
 
 /* .round{

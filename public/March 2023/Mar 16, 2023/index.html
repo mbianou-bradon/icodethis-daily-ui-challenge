@@ -8,73 +8,121 @@
     <title>Accordion 2</title>
 </head>
 <body class="bg-slate-200 flex items-center justify-center min-h-screen">
-    <div class="relative w-full max-w-lg bg-white rounded-xl p-10">
-        <div class="absolute -top-10 -left-10 -z-10 w-24 h-24 bg-rose-500"></div>
-        <div class="">
-            <div class="text-center">
-                <h2 class="leading-[2.5rem] text-xl font-bold mb-3">The Barebones of Accordion</h2>
-                <p class="text-sm w-[80%] mx-auto">Highlighting important details of a section and revealing more details upon a tap or click, if necessary</p>
+    <div class="p-4 flex items-center justify-center">
+        
+    
+        <div class="relative w-full sm:max-w-lg bg-white rounded-lg p-5 sm:p-10">
+            <div class="absolute -top-10 left-[10%] sm:-left-10 -z-10 ">
+                <div class="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[15rem] bg-rose-300/50 rounded-full relative after:absolute after:content-[''] after:w-full after:h-full after:bg-pink-300/50 after:rounded-full after:-right-24"></div>
             </div>
-
-            <div class="[&>*]:mb-5">
-                <div class="m-[0.8rem] overflow-hidden border-b border-red-400 shadow-lg">
-                    <input type="checkbox" name="faq_1" id="faq_1" class="sr-only peer">
-                    <label for="faq_1" class="peer-checked:[&>h2]:text-white peer-checked:[&>h2]:bg-[rgb(225,29,72,1)] peer-checked:[&>div]:max-h-screen peer-checked:[&>div]:p-[1rem]">
-                        <h2 class="p-[1em] cursor-pointer font-bold">What is an Accordion?</h2>
-
-                        <div class="max-h-0 p-[0.001rem] bg-white transition-all duration-[1s] text-[0.8rem]">
-                            <p>
-                                Accordion is a graphical control element comprising a vertically stacked list of items, such as labels and thumbnails. 
-                                An accordion is similar in purpose to a tabbed interface, a list of items where exactly one item is expanded into a panel
-                            </p>
-                        </div>
-                    </label>
+            <div class="">
+                <div class="text-center">
+                    <h2 class="text-xl font-bold mb-3">The Barebones of Accordion</h2>
+                    <p class="text-sm w-[95%] sm:w-[80%] mx-auto">Highlighting important details of a section and revealing more details upon a tap or click, if necessary</p>
                 </div>
 
-                <div class="m-[0.8rem] overflow-hidden border-b border-red-400  shadow-lg">
-                    <input type="checkbox" name="faq_2" id="faq_2" class="sr-only peer">
-                    <label for="faq_2" class="peer-checked:[&>h2]:text-white peer-checked:[&>h2]:bg-[rgb(225,29,72,1)] peer-checked:[&>div]:max-h-screen peer-checked:[&>div]:p-[1rem]">
-                        <h2 class="p-[1em] cursor-pointer font-bold">When and how it should be used?</h2>
+                <div class="[&>*]:mb-5">
+                    <div class="m-[0.8rem] overflow-hidden border-b border-red-400 shadow-lg">
+                        <input type="checkbox" name="faq_1" id="faq_1" class="sr-only peer">
+                        <label for="faq_1" class="peer-checked:[&>section]:text-white peer-checked:[&>section]:bg-[rgb(225,29,72,1)] peer-checked:[&>section>div>h2]:hidden  peer-checked:[&>section>div>h3]:block peer-checked:[&>div]:max-h-screen peer-checked:[&>div]:p-[1rem]">
+                            <section class="p-[1em] cursor-pointer font-bold flex justify-between text-slate-500">
+                               <h2 class="w-[80%]">What is an Accordion?</h2>
+                               <div class="text-xl flex items-center justify-center">
+                                    <h2 class="block">&plus;</h2>
+                                    <h3 class="hidden">&minus;</h3>
+                               </div>
+                            </section>
 
-                        <div class="max-h-0 p-[0.001rem] bg-white transition-all duration-[1s] text-[0.8rem]">
-                            <p>
-                                Accordion is a graphical control element comprising a vertically stacked list of items, such as labels and thumbnails. 
-                                An accordion is similar in purpose to a tabbed interface, a list of items where exactly one item is expanded into a panel
-                            </p>
-                        </div>
-                    </label>
-                </div>
+                            <div class="max-h-0 p-[0.001rem] bg-white transition-all duration-[1s] text-[0.8rem]">
+                                <p>
+                                    Accordion is a graphical control element comprising a vertically stacked list of items, such as labels and thumbnails. 
+                                    An accordion is similar in purpose to a tabbed interface, a list of items where exactly one item is expanded into a panel
+                                </p>
+                                <div class="w-fit px-4 py-2 border text-xs mt-2 border-slate-800 rounded-full cursor-pointer active:scale-95 hover:bg-slate-800 hover:text-white transition-all duration-200">
+                                    <h2>Read More</h2>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
 
-                <div class="m-[0.8rem] overflow-hidden border-b border-red-400  shadow-lg">
-                    <input type="checkbox" name="faq_3" id="faq_3" class="sr-only peer">
-                    <label for="faq_3" class="peer-checked:[&>h2]:text-white peer-checked:[&>h2]:bg-[rgb(225,29,72,1)] peer-checked:[&>div]:max-h-screen peer-checked:[&>div]:p-[1rem]">
-                        <h2 class="p-[1em] cursor-pointer font-bold">What if the user clicks on a collapsed card while another card is open?</h2>
+                    <div class="m-[0.8rem] overflow-hidden border-b border-red-400  shadow-lg">
+                        <input type="checkbox" name="faq_2" id="faq_2" class="sr-only peer">
+                        <label for="faq_2" class="peer-checked:[&>section]:text-white peer-checked:[&>section]:bg-[rgb(225,29,72,1)] peer-checked:[&>section>div>h2]:hidden  peer-checked:[&>section>div>h3]:block peer-checked:[&>div]:max-h-screen peer-checked:[&>div]:p-[1rem]">
+                            <section class="p-[1em] cursor-pointer font-bold flex justify-between text-slate-500">
+                               <h2 class="w-[80%]">When and how it should be used?</h2>
+                               <div class="text-xl flex items-center justify-center">
+                                    <h2 class="block">&plus;</h2>
+                                    <h3 class="hidden">&minus;</h3>
+                               </div>
+                            </section>
+                                
+                                
 
-                        <div class="max-h-0 p-[0.001rem] bg-white transition-all duration-[1s] text-[0.8rem]">
-                            <p>
-                                Accordion is a graphical control element comprising a vertically stacked list of items, such as labels and thumbnails. 
-                                An accordion is similar in purpose to a tabbed interface, a list of items where exactly one item is expanded into a panel
-                            </p>
-                        </div>
-                    </label>
-                </div>
+                            <div class="max-h-0 p-[0.001rem] bg-white transition-all duration-[1s] text-[0.8rem]">
+                                <p>
+                                    Accordion is a graphical control element comprising a vertically stacked list of items, such as labels and thumbnails. 
+                                    An accordion is similar in purpose to a tabbed interface, a list of items where exactly one item is expanded into a panel
+                                </p>
+                                <div class="w-fit px-4 py-2 border text-xs mt-2 border-slate-800 rounded-full cursor-pointer active:scale-95 hover:bg-slate-800 hover:text-white transition-all duration-200">
+                                    <h2>Read More</h2>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
 
-                <div class="m-[0.8rem] overflow-hidden border-b border-red-400  shadow-lg">
-                    <input type="checkbox" name="faq_4" id="faq_4" class="sr-only peer">
-                    <label for="faq_4" class="peer-checked:[&>h2]:text-white peer-checked:[&>h2]:bg-[rgb(225,29,72,1)] peer-checked:[&>div]:max-h-screen peer-checked:[&>div]:p-[1rem]">
-                        <h2 class="p-[1em] cursor-pointer font-bold">How to choose an icon to indicate expansion?</h2>
+                    <div class="m-[0.8rem] overflow-hidden border-b border-red-400  shadow-lg">
+                        <input type="checkbox" name="faq_3" id="faq_3" class="sr-only peer">
+                        <label for="faq_3" class="peer-checked:[&>section]:text-white peer-checked:[&>section]:bg-[rgb(225,29,72,1)] peer-checked:[&>section>div>h2]:hidden  peer-checked:[&>section>div>h3]:block peer-checked:[&>div]:max-h-screen peer-checked:[&>div]:p-[1rem]">
+                            <section class="p-[1em] cursor-pointer font-bold flex justify-between text-slate-500">
+                               <h2 class="w-[80%]">What if the user clicks on a collapsed card while another card is open?</h2>
+                               <div class="text-xl flex items-center justify-center">
+                                    <h2 class="block">&plus;</h2>
+                                    <h3 class="hidden">&minus;</h3>
+                               </div>
+                            </section>
 
-                        <div class="max-h-0 p-[0.001rem] bg-white transition-all duration-[1s] text-[0.8rem]">
-                            <p>
-                                Accordion is a graphical control element comprising a vertically stacked list of items, such as labels and thumbnails. 
-                                An accordion is similar in purpose to a tabbed interface, a list of items where exactly one item is expanded into a panel
-                            </p>
-                        </div>
-                    </label>
+
+                            <div class="max-h-0 p-[0.001rem] bg-white transition-all duration-[1s] text-[0.8rem]">
+                                <p>
+                                    Accordion is a graphical control element comprising a vertically stacked list of items, such as labels and thumbnails. 
+                                    An accordion is similar in purpose to a tabbed interface, a list of items where exactly one item is expanded into a panel
+                                </p>
+                                <div class="w-fit px-4 py-2 border text-xs mt-2 border-slate-800 rounded-full cursor-pointer active:scale-95 hover:bg-slate-800 hover:text-white transition-all duration-200">
+                                    <h2>Read More</h2>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="m-[0.8rem] overflow-hidden border-b border-red-400  shadow-lg">
+                        <input type="checkbox" name="faq_4" id="faq_4" class="sr-only peer">
+                        <label for="faq_4" class="peer-checked:[&>section]:text-white peer-checked:[&>section]:bg-[rgb(225,29,72,1)] peer-checked:[&>section>div>h2]:hidden  peer-checked:[&>section>div>h3]:block peer-checked:[&>div]:max-h-screen peer-checked:[&>div]:p-[1rem]">
+                            <section class="p-[1em] cursor-pointer font-bold flex justify-between text-slate-500">
+                               <h2 class="w-[80%]">How to choose an icon to indicate expansion?</h2>
+                               <div class="text-xl flex items-center justify-center">
+                                    <h2 class="block">&plus;</h2>
+                                    <h3 class="hidden">&minus;</h3>
+                               </div>
+                            </section>
+                                
+                                
+
+                            <div class="max-h-0 p-[0.001rem] bg-white transition-all duration-[1s] text-[0.8rem]">
+                                <p>
+                                    Accordion is a graphical control element comprising a vertically stacked list of items, such as labels and thumbnails. 
+                                    An accordion is similar in purpose to a tabbed interface, a list of items where exactly one item is expanded into a panel
+                                </p>
+                                <div class="w-fit px-4 py-2 border text-xs mt-2 border-slate-800 rounded-full cursor-pointer active:scale-95 hover:bg-slate-800 hover:text-white transition-all duration-200">
+                                    <h2>Read More</h2>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="absolute -bottom-[2.5rem] -right-9  w-[9rem] h-[9rem] border-b-[1.5rem] border-r-[1.5rem] border-red-500 bg-ose-600">
+            <div class="absolute -bottom-[0.9rem] right-1/2 sm:-right-8 -z-20">
+                <div class="w-[15rem] h-[15rem] bg-rose-300/50 rounded-full relative after:absolute after:content-[''] after:w-[80%] after:h-[80%] after:bg-pink-300/50 after:rounded-full after:-bottom-12 after:-right-8"></div>
+            </div>
         </div>
     </div>
 </body>

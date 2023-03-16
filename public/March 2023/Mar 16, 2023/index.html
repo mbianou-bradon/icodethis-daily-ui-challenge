@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion 2</title>
+</head>
+<body class="bg-purple-900 flex items-center justify-center min-h-screen">
+    <div class="relative w-full max-w-2xl bg-white rounded-xl p-10">
+        <div class="absolute -top-10 -left-10 -z-10 w-24 h-24 bg-rose-500"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <div class=" text-2xl font-bold">
+                <h2 class="leading-[2.5rem]">Questions and answers about <span class="text-rose-600">Bradon</span></h2>
+            </div>
+
+            <div class="col-span-2 [&>*]:mb-5">
+                <div class="accordion shadow-lg">
+                    <input type="checkbox" name="faq_1" id="faq_1">
+                    <label class="accordion_label" for="faq_1">Do I have to allow the use of cookies?</label>
+
+                    <div class="accordion_content">
+                        <p>Yes, in order to use My page, you must allow the use of cookies in your browser.</p>
+                        <p>See also: What is a cookie and what does it do?</p>
+                    </div>
+                </div>
+
+                <div class="accordion shadow-lg">
+                    <input type="checkbox" name="faq_2" id="faq_2">
+                    <label class="accordion_label" for="faq_2">How do I get yo you?</label>
+
+                    <div class="accordion_content">
+                        <p>You can get to me through my different Social Medias</p>
+                        <ul class="flex gap-3 [&>*:hover]:underline [&>*:hover]:text-rose-600 text-sm">
+                            <li><a href="https://twitter.com/Mbianou_Bradon" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/romeo.mbianou/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                            <li><a href="https://www.linkedin.com/in/mbianou-bradon/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion shadow-lg">
+                    <input type="checkbox" name="faq_3" id="faq_3">
+                    <label class="accordion_label" for="faq_3">Who are you exactly?</label>
+
+                    <div class="accordion_content">
+                        <p>I am Mbianou Bradon. Currently studying Software engineering at Holberton University through
+                            the ALX Program</p>
+                    </div>
+                </div>
+
+                <div class="accordion shadow-lg">
+                    <input type="checkbox" name="faq_4" id="faq_4">
+                    <label class="accordion_label" for="faq_4">What are you daily routine?</label>
+
+                    <div class="accordion_content ">
+                        <ul class="list-disc marker:text-rose-400 ml-10">
+                            <li>ALX class</li>
+                            <li>icodethis challenge</li>
+                            <li>Personal Project</li>
+                            <li>Eat Something Nice</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion shadow-lg">
+                    <input type="checkbox" name="faq_5" id="faq_5">
+                    <label class="accordion_label" for="faq_5">Do you have Some Cool Stuff?</label>
+
+                    <div class="accordion_content">
+                        <p>
+                        <h2>SURE ! Check the link below</h2>
+                        <div
+                            class="w-fit px-4 py-1 bg-rose-500 text-white hover:text-slate-900 border border-red-500 hover:bg-white active:scale-95">
+                            <a href="https://www.icodethis.com/Bradon" target="_blank">Creative Art</a></div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="absolute -bottom-[2.5rem] -right-9  w-[9rem] h-[9rem] border-b-[1.5rem] border-r-[1.5rem] border-red-500 bg-ose-600">
+        </div>
+    </div>
+</body>
+</html>

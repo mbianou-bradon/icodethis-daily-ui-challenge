@@ -324,15 +324,15 @@ body {
   opacity: 0;
   z-index: -1;
 } */
-.accordion {
+/* .accordion {
   margin: 10px;
   border-radius: 5px;
   overflow: hidden;
 
 }
 .accordion_label {
-  /* display: flex; */
-  /* justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   padding: 1em;
   font-weight: bold;
   cursor: pointer;
@@ -358,7 +358,7 @@ input:checked ~ .accordion_label {
 
 .accordion_content {
     font-size: 0.8rem;
-} 
+}  */
 
 
 /* .round{

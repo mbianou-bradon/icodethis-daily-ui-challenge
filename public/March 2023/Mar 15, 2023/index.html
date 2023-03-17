@@ -5,16 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/style.css">
-    <title>Document</title>
+    <title>Webinar Signup</title>
 </head>
-<body class="bg-slate-900">
+
+
+<body class="bg-zinc-900 text-white flex items-center justify-center min-h-screen">
     <div>
-        <div>
-            <div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 p-5 sm:p-10">
+            <div class="sm:col-span-2 sm:w-[70%] mx-auto">
+                <!-- Description of event -->
+                <div class="sm:w-[90%]">
+                    <h2 class="text-xs text-slate-300">March 16, 2023 17:00</h2>
+                    <h1 class="text-xl sm:text-2xl font-semibold mt-2 mb-4">The help of Augmented Reality and
+                        Holograms.</h1>
+                    <p class="text-xs">
+                        Use Augmented Reality to keep students engaged and p
+                        rovide detailed explanations of models and course material.
+                        In a 3D, AR Lab, students can pinch, zoom, and rotate equipment
+                        related to the course, for a fully immersive learning experienc
+                    </p>
+                </div>
+
+                <!-- Registration Form -->
+                <div>
+                    <h2 class="text-2xl my-5">Join the event</h2>
+                    <div
+                        class="grid grid-cols-2 gap-5 [&>*]:col-span-2 [&>*]:sm:col-span-1 [&>*>label]:block [&>*>label]:text-sm [&>*>input]:border [&>*>input]:border-slate-500 [&>*>input]:bg-transparent [&>*>input]:rounded [&>*>input:focus]:ring-0 [&>*>input:focus]:outline-none [&>*>input:focus]:border-slate-500 [&>*>input]:pl-4 [&>*>input]:py-2 [&>*>input]:text-xs [&>*>input]:w-full">
+                        <div>
+                            <label for="firstName">First name</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Enter your first name">
+                        </div>
+                        <div>
+                            <label for="lastName">Last name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter your last name">
+                        </div>
+                        <div>
+                            <label for="businessEmail">Business Email</label>
+                            <input type="email" name="businessEmail" id="businessEmail" placeholder="Enter your email">
+                        </div>
+                        <div>
+                            <label for="jobTitle">Title</label>
+                            <input type="text" name="jobTitle" id="jobTitle" placeholder="What's your job title?">
+                        </div>
+                        <div>
+                            <label for="companyName">Company name</label>
+                            <input type="text" name="companyName" id="companyName" placeholder="Where do you work?">
+                        </div>
+                        <div>
+                            <h2>Company size</h2>
+                            <select name="companySize" id="companySize" class="bg-transparent rounded w-full h-8 text-sm border border-slate-500 focus:border-slate-500">
+                                <option value="Default">Select</option>
+                                <option value="small">1-100</option>
+                                <option value="medium">101-500</option>
+                                <option value="large">501-10000+</option>
+                            </select>
+                        </div>
 
 
-            <div></div>
+                    </div>
+
+                    <div class="mt-4">
+                        <label for="jobDescription">What are you hoping to learn about?</label>
+                        <textarea name="jobDescription" id="jobDescription" cols="30" rows="7" placeholder="Where do you work?" class="bg-transparent rounded resize-none border border-slate-500 p-2 text-xs w-full focus:ring-0 focus:outline-none focus:border-slate-500"></textarea>
+                    </div>
+
+                    <div class="my-4">
+                        <input type="checkbox" name="checkbox" id="checkbox" class="w-6 h-6 bg-transparent mr-1 focus:ring-0 focus:outline active:border-slate-500">
+                        <label for="checkbox" class="text-sm">I would like to receive emails about future webinars</label>
+                    </div>
+
+                    <div class="w-fit px-9 py-4 text-xs sm:text-sm font-semibold bg-white text-slate-900 cursor-pointer border border-white hover:bg-transparent hover:text-white">
+                        <h2>Register for this event</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col ">
+                <div class="mb-10 sm:mb-24 mt-10">
+                    <h2 class="text-2xl">Share</h2>
+                    <div class="flex gap-5 my-5 [&>*]:cursor-pointer [&>*:hover]:scale-[1.02] [&>*]:transition">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M23 3.01s-2.018 1.192-3.14 1.53a4.48 4.48 0 0 0-7.86 3v1a10.66 10.66 0 0 1-9-4.53s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5c0-.278-.028-.556-.08-.83C21.94 5.674 23 3.01 23 3.01Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm4 5v5m0-8v.01M12 16v-5" />
+                                    <path d="M16 16v-3a2 2 0 0 0-4 0" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-mono mb-4">Guess</h2>
+                    <div class="">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full bg-rose-500">
+                                <img src="https://media.licdn.com/dms/image/C4E03AQGXRPRFVl-CtA/profile-displayphoto-shrink_800_800/0/1600340500194?e=2147483647&v=beta&t=cPzFchd8_4CLFl4bfZOZ5ft_3rmb1dsbwxBwbf1dSeo" alt="" class="h-full w-full rounded-full object-cover">
+                            </div>
+                            <div>
+                                <h2 class="font-semibold">Lisa Alvin</h2>
+                                <p class="text-xs">Cofounder, Jea</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 my-3">
+                            <div class="w-12 h-12 rounded-full bg-rose-500">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1k6ZImxE530-dgOmAOCOigkdf9sFMhoF5R_1OuRSoj33-Zlu-57B-2WJf96LKF4ed-Sg&usqp=CAU" alt="" class="h-full w-full rounded-full object-cover">
+                            </div>
+                            <div>
+                                <h2 class="font-semibold">Jenny Pick</h2>
+                                <p class="text-xs">Head of Education, Jea</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full bg-rose-500">
+                                <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/mxpd0ydkbz8bmlkapdp9" alt="" class="h-full w-full rounded-full object-cover">
+                            </div>
+                            <div>
+                                <h2 class="font-semibold">Peter Scott</h2>
+                                <p class="text-xs">Founder, Jea</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-mono mt-8 mb-4">Hosted By</h2>
+                        <div class="flex items-center gap-3">
+                            <div class="w-14 h-14 rounded-full bg-rose-500">
+                                <img src="https://alvarezandmarsal-crg.com/wp-content/uploads/2021/09/AMCRG_Website_BioPages_Headshots_0014_AMCRG_OurTeam_headshots_Jacobs-1.jpg" alt="" class="h-full w-full rounded-full object-cover">
+                            </div>
+                            <div>
+                                <h2 class="font-semibold">Josh Jacob</h2>
+                                <p class="text-xs">Educator, Web</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

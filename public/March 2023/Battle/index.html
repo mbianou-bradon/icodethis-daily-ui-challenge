@@ -8,43 +8,105 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="flex ">
-        <div class="logo">
-            <h2>EasyPay</h2>
-        </div>
-
-        <div>
-            <ul class="flex items-center gap-4">
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Documentation</a></li>
-                <li><a href="">Solution</a></li>
-                <li><a href="">Devlopers</a></li>
-            </ul>
-        </div>
-
-        <div class="callToAction">
-            <div class="px-4 py-2 w-fit rounded-lg bg-slate-200">
-                <h2>Login</h2>
+    <nav class="bg-slate-300/50 w-full h-[12vh] py-5 fixed px-6">
+        <div class="flex items-center justify-between ">
+            <div class="logo text-2xl font-semibold">
+                <h2>Easy<span class="text-blue-700">Pay</span></h2>
             </div>
 
-            <div class="px-4 py-2 w-fit rounded-lg hover:bg-slate-900 border border-sk">
-                <h2>Get Started</h2>
+            <div>
+                <ul class="flex items-center gap-10 [&>*]:cursor-pointer [&>*]:border-b-2 [&>*]:border-transparent [&>*:hover]:border-blue-700">
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Fees</a></li>
+                    <li><a href="">Documentation</a></li>
+                </ul>
             </div>
-            
+
+            <div class="callToAction flex gap-3">
+                <div class="px-4 py-2 w-fit bg-slate-200">
+                    <h2>Login</h2>
+                </div>
+
+                <div class="px-4 py-2 w-fit hover:bg-slate-900 border border-sk">
+                    <h2>Get Started</h2>
+                </div>
+                
+            </div>
         </div>
     </nav>
 
-    <header>
+    <header class="pt-[12vh] h-creen flex flex-col items-center text-center px-6">
         <div>
-            <h1>The Future of Payments</h1>
-            <p></p>
+            <h1 class="text-4xl font-semibold my-4">The Future of Payments</h1>
+            <p class="w-[60%] mx-auto">The easiest, Fastest and Safe way to transfer money in the world. Send and Recieve money to a bank account in and out of the country in less than 5 mins</p>
         </div>
-        <div class="flex gap-2">
-            <input type="email" name="email" id="email">
-            <div class="px-4 py-2 w-fit rounded-lg bg-slate-900 border border-slate-900 hover:bg-white text-white hover:text-slate-900 cursor-pointer">
-                <h2>Get Started</h2>
-            </div>
+        <div class="flex h-[35rem]">
+            <img src="/public/assets/battle/undraw_mobile_devices_k1ok.png" alt="" class="h-full object-cover">
         </div>
     </header>
+
+    <main class="px-6 mb-20">
+        <section class="advantages grid grid-cols-3 h-[30vh] bg-rose-500 [&>*]:place-self-center [&>*]:p-2 [&>*>div>h2]:text-lg [&>*>div>h2]:font-semibold [&>*>div>h2]:mb-2 [&>*>div>p]:text-sm [&>*>div>p]:w-[70%]">
+            <div class="text-2xl">
+                <p>We've created an exchange to lead this revolutionary</p>
+            </div>
+
+            <div>
+                <div class="w-10 h-10 rounded-full bg-slate-300 mb-3"></div>
+                <div>
+                    <h2>Fast Transaction</h2>
+                    <p>We have a safe and easy money transaction process</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="w-10 h-10 rounded-full bg-slate-300 mb-3"></div>
+                <div>
+                    <h2>Safe and secure</h2>
+                    <p>
+                        We developed the most secure money transation process
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex justify-between px-6 my-10 h-[50vh]">
+            <div class="w-[60%]">
+
+            </div>
+
+            <div class="flex items-center justify-end">
+                <div class="w-[65%]">
+                    <h2 class="text-2xl font-semibold mb-4">You can express yourself by sending money</h2>
+                    <p class="text-sm text-slate-500 my-4">There are many variations of Lorem ispum available, but the majority have suffered alteration in some form, by injected humor or randomised words which</p>
+                    <ul class="list-disc [&>*]:my-4 marker:text-blue-600 marker:text-lg">
+                        <li>Send and Recieve money from any bank</li>
+                        <li>In-built Conversion Rate</li>
+                    </ul>
+
+                    <div class="w-fit px-4 py-2 cursor-pointer border border-slate-900  hover:bg-slate-900 hover:text-white">
+                        <h2>Learn More</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partner bg-blue-700/50 h-[40vh] flex flex-col items-center justify-center">
+            <h2 class="text-4xl text-center">OUR PARTNERS</h2>
+            <p class="text-sm w-[60%] text-center mx-auto mt-3 mb-10">We partner with the best banks, microfinance and saving services to give you the best experience you need</p>
+            <div>
+                <ul class="flex gap-3 [&>*]:w-40 [&>*]:h-40 [&>*]:bg-teal-600 [&>*]:flex [&>*]:items-center [&>*]:justify-center text-center">
+                    <li>BICEC</li>
+                    <li>UBA</li>
+                    <li>ECOBANK</li>
+                    <li>CCC</li>
+                    <li>MTN MOBILE MONEY</li>
+                    <li>ORANGE MOBILE MONEY</li>
+                    <li>MOCU</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

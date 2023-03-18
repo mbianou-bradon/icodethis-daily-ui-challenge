@@ -237,7 +237,7 @@
 
 }
 */
-/* .rotation {
+.rotation {
     animation-name: rotation;
     animation-duration: 2500ms;
     animation-timing-function: ease-in-out; 
@@ -250,9 +250,9 @@
     to {
         transform:rotate(720deg);
     }
-} 
+}
 
-.tooltip1 {
+/* .tooltip1 {
   bottom: -13rem;
   left:-2.5rem;
   color: white;
@@ -264,9 +264,9 @@
   right:4rem;
   background: white;
   color: #1d1a36 !important;
-}
+} */
 
-.arrow1{
+/* .arrow1{
   bottom: -0.5rem;
   left: 50%;
   background: #1d1a36;
@@ -276,8 +276,8 @@
   right: -0.5rem;
   top: 50%;
   background: white;
-} 
-*/
+}  */
+
  /* .modal {
   display: none;
   background-color: rgb(0,0,0); 
@@ -307,7 +307,7 @@ body {
   display: block;
 } */
 
-.menuDarkMode {
+/* .menuDarkMode {
   @apply bg-slate-900 text-slate-200
 }
 
@@ -317,7 +317,7 @@ body {
 
 .gotoAppDarkMode {
   @apply hover:bg-white hover:text-slate-900 shadow-none
-}
+} */
 
 /* input {
   position: absolute;

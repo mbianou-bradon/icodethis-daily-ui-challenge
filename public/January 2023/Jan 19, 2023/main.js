@@ -5,10 +5,15 @@ const out = document.getElementById('out')
 const arrow = document.getElementById('arrow')
 
 profile.addEventListener('mouseover', () => {
-    tooltip.classList.remove('tooltip2')
-    tooltip.classList.remove('hidden')
+    tooltip.classList.toggle('hidden')
+    // tooltip.classList.remove('hidden')
     tooltip.classList.add('tooltip1')
     arrow.classList.add('arrow1')
+})
+
+profile.addEventListener('mouseout', () => {
+    tooltip.classList.toggle('hidden')
+    
 })
 
 out.addEventListener('click', () => {
@@ -18,12 +23,12 @@ out.addEventListener('click', () => {
     tooltip.classList.remove("rotation");
 })
 
-profile2.addEventListener('mouseover', () => {
-    tooltip.classList.remove('tooltip1')
-    tooltip.classList.remove('hidden')
-    tooltip.classList.add('tooltip2')
-    arrow.classList.add('arrow2')
-})
+// profile2.addEventListener('mouseover', () => {
+//     tooltip.classList.remove('tooltip1')
+//     tooltip.classList.remove('hidden')
+//     tooltip.classList.add('tooltip2')
+//     arrow.classList.add('arrow2')
+// })
 
 
 

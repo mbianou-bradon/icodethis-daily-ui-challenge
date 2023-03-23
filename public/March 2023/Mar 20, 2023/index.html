@@ -5,32 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/style.css">
-    <title>Help Center</title>
+    <title>Featues List</title>
 </head>
-<body class="bg-blue-50 flex items-center justify-center min-h-screen">
-    <div class="bg-white w-full sm:max-w-3xl py-10 px-5 rounded-sm [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
+<body class="bg-slate-800 flex items-center justify-center min-h-screen">
+    <div class="w-full md:max-w-4xl bg-slate-3 text-white px-5 my-10 sm:my-0 [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
         <div>
-            <h2 class="text-3xl font-semibold text-center">Help Center</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-x-9 gap-y-4">
+                <div class="text-xl font-semibold w-[80%]">
+                    <h2>Other Key features</h2>
+                </div>
 
-            <div class="w-[55%] flex items-center border rounded-full p-2 mt-6 mb-12 mx-auto">
-                <!-- Search Icon -->
-                <div class="w-[10%] bg-red-600"></div>
-                <input type="text" name="search" class="w-full h-4/5 border-0 focus:border-0 focus:outline-none focus:ring-0" placeholder="search">
+                <div class="sm:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-5 [&>*]:mb-4 [&>*>h2]:font-semibold [&>*>h2]:mb-3 [&>*>p]:text-xs [&>*>p]:mb-4 [&>*p]:w-full [&>*>p]:sm:w-[70%]">
+                    <div>
+                        <h2>Live Preview</h2>
+                        <p>Preview the onboarding flows you create on your website or local environment</p>
+                    </div>
+
+                    <div>
+                        <h2>Element Inspection</h2>
+                        <p>Live Preview provides a tool where you can easily select your element tp apply the guides.</p>
+                    </div>
+
+                    <div>
+                        <h2>Control flow display</h2>
+                        <p>Full control over how, where and when you want your flows to be displayed for your users</p>
+
+                        <div class="text-sm text-blue-600 hover:underline cursor-pointer">
+                            <h2>See how</h2>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2>Help along the way</h2>
+                        <p>If you're stuck working in boardme, we've got you covered. We are helping with videos and tips.</p>
+                    </div>
+
+                    <div>
+                        <h2>Active bug reporting</h2>
+                        <p>Find something not working as expect? Report the issue with a few clicks</p>
+                    </div>
+
+                    <div>
+                        <h2>Detailed documentation</h2>
+                        <p>Live preview provides a tool where you can easily select your element to apply the guides</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0.5 bg-slate-200 [&>*]:h-24 [&>*]:px-3 [&>*]:bg-white [&>*]:flex [&>*]:items-center [&>*]:justify-center [&>*]:cursor-pointer [&>*:hover]:scale-105 [&>*:hover]:shadow-sm [&>*:hover]:shadow-slate-800/80">
-                <div><h2>Biling and Membership</h2></div>
-                <div><h2>Managing and Organizing</h2></div>
-                <div><h2>Uploading</h2></div>
-                <div><h2>Uploading</h2></div>
-                <div><h2>Video Enterprise</h2></div>
-                <div><h2>Creators</h2></div>
-                <div><h2>Enterprise</h2></div>
-                <div><h2>Features</h2></div>
-                <div><h2>Sales</h2></div>
-                <div><h2>Embeding and Sharing</h2></div>
-                <div><h2>FAQs</h2></div>
-                <div><h2>Developers</h2></div>
+
+            <div class="text-center w-full rounded-lg bg-blue-500 py-6 mt-10">
+                <h2 class="text-2xl font-semibold">Ready to get Started?</h2>
+                <p class="w-[80%] sm:w-[45%] mx-auto mt-2 mb-7">Create an account and start helping your users learn how your app works</p>
+
+                <div class="px-8 py-2 bg-white rounded-full w-fit mx-auto text-slate-800 cursor-pointer hover:scale-[1.03] active:scale-95">
+                    <h2>Get Started - It's free</h2>
+                </div>
             </div>
         </div>
     </div>

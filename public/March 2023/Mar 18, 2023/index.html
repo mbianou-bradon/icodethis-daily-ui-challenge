@@ -7,25 +7,30 @@
    <link rel="stylesheet" href="/public/style.css">
     <title>Donor Card</title>
 </head>
-<body>
-    <div class="w-full sm:w-[22rem]">
+<body class="bg-blue-400 flex items-center justify-center min-h-screen">
+    <div class="w-full h-full sm:h-[20rem] sm:max-w-xl relative rounded-lg bg-white p-8 flex ">
+        <div class="w-[20%]"></div>
+        <div class="absolute top-1 right-1 w-8 h-8 rounded-full bg-blue-100 text-blue-500 flex items-center justify-center cursor-pointer hover:text-blue-100 hover:bg-blue-300">
+            &times;
+        </div>
         <div>
-            <div>
-                <h2>Your gift changes lifes</h2>
-                <p>Pledge your support today so that we can help more women in 2023</p>
+            
+            <div class="mb-5">
+                <h2 class="text-3xl mb-3">Your gift changes lifes</h2>
+                <p class="text-xs w-[60%]">Pledge your support today so that we can help more women in 2023</p>
             </div>
 
-            <div class=" flex gap-5 [&>*]:px-10 [&>*]:h-10 [&>*]:bg-blue-300 [&>*]:flex [&>*]:items-center [&>*]:justify-center [&>*]:rounded-lg [&>*]:">
+            <div class="mb-6 flex flex-wrap md:flex-nowrap gap-2 [&>div]:px-8 [&>*]:h-10 [&>*]:bg-blue-100 [&>*]:flex [&>*]:items-center [&>*]:justify-center [&>*]:rounded-lg [&>*]:text-blue-400 [&>*]:border [&>*]:border-blue-100 [&>div:hover]:bg-white [&>div:hover]:text-slate-900 [&>div:hover]:scale-105 [&>div:hover]:shadow-md [&>div:hover]:shadow-blue-200 [&>div]:cursor-pointer">
                 <div><h2>$5</h2></div>
                 <div><h2>$10</h2></div>
                 <div><h2>$15</h2></div>
-                <div>
-                    <h2>$5</h2>
-                    <input type="text">
-                </div>
+                <section class="border-2 border-blue-100 py-5">
+                    <h2 class="px-3">$</h2>
+                    <input type="text" class="min-w-0 w-20 border-0 focus:outline-none focus:border-0 focus:ring-0 placeholder:text-blue-300 caret-blue-200" placeholder="Amount">
+                </section>
             </div>
 
-            <button>Donate</button>
+            <button class="px-10 py-2 bg-rose-400 rounded-lg text-white cursor-pointer">Donate</button>
         </div>
     </div>
 </body>

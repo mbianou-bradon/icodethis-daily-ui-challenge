@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
     <title>Featues List</title>
 </head>
-<body>
-    <div>
+<body class="bg-slate-800 flex items-center justify-center min-h-screen">
+    <div class="w-full md:max-w-4xl bg-slate-3 text-white px-5 my-10 sm:my-0 [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
         <div>
-            <div>
-                <div>
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-x-9 gap-y-4">
+                <div class="text-xl font-semibold w-[80%]">
                     <h2>Other Key features</h2>
                 </div>
 
-                <div>
+                <div class="sm:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-5 [&>*]:mb-4 [&>*>h2]:font-semibold [&>*>h2]:mb-3 [&>*>p]:text-xs [&>*>p]:mb-4 [&>*p]:w-full [&>*>p]:sm:w-[70%]">
                     <div>
                         <h2>Live Preview</h2>
                         <p>Preview the onboarding flows you create on your website or local environment</p>
@@ -29,9 +30,8 @@
                         <h2>Control flow display</h2>
                         <p>Full control over how, where and when you want your flows to be displayed for your users</p>
 
-                        <div>
+                        <div class="text-sm text-blue-600 hover:underline cursor-pointer">
                             <h2>See how</h2>
-                            <div></div>
                         </div>
                     </div>
 
@@ -53,11 +53,11 @@
             </div>
 
 
-            <div>
-                <h2>Ready to get Started?</h2>
-                <p>Create an account and start helping your users learn how your app works</p>
+            <div class="text-center w-full rounded-lg bg-blue-500 py-6 mt-10">
+                <h2 class="text-2xl font-semibold">Ready to get Started?</h2>
+                <p class="w-[80%] sm:w-[45%] mx-auto mt-2 mb-7">Create an account and start helping your users learn how your app works</p>
 
-                <div>
+                <div class="px-8 py-2 bg-white rounded-full w-fit mx-auto text-slate-800 cursor-pointer hover:scale-[1.03] active:scale-95">
                     <h2>Get Started - It's free</h2>
                 </div>
             </div>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Agency Search</title>
+</head>
+<body class="bg-slate-50 flex items-center justify-center min-h-screen selection:text-white selection:bg-green-500">
+    <div class="bg-white w-full sm:max-w-4xl px-8 py-8 rounded-lg shadow [&_*]:transition-all [&_*]:ease-linear [&_*]:duration-200">
+        <div>
+            <div class="flex items-center flex-wrap md:flex-nowrap gap-y-4 mb-9">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-3 text-slate-900">Explore agencies</h2>
+                    <p class="w-[75%] text-slate-800">
+                        select a region and city to discovery the best digital developer agencies
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap md:flex-nowrap gap-5 [&>section]:w-[10rem] [&>*>select]:w-full [&>*>select]:border-slate-200 [&>*>select]:text-slate-800 [&>*>select]:rounded-md [&>*>select:focus]:ring-0 [&>*>select:focus]:outline-none [&>*>select:focus]:border-green-400">
+                    <section>
+                        <select name="country" id="country">
+                            <option value="country">Country</option>
+                            <option value="africa">Africa</option>
+                            <option value="australia">Australia</option>
+                            <option value="asia">Asia</option>
+                            <option value="northamerica">North America</option>
+                            <option value="europe">Europe</option>
+                            <option value="southamerica">South America</option>
+                            <option value="other">other</option>
+                        </select>
+                    </section>
+
+                    <section>
+                        <select name="city" id="city">
+                            <option value="City">City</option>
+                            <option value="buea">Buea</option>
+                            <option value="douala">Douala</option>
+                        </select>
+                    </section>
+
+                    <div class="bg-green-400 px-8 py-2 flex items-center justify-center text-white w-fit rounded-md shadow-sm shadow-green-400 cursor-pointer hover:bg-green-500">
+                        <h2>Find</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex md:justify-between gap-y-5 flex-wrap p-6 bg-slate-100 rounded-md [&>*]:w-[15rem]">
+                <div class="flex gap-2">
+                    <div class="w-8 h-8 bg-green-400"></div>
+                    <div class="w-[85%]">
+                        <h2 class="font-semibold mb-2 w-1/2">Get Discovered</h2>
+                        <p class="text-sm">
+                            Get listed in location based agency directories and attract
+                            business opportunities. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-2">
+                    <div class="w-8 h-8 bg-green-400"></div>
+                    <div class="w-[85%]">
+                        <h2 class="font-semibold w-1/2 mb-2">Publish Content</h2>
+                        <p class="text-sm">
+                            Get listed in location based agency directories and attract
+                            business opportunities. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-2">
+                    <div class="w-8 h-8 bg-green-400"></div>
+                    <div class="w-[85%]">
+                        <h2 class="font-semibold w-[30%] mb-2">Post jobs</h2>
+                        <p class="text-sm">
+                            Get listed in location based agency directories and attract
+                            business opportunities. 
+                        </p>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

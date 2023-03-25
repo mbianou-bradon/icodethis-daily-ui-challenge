@@ -4,12 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Accordion</title>
 </head>
-<body>
-    <div>
+<body class="bg-slate-50 flex items-center justify-center min-h-screen">
+    <div class="w-[22rem] p-5 bg-white rounded-md shadow-md">
         <div>
+            <div class="font-bold">
+                <h2>Coronavirus - Facts, advice and measures</h2>
+            </div>
+
+            <div>
+                <div class="my-[0.8rem] overflow-hidden border-l-[0.4rem] border-orange-400 bg-orange-200/20 shadow-md rounded">
+                    <input type="radio" name="faq" id="faq_1" class="sr-only peer">
+                    <label for="faq_1" class="peer-checked:[&>section]:font-semibold peer-checked:[&>section]:bg-orange-400 peer-checked:[&>section]:text-white peer-checked:[&>section>div>h2]:rotate-45 peer-checked:[&>div]:max-h-screen peer-checked:[&>div]:p-[1rem]">
+                        <section class="p-[0.7em] cursor-pointer flex items-center bg-transparent gap-3">
+                            <div class="text-4xl flex items-center justify-center">
+                                <h2 class="block rotate-0 transition-all duration-200">&plus;</h2>
+                            </div>
+                            <h2 class="w-[80%] text-xs">Facts and Knowledge about COVID-19</h2>
+                            
+                        </section>
+
+                        <div class="max-h-0 mx-7 p-[0.001rem] [&>p]:mb-3 transition-all duration-[1s] text-[0.8rem]">
+                            <p>Social distance, quarantine and insolation</p>
+                            <p>Hand hygiene, cough etiquete, cleaning and laundry</p>
+                            <p>When children have acute respiratory tract infections</p>
+                            <p>Risk groups and their relatives</p>
             
+                        </div>
+                    </label>
+                </div>
+
+                <div class="my-[0.8rem] overflow-hidden border-l-[0.4rem] border-violet-400 bg-violet-200/20 rounded shadow-md">
+                    <input type="radio" name="faq" id="faq_2" class="sr-only peer" checked>
+                    <label for="faq_2" class="peer-checked:[&>section]:font-semibold peer-checked:[&>section]:bg-violet-400 peer-checked:[&>section]:text-white peer-checked:[&>section>div>h2]:rotate-45 peer-checked:[&>div]:max-h-screen peer-checked:[&>div]:p-[1rem]">
+                        <section class="p-[0.7em] cursor-pointer bg-transparent flex items-center gap-3">
+                            <div class="text-4xl flex items-center justify-center">
+                                <h2 class="rotate-0 transition-all duration-200">&plus;</h2>
+                            </div>
+                            <h2 class="w-[80%] text-xs">For the public</h2>
+                            
+                        </section>
+
+                        <div class="max-h-0 mx-6 p-[0.001rem] [&>p]:mb-3 transition-all duration-[1s] text-[0.8rem]">
+                            <p>Social distance, quarantine and insolation</p>
+                            <p>Hand hygiene, cough etiquete, cleaning and laundry</p>
+                            <p>When children have acute respiratory tract infections</p>
+                            <p>Risk groups and their relatives</p>
+            
+                        </div>
+                    </label>
+                </div>
+
+                <div class="my-[0.8rem] overflow-hidden border-l-[0.4rem] border-rose-400 bg-rose-300/20 shadow-md rounded">
+                    <input type="radio" name="faq" id="faq_3" class="sr-only peer">
+                    <label for="faq_3" class="peer-checked:[&>section]:font-semibold peer-checked:[&>section]:bg-rose-400 peer-checked:[&>section]:text-white peer-checked:[&>section>div>h2]:rotate-45 peer-checked:[&>div]:max-h-screen peer-checked:[&>div]:p-[1rem]">
+                        <section class="p-[0.7em] cursor-pointer flex items-center gap-3">
+                            <div class="text-4xl flex items-center justify-center">
+                                <h2 class="block rotate-0 transition-all duration-200">&plus;</h2>
+                            </div>
+                            <h2 class="w-[80%] text-xs">Facts and Knowledge about COVID-19</h2>
+                            
+                        </section>
+
+                        <div class="max-h-0 mx-7 p-[0.001rem] [&>p]:mb-3 transition-all duration-[1s] text-[0.8rem]">
+                            <p>Social distance, quarantine and insolation</p>
+                            <p>Hand hygiene, cough etiquete, cleaning and laundry</p>
+                            <p>When children have acute respiratory tract infections</p>
+                            <p>Risk groups and their relatives</p>
+            
+                        </div>
+                    </label>
+                </div>
+            </div>
         </div>
     </div>
 </body>

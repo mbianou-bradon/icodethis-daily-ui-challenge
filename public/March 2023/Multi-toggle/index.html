@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Multi Toggle</title>
+</head>
+<body class="bg-[#22242c] flex justify-center items-center min-h-screen">
+    <div class="bg-[#1b1d25] w-full sm:max-w-3xl py-9 px-9 text-slate-200 relative">
+        <div class="absolute top-2 right-2 w-10 h-10 rounded-full text-2xl bg-[#16181f] text-slate-400 flex items-center justify-center cursor-pointer hover:text-slate-100 ">
+            &times;
+        </div>
+        <div>
+            <div class="text-center mb-5">
+                <h2 class="text-2xl mb-3">Browse by Interest</h2>
+                <p class="w-[80%] sm:w-[50%] text-sm mx-auto">Select some interest to help us personalize your experience on Edmondo</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10 mb-10 [&>*]:px-4 [&>*]:h-14 [&>*]:flex [&>*]:items-center [&>*]:justify-center [&>*]:bg-[#16181f] [&>*]:border-2 [&>*]:border-[#171920] [&>*]:text-xs [&>*]:sm:text-sm [&>*]:text-slate-400 [&>*]:rounded-sm [&>*]:cursor-pointer [&>*:hover]:border-rose-500 [&>*:hover]:shadow-[0rem_0rem_0.3rem_0.2rem_rgba(244,63,94,0.8)] [&>*:hover]:text-slate-100">
+                <div class="element">
+                    <h2>Math</h2>
+                </div>
+                <div class="element">
+                    <h2>Science</h2>
+                </div>
+                <div class="element border-rose-500 shadow-[0rem_0rem_0.3rem_0.2rem_rgba(244,63,94,0.8)] text-slate-100">
+                    <h2>English</h2>
+                </div>
+                <div class="element">
+                    <h2>World Languages</h2>
+                </div>
+                <div class="element border-rose-500 shadow-[0rem_0rem_0.3rem_0.2rem_rgba(244,63,94,0.8)] text-slate-100">
+                    <h2>Health & PE</h2>
+                </div>
+                <div class="element">
+                    <h2>Special Education</h2>
+                </div>
+                <div class="element">
+                    <h2>Development</h2>
+                </div>
+                <div class="element">
+                    <h2>Technology</h2>
+                </div>
+                <div class="element border-rose-500 shadow-[0rem_0rem_0.3rem_0.2rem_rgba(244,63,94,0.8)] text-slate-100">
+                    <h2>Social Studies</h2>
+                </div>
+            </div>
+            
+
+            <div class="flex gap-5 justify-center [&>*]:px-6 [&>*]:py-2 [&>*]:border [&>*]:rounded-lg [&>*]:cursor-pointer">
+                <div class="border-slate-900 hover:bg-slate-800 hover:text-white">
+                    <h2>Skip</h2>
+                </div>
+
+                <div class="border-rose-500 bg-rose-500 text-white hover:text-rose-500 hover:bg-transparent">
+                    <h2>Save</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
